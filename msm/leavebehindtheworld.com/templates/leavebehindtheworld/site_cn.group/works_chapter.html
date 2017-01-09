@@ -1,0 +1,55 @@
+{layout="site_cn/layout" title="童孝贤的摄影本"}
+
+<main class="works_chapter">
+
+{exp:channel:entries channel="works_main_cn" sort="asc" limit="1" disable="categories|member_data"}
+
+{layout:set name="title"}童孝贤的摄影本｜{title}{/layout:set}
+
+	<article>
+   
+    <h1><a href="{path="site_cn/works"}">{title}</a></h1>
+
+	{if works_main_description_cn}
+
+		{works_main_description_cn}
+
+	{/if}
+
+	{works_main_relationship_cn}
+		
+		<h2>{works_main_relationship_cn:title}</h2>
+
+			{works_main_relationship_cn:works_chapter_description_cn}
+
+			<div class="gallery">
+
+			{works_main_relationship_cn:works_chapter_grid_cn}
+
+				{if works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_display_cn == "Yes"}
+
+					{if works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_descript_cn}
+
+						{works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_descript_cn}
+
+					{/if}
+					
+					{works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_image_cn}
+				
+						<img src="{url}" alt="{works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_title_cn}" width="{exp:mx_calc expression="{width}/2"}" height="400">
+
+					{/works_main_relationship_cn:works_chapter_grid_cn:works_chapter_grid_image_cn}	
+
+				{/if}
+
+			{/works_main_relationship_cn:works_chapter_grid_cn}
+
+			</div>
+
+	{/works_main_relationship_cn}
+
+</article>
+
+{/exp:channel:entries} 
+
+</main>

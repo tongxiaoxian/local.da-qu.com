@@ -1,0 +1,71 @@
+{layout="layout/site" title="大屈影像｜艺术作品精选｜摄影工作室｜广州&amp;深圳&amp;三亚&amp;海口"}
+
+{exp:channel:entries channel="art" limit="1" orderby="random" disable="categories|member_data"}
+
+	{layout:set name="description"}大屈影像工作室的艺术创作类作品展示，包含了历年来大屈影像创作的商业及艺术类摄影。{/layout:set}
+	
+	<section class="portfolio backstretch">
+		
+		<header>
+			<p>欢迎来到大屈*</p>
+			<h1>Welcome.</h1>
+		</header>			
+		
+		<footer>
+			<span class="icon-phone-portrait orientation"></span>
+			<p>* 上下滑动或翻转屏幕浏览</p>
+		</footer>
+		
+		{art_cover}
+			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+		{/art_cover}
+	
+	</section>
+
+	{art_gallery}
+
+		{art_gallery:art_gallery_file}
+
+			<section class="backstretch">
+
+				<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+			</section>
+				
+		{/art_gallery:art_gallery_file}
+
+	{/art_gallery}
+
+	<section class="backstretch">
+		
+		<header>
+
+			<p>旅行三亚／海口</p>
+			<h1>Travel Sanya and Haikou</h1>
+			<br>
+			<br>
+			<br>
+			<p>工作邮箱：<a href="mailto:team@da-qu.com?subject=预约拍摄">team@da-qu.com</a></p>
+
+
+		</header>			
+		
+		<footer>
+			<p><a href="{path="schedule/index"}">查看日程安排</a></p>
+		</footer>
+
+		{art_footer}
+			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+		{/art_footer}
+
+	</section>
+
+	<a href="{path="service/index"}">
+	<section>
+		<span class="pointer">&#8681;</span>
+		<p class="direction">点击查看服务及价格</p>
+		<span class="icon-camera guide"></span>
+	</section>
+	</a>
+
+{/exp:channel:entries}

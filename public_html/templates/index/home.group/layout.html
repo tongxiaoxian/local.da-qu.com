@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{layout:title}</title>
+
+{exp:minimee:css}
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/> -->
+{/exp:minimee:css}
+
+
+<style>
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+ol {
+  /*-webkit-padding-start: 0px;*/
+}
+
+body {
+  font-family: "Gotham Narrow SSm A", "Gotham Narrow SSm B", "sourcehansans-tc", "sourcehansans-sc", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-style: normal;
+  font-size: 62.5%;
+  padding-left: 25px;  
+}
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  letter-spacing: 0.5px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 2px;
+  font-size: 2em;
+}
+
+h1 a, h1 span {
+  font-size: 1em;
+}
+
+p, time {
+  font-size: 1.2em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+ol li, ul li {
+  margin-bottom: 0.5em;  
+  font-size: 1.5em;
+}
+
+ol li p, ul li p {
+  font-size: 1em;
+}
+
+ol li a, ul li a {
+  font-size: 1em;
+}
+
+span, a {
+  font-size: 1.2em; 
+}
+
+span a, a span {
+  font-size: 1.2em;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+span.icon-menu7 {
+  font-size: 1.2em;
+}
+
+img.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+blockquote {
+  margin:0;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+p.welcome {
+  /*font-size: 5em;*/
+}
+
+#backstretch {
+  display: none;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  font-weight: bold;
+  /*text-decoration: underline;*/
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+header a.selected:link, header a.selected:visited {
+  font-weight: bold;
+} 
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+nav p {
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 4em;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+p.address {
+  /*color: gray;*/
+  font-size: 1em;
+}
+
+div.social a {
+  /*color: gray;*/
+  font-size: 1em;
+}
+
+div.social a:link, div.social a:visited {
+  color: black;
+}
+
+div.social a:hover, div.social a:active {
+  /*color: gray;*/
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  margin-top: 2em;
+  padding-bottom: 25px;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (min-width: 1001px) {
+
+    body {
+      padding-left: 50px;
+    }
+
+    nav p {
+      font-size: 5em;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+	
+{layout:contents}
+
+
+{exp:minimee:js}
+  <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+{/exp:minimee:js}
+
+</body>

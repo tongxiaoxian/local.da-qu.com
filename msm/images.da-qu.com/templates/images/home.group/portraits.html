@@ -1,0 +1,72 @@
+{layout="layout/site" title="大屈影像｜写真作品精选｜摄影工作室｜广州&amp;深圳&amp;三亚&amp;海口"}
+
+{exp:channel:entries channel="portrait" limit="1" orderby="random" disable="categories|member_data"}
+
+	{layout:set name="description"}屡获殊荣的旅拍式写真摄影及婚纱摄影工作室,提供广州、深圳、三亚、海口地区的高品质影像服务。{/layout:set}
+
+	<section class="backstretch">
+
+		<header>
+			<p>欢迎来到大屈*</p>
+			<h1>Welcome.</h1>
+		</header>
+
+		<footer>
+			<span class="icon-phone-portrait orientation"></span>
+			<p>* 上下滑动或翻转屏幕浏览</p>
+		</footer>
+	
+		{portrait_cover}
+			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+		{/portrait_cover}
+
+	</section>
+
+	{portrait_gallery}
+
+		{portrait_gallery:portrait_gallery_file}
+
+			<section class="backstretch">
+
+				<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+			</section>
+				
+		{/portrait_gallery:portrait_gallery_file}
+
+	{/portrait_gallery}
+
+	<section class="backstretch">
+
+		<header>
+			<p>工作地点：广州／深圳／海南</p>
+			<h1>Guangdong and Hainan.</h1>
+			<!-- <p>工作地点：海南岛</p> -->
+			<!-- <h1>See you in Hainan</h1> -->
+			<br>
+			<br>
+			<br>
+			<p>预订拍摄：<a href="{path="about/wechat"}">daqustudio</a></p>
+
+			
+		</header>
+
+		<footer>
+			<p><a href="{path="about/public"}">微信公众号</a></p>
+		</footer>
+
+		{portrait_footer}
+			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+		{/portrait_footer}
+		
+	</section>
+	
+	<a href="{path="home/arts"}">
+	<section>
+		<span class="pointer">&#8681;</span>
+		<p class="direction">点击查看黑白作品</p>
+		<span class="icon-camera guide"></span>
+	</section>
+	</a>
+
+{/exp:channel:entries}
