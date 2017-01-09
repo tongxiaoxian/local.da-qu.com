@@ -41,8 +41,8 @@
  *
  */
    $assign_to_config['site_name']  = 'suites';
-   $assign_to_config['cp_url'] = 'http://local.suites.da-qu.com/admin.php';
-   $assign_to_config['site_url'] = 'http://local.suites.da-qu.com/';
+   $assign_to_config['cp_url'] = 'http://suites.da-qu.com/admin.php';
+   $assign_to_config['site_url'] = 'http://suites.da-qu.com/';
 
 
 /*
@@ -87,7 +87,7 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://local.suites.da-qu.com/";
+$assign_to_config['site_url'] = "http://suites.da-qu.com/";
 
 $assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/suites.da-qu.com/templates';
 
