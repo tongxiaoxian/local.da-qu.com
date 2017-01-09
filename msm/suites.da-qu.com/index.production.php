@@ -89,7 +89,7 @@
 
 $assign_to_config['site_url'] = "http://suites.da-qu.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/suites.da-qu.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/suites.da-qu.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
      
