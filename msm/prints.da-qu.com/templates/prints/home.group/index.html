@@ -123,6 +123,31 @@ img {
 body {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+div#about {
+  min-width: 42px;
+  height: 100vh;
+  border-right: 1px solid #e5e5e5;
+  padding-top: 119px;
+  padding-left: 12px;
+  text-align: center;
+  /*margin: 0 auto;*/
+}
+
+div#about h1 {
+  margin: 0;
+  -ms-writing-mode: tb-lr;
+  -webkit-writing-mode: vertical-lr;
+  -moz-writing-mode: vertical-lr;
+  -ms-writing-mode: vertical-lr;
+  writing-mode: vertical-lr;
 }
 
 /* ==========================================================================
@@ -144,11 +169,12 @@ header h1 {
   font-size: 5em;
 }
 
-div#about {
-  width: 42px;
-  height: 100vh;
-  border-right: 1px solid black;
+header p {
+  margin: 0;
+  max-width: 500px;
 }
+
+
 
 
 </style>
@@ -158,7 +184,9 @@ div#about {
 <body>
 
   <div id="about">
-        
+  
+      <h1>屈家印铺</h1>
+  
   </div>
 
 	<header>
