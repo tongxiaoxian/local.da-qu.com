@@ -33,22 +33,6 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    var zmax = 100;
-    $('section.printing article, section.printing img').click(function(event) {
-            event.preventDefault();
-            zmax++;
-          $(this).css('z-index',zmax);    
-            console.log(zmax);
-        }
-    );
-});
-
-
-
-
-
-
 // $(document).ready(function() {
 
 //     $("a.message_about").click(function() {

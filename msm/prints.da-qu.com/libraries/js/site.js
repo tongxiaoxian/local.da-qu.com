@@ -1,8 +1,21 @@
 $(document).ready(function() {
-	var image = $('#backstretch').attr("src");
-	$("header").backstretch(image, {speed: 150});
+    var image = $('img#backstretch').attr("src");
+    $('header').backstretch(image);
 });
 
 $(document).ready(function() {
-	document.oncontextmenu = function () { return false; }
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        mousewheelControl: true,
+        touchAngle: 75,
+        hashnav: true,
+        slidesPerView: 1,
+        breakpoints: {
+        // when window width is <= 1001px
+            1001: {
+                slidesPerView: 1,
+            }
+        }
+    });
 });
