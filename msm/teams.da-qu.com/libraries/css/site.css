@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+  /*-webkit-margin-before: 0em;*/
+  /*-webkit-margin-after: 0em;*/
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+body {
+  font-family: "Whitney A", "Whitney B", "sourcehansans-tc", "sourcehansans-sc", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 62.5%;
+}
+
+
+
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  /*letter-spacing: 1px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.1em;
+}
+
+h1 a, h1 span {
+  font-size: 1em;
+}
+
+p, figcaption, time {
+  font-size: 1.1em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+span, a {
+  font-size: 1.1em; 
+}
+
+span a, a span {
+  font-size: 1.1em;
+}
+
+span {
+  display: block;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+#backstretch{
+  display:none;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: #AAA*/
+}
+
+a:active {
+  /*font-weight: bold; */
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  color: white;
+
+  position: relative;
+  height: 90vh;
+}
+
+header > h1 {
+  /*display: none;*/
+  position: absolute;
+  top:15px;
+  left:25px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+header span {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2.5em;
+}
+
+
+header img#logo {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,0);
+}
+
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header div#billboard {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  padding: 1em 2em 1em 2em;
+  width: 200px;
+  height:120px;
+  background-color: #2a1414;
+}
+
+header div#billboard h1{
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+header div#billboard p{
+
+}
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+  margin-top:6em;
+  margin-bottom:6em;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 0.5em;
+  list-style: none;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+
+}
+
+main section {
+  margin-bottom:10em;
+  margin-left: auto;
+  margin-right: auto;  
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;
+}
+
+main div.gallery {
+}
+
+
+main section p.delimiter {
+  margin-top: 2em;
+  color: #999999;
+}
+
+main section p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+
+main section div.order {
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;  
+  margin: 2em auto;
+  padding: 1em;
+  border: 1px solid black;
+  color: #000000;
+}
+
+main section div.order:hover { 
+  cursor: pointer;
+  background: #444;
+  color: #FFF;
+  -webkit-transition-property:background; 
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-out;
+}
+
+main section#links > div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  /*width: 120px;*/
+}
+
+main section#links {
+  /*margin-top:6em;*/
+  margin-bottom:0em;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  position: relative;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;  
+}
+
+footer #footer {
+  margin-top: 5em;
+
+}
