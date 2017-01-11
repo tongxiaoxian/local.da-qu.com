@@ -20,8 +20,36 @@ $(document).ready(function() {
     });
 });
 
+// $(document).ready(function() {
+//     $('body').click(function() {
+//         $('header').velocity('transition.fadeOut', {duration: 800})
+//     });
+// });
+
+/* Saver js */
 $(document).ready(function() {
-    $('header').click(function() {
-        $(this).css("display","none");
+
+    var s_saver;
+
+    $('body').mousemove(function() {
+        clearTimeout(s_saver);
+
+        s_saver = setTimeout(function() {
+            $('header').fadeIn(900);
+        }, 30000);
+
+        $('header').fadeOut(500);
     });
+
+    $('body').keydown(function() {
+        clearTimeout(s_saver);
+
+        s_saver = setTimeout(function() {
+           $('header').fadeIn(900);
+        }, 30000);
+
+        $('header').fadeOut(500);
+    });
+
 });
+
