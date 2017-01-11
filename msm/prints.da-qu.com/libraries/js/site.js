@@ -26,6 +26,23 @@ $(document).ready(function() {
     });
 });
 
+
+$(document).ready(function() {
+    var myElement = $('body');
+
+        // create a simple instance
+        // by default, it only adds horizontal recognizers
+        var mc = new Hammer(myElement);
+
+        // listen to events...
+        mc.on("swipe pan pinch tap press", function(ev) {
+            $('header').velocity('transition.fadeOut', {duration: 800})
+        });  
+});
+
+
+
+
 /* Saver js */
 $(document).ready(function() {
 
@@ -52,4 +69,6 @@ $(document).ready(function() {
     });
 
 });
+
+
 
