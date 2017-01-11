@@ -155,11 +155,12 @@ div#about h1 {
    ========================================================================== */
 
 header {
+  display: none;
+  position: fixed;
   width: 100%;
   height: 100vh;
   background: #191919;
   padding: 115px 40px 40px 40px;
-  position: absolute;
   bottom: 0;
   cursor: pointer;
 }
@@ -178,6 +179,62 @@ header p {
 }
 
 
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(209, 230, 223, 0.7);
+}
+
+li.underline a {
+  position: relative;
+  top: 10px;
+  /*left: 5px;*/
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+a:active {
+  border-bottom: none;
+}
+
+nav a:link, nav a:visited {
+  border-bottom: none;
+}
+
+nav a.selected:link, nav a.selected:visited {
+  
+}
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+  margin-top: 10px;
+  margin-left: 25px;
+}
+
+nav ul {  
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav ul li {
+  font-size: 1.1em;
+  margin-right: 3em;
+  list-style: none;
+}
 
 
 </style>
@@ -188,11 +245,21 @@ header p {
 
 	<header>
 
-    <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p>
+    <!-- <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p> -->
 
     <h1>屈家印铺</h1>
 
 	</header>
+  
+  <nav>
+    <ul>
+      <li><a {if segment_1 == '' OR segment_1 == 'suites'}class="selected" {/if}href="{path="start/index"}">开始制作</a></li>
+      <li class="underline"><span><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="pricing/index"}">服务与价格</a></span></li>
+      <li><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">已完成</a></li>
+      <li><a {if segment_1 == 'photography'}class="selected" {/if}href="{path="taobao/index"}">淘宝店</a></li>
+      <li><a {if segment_1 == 'photography'}class="selected" {/if}href="{path="store/index"}">线下实体店</a></li>
+    </ul>
+  </nav>
 
 	<main>
   
