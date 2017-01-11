@@ -17,8 +17,6 @@
 <script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
@@ -55,13 +53,11 @@ ul {
 }
 
 html {
-  height: 100%
 }
 
 body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  min-height: 100%;
 }
 
 /* ==========================================================================
@@ -114,40 +110,6 @@ img {
 
 #backstretch{
   display:none;
-}
-
-/* ==========================================================================
-   Body
-   ========================================================================== */
-
-body {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-}
-
-/* ==========================================================================
-   About
-   ========================================================================== */
-
-div#about {
-  min-width: 42px;
-  /*height: 100vh;*/
-  border-right: 1px solid #e5e5e5;
-  padding-top: 119px;
-  padding-left: 12px;
-  text-align: center;
-  /*margin: 0 auto;*/
-}
-
-div#about h1 {
-  margin: 0;
-  -ms-writing-mode: tb-lr;
-  -webkit-writing-mode: vertical-lr;
-  -moz-writing-mode: vertical-lr;
-  -ms-writing-mode: vertical-lr;
-  writing-mode: vertical-lr;
 }
 
 /* ==========================================================================
@@ -228,7 +190,8 @@ nav {
 nav ul {  
   display: -webkit-flex;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
 }
 
 nav ul li {
@@ -236,6 +199,20 @@ nav ul li {
   margin-right: 1em;
   margin-top: 1em;
   list-style: none;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  margin-top: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+main p {
+  max-width: 600px;
 }
 
 
@@ -247,16 +224,14 @@ nav ul li {
 
 	<header>
 
-    <!-- <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p> -->
-
     <h1>屈家印铺</h1>
 
 	</header>
   
   <nav>
     <ul>
-      <li><a {if segment_1 == '' OR segment_1 == 'suites'}class="selected" {/if}href="{path="start/index"}">开始制作</a></li>
-      <li class="underline"><span><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="pricing/index"}">服务与价格</a></span></li>
+      <li class="underline"><span><a {if segment_1 == '' OR segment_1 == 'suites'}class="selected" {/if}href="{path="start/index"}">开始制作</a></span></li>
+      <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="pricing/index"}">价格</a></li>
       <li><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">已完成</a></li>
       <li><a {if segment_1 == 'photography'}class="selected" {/if}href="{path="taobao/index"}">淘宝店</a></li>
       <li><a {if segment_1 == 'photography'}class="selected" {/if}href="{path="store/index"}">线下实体店</a></li>
@@ -264,6 +239,7 @@ nav ul li {
   </nav>
 
 	<main>
+    <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p>
   
 	</main>
 
