@@ -37,12 +37,12 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-  $('body').swipe( {
+  $('body').swipe({
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-      $('header').text("You swiped " + direction );  
+        $('header').velocity('transition.fadeOut', {duration: 800});
     }
-  });
+});
 
   //Set some options later
   $("#test").swipe( {fingers:2} );
