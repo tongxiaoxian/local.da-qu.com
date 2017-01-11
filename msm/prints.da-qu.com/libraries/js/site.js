@@ -28,15 +28,10 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    var myElement = $('body');
-
-        // create a simple instance
-        // by default, it only adds horizontal recognizers
+    var myElement = $('header');
         var mc = new Hammer(myElement);
-
-        // listen to events...
         mc.on("swipe pan pinch tap press", function(ev) {
-            $('header').velocity('transition.fadeOut', {duration: 800})
+            $('header').velocity('transition.fadeOut', {duration: 800});
         });  
 });
 
