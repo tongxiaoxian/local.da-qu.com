@@ -1,7 +1,7 @@
-$(document).ready(function() {
-    var image = $('img#backstretch').attr("src");
-    $('header').backstretch(image);
-});
+// $(document).ready(function() {
+//     var image = $('img#backstretch').attr("src");
+//     $('header').backstretch(image);
+// });
 
 $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
@@ -17,5 +17,11 @@ $(document).ready(function() {
                 slidesPerView: 1,
             }
         }
+    });
+});
+
+$(document).ready(function() {
+    $('header').click(function() {
+        $(this).css("display","none");
     });
 });
