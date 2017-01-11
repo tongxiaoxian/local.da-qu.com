@@ -27,15 +27,31 @@ $(document).ready(function() {
 });
 
 
+// $(document).ready(function() {
+//     var myElement = $('*');
+//         var mc = new Hammer(myElement);
+//         mc.on("swipe pan pinch tap press", function(ev) {
+//             $('header').velocity('transition.fadeOut', {duration: 800});
+//         });  
+// });
+
+
 $(document).ready(function() {
-    var myElement = $('*');
-        var mc = new Hammer(myElement);
-        mc.on("swipe pan pinch tap press", function(ev) {
-            $('header').velocity('transition.fadeOut', {duration: 800});
-        });  
+  $('body').swipe( {
+    //Generic swipe handler for all directions
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+      $('header').text("You swiped " + direction );  
+    }
+  });
+
+  //Set some options later
+  $("#test").swipe( {fingers:2} );
 });
 
 
+$(document).ready(function() {
+
+});
 
 
 /* Saver js */
