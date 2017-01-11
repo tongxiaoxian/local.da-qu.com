@@ -40,14 +40,11 @@ $(document).ready(function() {
   $('body').swipe({
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('header').velocity('transition.fadeOut', {duration: 800});
+        $('header, #saver').velocity('transition.fadeOut', {duration: 800});
     },
         threshold:0,
         fingers:'all'
-});
-
-  //Set some options later
-  $("#test").swipe( {fingers:2} );
+    });
 });
 
 
