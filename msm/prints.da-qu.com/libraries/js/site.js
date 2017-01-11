@@ -28,7 +28,7 @@ $(document).ready(function() {
 
 
 $(document).ready(function() {
-    var myElement = $('header');
+    var myElement = $('*');
         var mc = new Hammer(myElement);
         mc.on("swipe pan pinch tap press", function(ev) {
             $('header').velocity('transition.fadeOut', {duration: 800});
