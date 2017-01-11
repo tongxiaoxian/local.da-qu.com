@@ -26,30 +26,30 @@ $(document).ready(function() {
     });
 });
 
-// /* Saver js */
-// $(document).ready(function() {
+/* Saver js */
+$(document).ready(function() {
 
-//     var s_saver;
+    var s_saver;
 
-//     $('body').mousemove(function() {
-//         clearTimeout(s_saver);
+    $('body').mousemove(function() {
+        clearTimeout(s_saver);
 
-//         s_saver = setTimeout(function() {
-//             $('header').fadeIn(900);
-//         }, 30000);
+        s_saver = setTimeout(function() {
+            $('#saver').fadeIn(900);
+        }, 30000);
 
-//         $('header').fadeOut(500);
-//     });
+        $('#saver').fadeOut(500);
+    });
 
-//     $('body').keydown(function() {
-//         clearTimeout(s_saver);
+    $('body').keydown(function() {
+        clearTimeout(s_saver);
 
-//         s_saver = setTimeout(function() {
-//            $('header').fadeIn(900);
-//         }, 30000);
+        s_saver = setTimeout(function() {
+           $('#saver').fadeIn(900);
+        }, 30000);
 
-//         $('header').fadeOut(500);
-//     });
+        $('#saver').fadeOut(500);
+    });
 
-// });
+});
 

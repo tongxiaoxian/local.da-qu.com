@@ -117,37 +117,66 @@ img {
    ========================================================================== */
 
 header {
-  /*display: none;*/
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: #191919;
-  padding: 0px 0px 10px 25px;
-  /*bottom: 10px;*/
-  /*left: 25px;*/
+  position: fixed;
   top: 0;
-  margin: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFF;
+  z-index: 100000;
   cursor: pointer;
-    background-color: rgba(0, 0, 0, 0.9);
-    color: #FFF;
-    z-index: 100000;
-
-  
+  padding: 25px;
 }
 
 header h1 {
-  color: white;
   position: absolute;
   bottom: 25px;
+  left: 25px;
   font-size: 5em;
   line-height: 0;
 }
 
 header p {
-  color: white;
   margin: 0;
   max-width: 500px;
 }
+
+
+#saver {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #FFF;
+    z-index: 100000;
+  }
+
+  #saver .logo {
+    background: url('/wp-content/themes/studiofaculty/images/001.svg') no-repeat;
+    background-size: 100%;
+    width: 62px;
+    height: 25px;
+    position: fixed;
+    bottom: 30px;
+    left: 25px;
+  }
+
+  #saver .text {
+    max-width: 50%;
+    position: fixed;
+    bottom: 120px;
+    left: 25px;
+  }
+
+  #saver .text li {
+    display: inline-block;
+    padding-right: 30px;
+  }
+
 
 
 /* ==========================================================================
@@ -231,11 +260,32 @@ main p {
 </head>
 
 <body>
-
-	<header>
-
+  
+  <div id="saver">
     <h1>屈家印铺</h1>
+  <div id="saver">
+    <div class="logo"></div>
+    <div class="text">
+      2550 Stephens St.<br>Vancouver, BC&nbsp;&nbsp;Canada  V6K 4K4<br>
+      +1 778 989 3823<br>
+      info@studiofaculty.com<br>
+      M–F / 900am–500pm
+    </div>
+</div>
 
+
+  </div>
+	
+  <header>
+    <div class="text">
+      <h1>屈家印铺</h1>
+      <p>
+        <!-- 海南省海口市西沙路5号<br>亿美大厦408房<br> -->
+        营业时间：M–S / 9:00am–5:00pm<br>
+        微信：+86 189 7698 4285<br>
+        电邮：prints@da-qu.com<br>
+      </p>
+    </div>
 	</header>
   
   <nav>
@@ -249,7 +299,7 @@ main p {
   </nav>
 
 	<main>
-    <p>印铺从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p>
+    <p>我们从创立之初就不想做一个简单的打印输出工作室。我们喜欢与对影像有自己独立见解的摄影师合作，我们认为您的作品也是我们的作品，我们将影像输出视作摄影艺术的第二次创作，所以每次与印铺合作的艺术家都能获得最充分的输出创作空间与最专业的输出建议。而且我们接受影像输出的任何特殊要求与定制服务。</p>
   
 	</main>
 
