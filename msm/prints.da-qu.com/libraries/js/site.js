@@ -65,4 +65,8 @@ $(document).ready(function() {
 });
 
 
+$(document).ready(function() {
+    $('table.works').DataTable();
+} );
+
 

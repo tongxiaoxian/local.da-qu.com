@@ -8,6 +8,7 @@
 
 {exp:minimee:css}
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/site.css"/>
 {/exp:minimee:css}
 
 {exp:minimee:js}
@@ -18,261 +19,9 @@
 <script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 {/exp:minimee:js}
-
-<style>
-
-@charset "utf-8";
-/* CSS Document */
-
-
-/* ==========================================================================
-   Body
-   ========================================================================== */
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  -moz-user-select: text;  
-  -webkit-user-select: text;  
-  -ms-user-select: text;
-  -moz-touch-callout: none;
-  -webkit-touch-callout: none;
-  -ms-touch-callout: none;
-}
-
-p {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-}
-
-ul {
-  -webkit-padding-start: 0px;
-  padding:0;
-}
-
-html {
-}
-
-body {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 62.5%;
-  background-color: #eeedeb;
-}
-
-/* ==========================================================================
-   General Typography
-   ========================================================================== */
-
-*, *:before, *:after {
-  letter-spacing: .5px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-style: normal;
-  font-size: 1.1em;
-}
-
-h1 a, h1 span {
-  font-size: 1em;
-}
-
-p, figcaption, time, blockquote {
-  display: block;
-  font-size: 1.1em;
-  line-height: 1.9;
-  letter-spacing: 1px;
-}
-
-time {
-  font-size: 1em;
-}
-
-p a, p span {
-  font-size: 1em;
-}
-
-ol {
-  padding: 0;
-  list-style-position:inside;
-}
-
-ol li {
-  font-size: 1.1em;
-  line-height: 2;
-  margin-top: 2em;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-#backstretch{
-  display:none;
-}
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.85);
-  color: #FFF;
-  z-index: 100000;
-  cursor: pointer;
-  padding: 25px;
-}
-
-header div.text {
-  max-width: 50%;
-  position: fixed;
-  bottom: 120px;
-  left: 25px;
-}
-
-header h1 {
-  /*position: absolute;*/
-  /*bottom: 120px;*/
-  /*left: 25px;*/
-  /*line-height: 0;*/
-  letter-spacing: 1px;
-  margin-bottom: 2px;
-
-}
-
-header > p {
-  margin-top: 100px;
-  /*margin: 0;*/
-  /*font-size: 2*/
-  max-width: 500px;
-  /*margin-left: 50em;*/
-  /*margin-top:0em;*/
-}
-
-
-#saver {
-    display: none;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.85);
-    color: #FFF;
-    z-index: 100000;
-  }
-
-  #saver .logo {
-    background: url('/wp-content/themes/studiofaculty/images/001.svg') no-repeat;
-    background-size: 100%;
-    width: 62px;
-    height: 25px;
-    position: fixed;
-    bottom: 30px;
-    left: 25px;
-  }
-
-  #saver .text {
-    max-width: 50%;
-    position: fixed;
-    bottom: 120px;
-    left: 25px;
-  }
-
-  #saver .text li {
-    display: inline-block;
-    padding-right: 30px;
-  }
-
-
-
-/* ==========================================================================
-   General Links
-   ========================================================================== */
-
-a:link, a:visited {
-  color: #AAA;
-  text-decoration: none;
-}
-
-li.underline span {
-  position: relative;
-  top: -10px;
-  border-bottom: 8px solid rgba(209, 230, 223, 0.7);
-}
-
-li.underline a {
-  position: relative;
-  top: 10px;
-  /*left: 5px;*/
-}
-
-a:hover {
-  border-bottom: none;
-}
-
-a:active {
-  border-bottom: none;
-}
-
-nav a:link, nav a:visited {
-  border-bottom: none;
-}
-
-nav a.selected:link, nav a.selected:visited {
-
-}
-
-/* ==========================================================================
-   Nav
-   ========================================================================== */
-
-nav {
-  margin-top: 10px;
-  margin-left: 25px;
-  margin-right: 25px;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {  
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-shrink: 0;
-}
-
-nav ul li {
-  font-size: 1.1em;
-  margin-right: 1em;
-  margin-top: 1em;
-  list-style: none;
-}
-
-/* ==========================================================================
-   Main
-   ========================================================================== */
-
-main {
-  margin-top: 100px;
-  margin-left: 25px;
-  margin-right: 25px;
-}
-
-main p {
-  /*font-*/
-  max-width: 600px;
-}
-
-
-</style>
 
 </head>
 
@@ -312,9 +61,9 @@ main p {
   <nav>
     
     <ul>
-      <li class="underline"><span><a {if segment_1 == '' OR segment_1 == 'suites'}class="selected" {/if}href="{path="start/index"}">印务制作</a></span></li>
+      <li><a {if segment_1 == '' OR segment_1 == 'make'}class="selected" {/if}href="{path="start/index"}">印务制作</a></li>
       <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="pricing/index"}">服务与价格</a></li>
-      <li><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">样张</a></li>
+      <li class="underline"><span><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">样张</a></span></li>
 
     </ul>
 
@@ -326,7 +75,44 @@ main p {
   </nav>
 
 	<main>
-  
+    
+    <div class="container">
+
+      <table>
+
+          <caption>LATEST</caption>
+
+          <thead>
+              <tr>
+                  <th class="year" scope="col">时间</th>
+                  <th class="name" scope="col">名称</th>
+                  <th class="type" scope="col">类别</th>
+              </tr>
+          </thead>
+
+          <tbody>
+                <tr>
+                    <td>2016</td>
+                    <td><a href="#">《走，去台湾》</a></td>
+                    <td>微信写真书</td>
+                </tr>
+              
+              <tr>
+                  <td>2016</td>
+                  <td>Accountant</td>
+                  <td>家庭影集</td>
+              </tr>
+              <tr>
+                  <td>2016</td>
+                  <td>Junior Technical Author</td>
+                  <td>Print</td>
+              </tr>
+          </tbody>
+      
+      </table>
+    
+    </div>
+
 	</main>
 
 </body>
