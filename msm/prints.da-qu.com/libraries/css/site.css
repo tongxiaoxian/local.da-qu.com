@@ -256,7 +256,7 @@ main p {
    ========================================================================== */
 
 div.container {
-  max-width: 600px;
+  max-width: 500px;
 
 }
 
@@ -275,16 +275,23 @@ table {
   table-layout: fixed;
 }
 
+table thead {
+  padding-bottom: 1em;
+}
+
 table th {
   font-weight: normal;
+  padding-bottom: 1em;
+
 }
 
 table th.year {
   width: 30%;
 }
 
-table th.type {
-  width: 15%;
+table .type {
+  width: 16%;
+  text-align: right;
 }
 
 table thead tr {
