@@ -187,6 +187,9 @@ a:active {
   font-style: normal;
 }*/
 
+nav a:link, nav a:visited {
+  color: #AAA;
+}
 
 nav a.selected:link, nav a.selected:visited {
   /*color: #AAA;*/
