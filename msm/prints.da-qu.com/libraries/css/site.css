@@ -235,6 +235,10 @@ nav ul li {
   list-style: none;
 }
 
+nav ul li:last-child {
+  margin-right: 0em;
+}
+
 /* ==========================================================================
    Main
    ========================================================================== */
@@ -266,8 +270,9 @@ table caption {
   padding-bottom: 2em;
 }
 
-table tr {
+table th, table td {
   font-size: 1.1em;
+  padding-bottom: 5px;
 }
 
 table {
@@ -281,16 +286,14 @@ table thead {
 
 table th {
   font-weight: normal;
-  padding-bottom: 1em;
-
+  padding-bottom: 5px;
 }
 
 table th.year {
-  width: 30%;
+  width: 25%;
 }
 
 table .type {
-  width: 16%;
   text-align: right;
 }
 
