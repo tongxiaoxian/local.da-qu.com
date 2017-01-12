@@ -98,7 +98,7 @@ header {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: rgba(0, 0, 0, 0.9);
   color: #FFF;
   z-index: 100000;
   cursor: pointer;
@@ -139,33 +139,17 @@ header > p {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.9);
     color: #FFF;
     z-index: 100000;
   }
 
-  #saver .logo {
-    background: url('/wp-content/themes/studiofaculty/images/001.svg') no-repeat;
-    background-size: 100%;
-    width: 62px;
-    height: 25px;
-    position: fixed;
-    bottom: 30px;
-    left: 25px;
-  }
-
-  #saver .text {
-    max-width: 50%;
-    position: fixed;
-    bottom: 120px;
-    left: 25px;
-  }
-
-  #saver .text li {
-    display: inline-block;
-    padding-right: 30px;
-  }
-
+#saver h1 {
+  position: absolute;
+  bottom: 0px;
+  left: 25px;
+  font-size: 5em;
+}
 
 
 /* ==========================================================================
@@ -199,8 +183,8 @@ li.underline a {
 }
 
 
-
 nav a:link, nav a:visited {
+  color: #AAA;
   border-bottom: none;
 }
 
