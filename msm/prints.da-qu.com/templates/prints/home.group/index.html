@@ -54,10 +54,9 @@
   <nav>
     
     <ul>
-      <li><a {if segment_1 == '' OR segment_1 == 'make'}class="selected" {/if}href="{path="start/index"}">印务制作</a></li>
+      <li><a {if segment_1 == 'make'}class="selected" {/if}href="{path="start/index"}">印务制作</a></li>
       <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="pricing/index"}">服务与价格</a></li>
-      <li class="underline"><span><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">样张</a></span></li>
-
+      <li><a {if segment_1 == '' OR segment_1 == 'guide'}class="selected" {/if}href="{path="works/index"}">样张</a></li>
     </ul>
 
     <ul>
@@ -86,7 +85,7 @@
           <tbody>
                 <tr>
                     <td>2016</td>
-                    <td><a href="#">走，去台湾</a></td>
+                    <td class="underline"><span><a href="#">走，去台湾</a></span></td>
                     <td class="type">微信写真书</td>
                 </tr>
               
