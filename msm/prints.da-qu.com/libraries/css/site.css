@@ -162,20 +162,20 @@ a:link, a:visited {
 
 a:hover {
   border-bottom: none;
-  font-style: italic;
+  font-weight: bold;
 }
 
 a:active {
   border-bottom: none;
 }
 
-.underline span {
+li.underline span {
   position: relative;
   top: -10px;
   border-bottom: 8px solid rgba(209, 230, 223, 0.9);
 }
 
-.underline a {
+li.underline a {
   position: relative;
   top: 10px;
   /*left: 5px;*/
@@ -187,7 +187,7 @@ a:active {
 }*/
 
 nav a:link, nav a:visited {
-  color: #AAA;
+  /*color: #AAA;*/
 }
 
 nav a.selected:link, nav a.selected:visited {
@@ -198,6 +198,8 @@ nav a.selected:link, nav a.selected:visited {
 
 
 nav a:hover {
+  font-weight: normal;
+  font-style: italic;
 }
 
 
@@ -261,6 +263,11 @@ div.container {
 
 }
 
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 5em;
+}
 
 table caption {
   text-align: left;
@@ -272,10 +279,7 @@ table th, table td {
   padding-bottom: 5px;
 }
 
-table {
-  width: 100%;
-  table-layout: fixed;
-}
+
 
 table thead {
   padding-bottom: 1em;
