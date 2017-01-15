@@ -21,6 +21,16 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function($) {
+    $(".royalSlider").royalSlider({
+        // options go here
+        // as an example, enable keyboard arrows nav
+        transitionType: 'fade',
+        keyboardNavEnabled: true
+    });  
+});
+
+
 $(document).ready(function() {
     $('body').click(function() {
         $('header').velocity('transition.fadeOut', {duration: 800})
