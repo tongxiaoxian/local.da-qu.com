@@ -1,6 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>屈家印铺</title>
+
+{exp:minimee:css}
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
+{/exp:minimee:css}
+
+
+<style>
+
 @charset "utf-8";
 /* CSS Document */
-
 
 /* ==========================================================================
    Body
@@ -128,8 +142,8 @@ header > p {
 
 #saver h1 {
   position: absolute;
-  bottom: 0px;
-  font-size: 3em;
+  bottom: 0;
+  font-size: 5em;
 }
 
 /* ==========================================================================
@@ -178,14 +192,15 @@ nav ul li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  color: #AAA;
+  /*color: #AAA;*/  
 }
 
-nav ul li a.selected:link, nav ul li a.selected:visited {
+nav ul li.underline a:link, nav ul li.underline a:visited {
   font-style: normal;
 }
 
 nav ul li a:hover, nav ul li a:active {
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -253,4 +268,87 @@ table .type {
 
 table thead tr {
   text-align: left;
+}	
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  position: absolute;
+  /*right: 25px;*/
+  bottom: 8px;
+  margin-left: 25px;
 }
+
+</style>
+
+</head>
+
+<body>
+  
+  <div id="saver">
+      <h1>屈家印铺</h1>
+  </div>
+	
+  <header>
+    
+    <br>
+    <br>
+    <br>
+
+    <p>我们从创立之初就不想做一个简单的输出工作室。我们喜欢与对影像有自己独立见解的你合作，我们认为你的作品也是我们的作品。从印制明信片到画册设计，每个人都能获得最充分的输出建议。一如动人的生命特质平静、优雅、绵长，坚持质感细腻的纸张；丰盈生香的油墨；沉静不苟的匠心将你的独家记忆妥帖安放。高品质的影像输出服务，就这样一方所在，等你岁岁长相见。</p>
+
+
+    <div class="text">
+      <h1>屈家印铺</h1>
+      <p>
+        营业时间：周一到周日 / 1:00pm–10:30pm<br>
+        微信公众号：daquimage<br>
+        电邮：prints@da-qu.com<br>
+      </p>
+    </div>
+
+	</header>
+  
+  <nav>
+    
+    <ul>
+      <li {if segment_1 == 'making'}class="underline">{/if}<span><a href="{path="making/index"}">印务制作</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'service'}class="underline"{/if}><span><a href="{path="service/index"}">服务及价格</a></span></li>
+      <li {if segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">完成</a></span></li>
+    </ul>
+
+    <ul>
+      <li {if segment_1 == 'taobao'}class="underline" {/if}><span><a href="{path="taobao/index"}">淘宝</a></span></li>
+      <li {if segment_1 == 'public'}class="underline" {/if}><span><a href="{path="public/index"}">微信公众号</a></span></li>      
+    </ul>
+
+  </nav>
+
+	<main>
+		
+		{layout:contents}
+    
+	</main>
+  
+  <footer>
+    <p class="footer">&#169;2014-2016 <a href="{path="service/portrait"}"></a>屈家印铺</p>
+  </footer>
+
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+{/exp:minimee:js}
+
+</body>
+
+</html>
+	
