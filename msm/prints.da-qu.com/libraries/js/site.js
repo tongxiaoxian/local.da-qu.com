@@ -10,6 +10,7 @@ $(document).ready(function() {
         mousewheelControl: true,
         touchAngle: 75,
         hashnav: true,
+        effect: 'fade',
         slidesPerView: 1,
         breakpoints: {
         // when window width is <= 1001px
