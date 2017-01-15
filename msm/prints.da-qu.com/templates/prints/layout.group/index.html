@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em;
 }
 
-p, figcaption, time, blockquote {
+p, figcaption, time, blockquote, li {
   display: block;
   font-size: 1.1em;
   line-height: 1.9;
@@ -181,7 +181,7 @@ nav ul {
 }
 
 nav ul li {
-  font-size: 1.1em;
+  /*display: none;*/
   margin-right: 1em;
   margin-top: 1em;
   list-style: none;
@@ -192,7 +192,7 @@ nav ul li:last-child {
 }
 
 nav ul li a:link, nav ul li a:visited {
-  /*color: #AAA;*/  
+  letter-spacing: 1px; 
 }
 
 nav ul li.underline a:link, nav ul li.underline a:visited {
@@ -235,6 +235,10 @@ main p {
 
 div.container {
   max-width: 500px;
+}
+
+p.instruction {
+  letter-spacing: 5px;
 }
 
 table {
@@ -315,8 +319,8 @@ footer {
     
     <ul>
       <li {if segment_1 == 'making'}class="underline">{/if}<span><a href="{path="making/index"}">印务制作</a></span></li>
-      <li {if segment_1 == '' OR segment_1 == 'service'}class="underline"{/if}><span><a href="{path="service/index"}">服务及价格</a></span></li>
-      <li {if segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">完成</a></span></li>
+      <li {if segment_1 == 'service'}class="underline"{/if}><span><a href="{path="service/index"}">服务及价格</a></span></li>
+      <li {if segment_1 == '' OR segment_1 == 'work'}class="underline"{/if}><span><a class="selected" {/if}href="{path="work/index"}">完成</a></span></li>
     </ul>
 
     <ul>
