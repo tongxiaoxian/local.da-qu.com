@@ -83,7 +83,8 @@ p, figcaption, time, blockquote, li {
   line-height: 1.9;
 }
 
-img {2
+img {
+  max-width: 100%;
   display: block;
   margin: 0 auto;
 }
@@ -236,6 +237,9 @@ li.underline a {
    ========================================================================== */
 
 main {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin-top: 100px;
   margin-left: 15px;
   margin-right: 15px;
@@ -244,6 +248,19 @@ main {
 
 main p {
   max-width: 600px;
+}
+
+main div.project {
+  margin-bottom: 2em;
+}
+
+main div.gallery {
+  margin-bottom: 2em;
+}
+
+main img {
+  width: 800px;
+  margin-bottom: 2em;
 }
 
 /* ==========================================================================
