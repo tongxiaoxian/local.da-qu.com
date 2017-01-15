@@ -1,6 +1,6 @@
 // $(document).ready(function() {
 //     var image = $('img#backstretch').attr("src");
-//     $('#intro').backstretch(image);
+//     $('header').backstretch(image);
 // });
 
 $(document).ready(function() {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     $('body').click(function() {
-        $('#intro').velocity('transition.fadeOut', {duration: 800})
+        $('header').velocity('transition.fadeOut', {duration: 800})
     });
 });
 
@@ -30,7 +30,7 @@ $(document).ready(function() {
   $('body').swipe({
     //Generic swipe handler for all directions
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('#intro, #saver').velocity('transition.fadeOut', {duration: 800});
+        $('header, #saver').velocity('transition.fadeOut', {duration: 800});
     },
         threshold:0,
         fingers:'all'
