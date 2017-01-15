@@ -51,6 +51,11 @@ body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
   background-color: #eeedeb;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* ==========================================================================
@@ -223,6 +228,7 @@ main {
   margin-top: 100px;
   margin-left: 25px;
   margin-right: 25px;
+  flex: 1;
 }
 
 main p {
@@ -279,11 +285,12 @@ table thead tr {
    ========================================================================== */
 
 footer {
-  position: absolute;
-  /*right: 25px;*/
-  bottom: 8px;
+  margin-top: 75px;
+  margin-bottom: 8px;
   margin-left: 25px;
 }
+
+
 
 </style>
 
