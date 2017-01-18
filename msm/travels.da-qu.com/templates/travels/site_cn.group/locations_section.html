@@ -1,0 +1,34 @@
+{layout="layout/site"}
+
+<main class="locations">
+
+{exp:channel:entries channel="locations_section_cn" limit="1" disable="member_data"}
+
+{layout:set name="title"}漫旅 ｜ 取景地 ｜ {exp:playa:parents}{title}{/exp:playa:parents} ｜ {title}{/layout:set}
+
+        <img id="anystretch" src="{locations_section_background_cn}"/>
+
+        <article>
+                 
+                <h1>{title}</h1>
+                
+                {locations_section_body_cn}
+                
+                <p> 
+                
+                    <!-- <h2>旅游信息</h2> -->
+                    <ul>
+                        {locations_section_info_cn}
+                            <li>{{locations_section_info_type_cn}}：{locations_section_info_detail_cn}</li>
+                        {/locations_section_info_cn}
+                    </ul>
+                </p>
+
+                
+        </article>
+
+
+
+{/exp:channel:entries} 
+
+</main>

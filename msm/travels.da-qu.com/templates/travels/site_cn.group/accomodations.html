@@ -1,0 +1,26 @@
+{layout="layout/site"}
+
+<img id="anystretch" src="{site_url}assets/images/uploads/travel.jpg"/> 
+
+<main class="accomodations">
+
+{exp:channel:entries channel="accomodations_main_cn" disable="categories|member_data"}
+
+{layout:set name="title"}{site_name} ｜ 住宿及款待{/layout:set}
+        
+        <h1>{title}</h1>
+
+            <ol>
+                {accomodations_relationship_cn}
+                    <li>
+                        <h2>{accomodations_relationship_cn:title}</h2>
+                        <p class="delimiter">-</p>
+                        <p>{accomodations_relationship_cn:accomodations_abstract_cn}</p>
+                    </li>
+                {/accomodations_relationship_cn}
+
+            </ol>
+
+{/exp:channel:entries} 
+
+</main>

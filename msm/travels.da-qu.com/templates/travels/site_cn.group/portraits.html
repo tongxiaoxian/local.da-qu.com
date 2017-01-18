@@ -1,0 +1,58 @@
+{layout="layout/site"}
+
+<main class="{layout:main}">
+
+{exp:channel:entries channel="portraits_main_cn" limit="1" orderby="date" sort="asc" disable="categories|member_data"}
+
+{layout:set name="title"}{site_name} ｜ 写真{/layout:set}
+
+			<img id="anystretch" src="{portraits_main_background_cn}"/>
+			
+			<div class="gallery">
+
+				{portraits_main_relationship_cn}
+		
+					<article>
+						
+						{portraits_main_relationship_cn:portraits_chapter_gallery_cn}
+							
+							<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								
+								{portraits_main_relationship_cn:portraits_chapter_gallery_cn:portraits_gallery_file_cn}
+
+	   							 	<a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+								{/portraits_main_relationship_cn:portraits_chapter_gallery_cn:portraits_gallery_file_cn}
+
+								{portraits_main_relationship_cn:portraits_chapter_gallery_cn:portraits_gallery_thumb_cn}
+										
+									<img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+								{/portraits_main_relationship_cn:portraits_chapter_gallery_cn:portraits_gallery_thumb_cn}
+								
+							</a>
+							
+							</figure>
+
+						{/portraits_main_relationship_cn:portraits_chapter_gallery_cn}
+
+					</article>
+
+				{/portraits_main_relationship_cn}
+
+			</div>
+
+    {paginate}
+        <p>
+            {if previous_page}
+                <a class="prev" href="{auto_path}">上一页</a> &nbsp;
+            {/if}
+            {if next_page}
+                <a class="next" href="{auto_path}">下一页</a>
+            {/if}
+        </p>
+    {/paginate}
+
+{/exp:channel:entries}
+
+</main>
