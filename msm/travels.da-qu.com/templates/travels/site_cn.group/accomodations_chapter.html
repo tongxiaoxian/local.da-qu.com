@@ -1,18 +1,18 @@
-{layout="site_cn/layout"}
+{layout="site/layout"}
 
 <main class="travel">
 
-{exp:channel:entries channel="travel_chapter_cn" limit="1" disable="member_data"}
+{exp:channel:entries channel="travel_chapter" limit="1" disable="member_data"}
 
 {layout:set name="title"}漫旅 ｜ 住宿及款待 ｜ {parents}{parents:title}{/parents} ｜ {title}{/layout:set}
 
-        <img id="anystretch" src="{travel_chapter_background_cn}"/>
+        <img id="anystretch" src="{travel_chapter_background}"/>
 
         <article>
                  
                 <h1>{parents}{parents:title}{/parents}：{title}</h1>
                 
-                {travel_chapter_body_cn}
+                {travel_chapter_body}
 
         </article>
     

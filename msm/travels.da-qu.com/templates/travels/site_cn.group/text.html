@@ -4,13 +4,13 @@
 
 <main>
 
-{exp:channel:entries channel="blog_cn" limit="1" disable="categories|member_data"}
+{exp:channel:entries channel="blog" limit="1" disable="categories|member_data"}
 
 {layout:set name="title"}{site_name} ｜ 记录 ｜ {title}{/layout:set}
 
 		<article>
 			
-				{blog_body_cn}		
+				{blog_body}		
 
 				<time datetime="{entry_date format="%Y"}-{entry_date format="%m"}-{entry_date format="%d"}">{entry_date format="%F %d, %Y"}</time>
 

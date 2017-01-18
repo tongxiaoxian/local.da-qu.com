@@ -93,34 +93,34 @@ $assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu
 
 $assign_to_config['upload_preferences'] = array(
     40 => array(                                                            // ID of upload destination
-        'name'        => 'blog_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/blog_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/blog_cn/'      // URL of upload directory
+        'name'        => 'blog',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/blog/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/blog/'      // URL of upload directory
     ),
     41 => array(                                                            // ID of upload destination
-        'name'        => 'weddings_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/weddings_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/weddings_cn/'      // URL of upload directory
+        'name'        => 'weddings',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/weddings/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/weddings/'      // URL of upload directory
     ),
     42 => array(                                                            // ID of upload destination
-        'name'        => 'portraits_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/portraits_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/portraits_cn/'      // URL of upload directory
+        'name'        => 'portraits',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/portraits/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/portraits/'      // URL of upload directory
     ),
     48 => array(                                                            // ID of upload destination
-        'name'        => 'locations_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/locations_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/locations_cn/'      // URL of upload directory
+        'name'        => 'locations',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/locations/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/locations/'      // URL of upload directory
     ),
     49 => array(                                                            // ID of upload destination
-        'name'        => 'accomodations_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/accomodations_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/accomodations_cn/'      // URL of upload directory
+        'name'        => 'accomodations',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/accomodations/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/accomodations/'      // URL of upload directory
     ),
     50 => array(                                                            // ID of upload destination
-        'name'        => 'hospitalities_cn',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/hospitalities_cn/', // Server path to upload directory
-        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/hospitalities_cn/'      // URL of upload directory
+        'name'        => 'hospitalities',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/travels.da-qu.com/assets/images/uploads/hospitalities/', // Server path to upload directory
+        'url'         => 'http://local.travels.da-qu.com/assets/images/uploads/hospitalities/'      // URL of upload directory
     )             
 );
 
