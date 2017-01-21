@@ -97,6 +97,11 @@ $assign_to_config['upload_preferences'] = array(
         'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/images.da-qu.com/assets/images/uploads/portrait/', // Server path to upload directory
         'url'         => 'http://local.images.da-qu.com/assets/images/uploads/portrait/'      // URL of upload directory
     ),
+    59 => array(                                                            // ID of upload destination
+        'name'        => 'wedding',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/images.da-qu.com/assets/images/uploads/wedding/', // Server path to upload directory
+        'url'         => 'http://local.images.da-qu.com/assets/images/uploads/wedding/'      // URL of upload directory
+    ),
     46 => array(                                                            // ID of upload destination
         'name'        => 'art',                          // Display name in control panel
         'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/images.da-qu.com/assets/images/uploads/art/', // Server path to upload directory
