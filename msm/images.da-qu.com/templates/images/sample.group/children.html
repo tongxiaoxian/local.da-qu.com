@@ -14,14 +14,14 @@
 					<p>* 上下滑动或翻转屏幕浏览</p>
 				</footer>							
 				{sample_cover}
-					<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+					<img id="backstretch" src="{url}" alt="{sample_cover_description}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
 				{/sample_cover}
 			</section>
 
 			{sample_gallery}
 				{sample_gallery:sample_gallery_file}
 					<section class="backstretch">
-						<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+						<img id="backstretch" src="{url}" alt="{sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
 					</section>
 				{/sample_gallery:sample_gallery_file}
 			{/sample_gallery}
