@@ -212,13 +212,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/nan-su.com/cache',
+    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/suites.da-qu.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://local.nan-su.com/cache',
+    'cache_url'         => 'http://local.suites.da-qu.com/cache',
  
     /**
      * ==============================================

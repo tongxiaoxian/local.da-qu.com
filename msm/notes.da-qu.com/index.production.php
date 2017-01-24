@@ -212,13 +212,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/notes.com/cache',
+    'cache_path'        => '/var/www/html/da-qu.com/msm/notes.da-qu.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://local.notes.com/cache',
+    'cache_url'         => 'http://notes.da-qu.com/cache',
  
     /**
      * ==============================================

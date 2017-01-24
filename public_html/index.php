@@ -211,7 +211,7 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/Users/da-qu/Sites/local.da-qu.com/msm/da-qu.com/cache',
+    'cache_path'        => '/Users/da-qu/Sites/local.da-qu.com/public_html/cache',
  
     /**
      * The URL to the cache folder.
