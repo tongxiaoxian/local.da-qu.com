@@ -4,6 +4,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="content-language" content="zh-CN">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 <title>{layout:title}</title>
 
@@ -406,26 +426,37 @@ section.printing a:link, section.printing a:visited {
   border-bottom: 1px dotted black;
 }
 
-section.printing article {
-  background-color: white;
-  padding: 5em;
+section.printing > div {
+  margin-bottom: 10em;
 }
 
 section.printing > div > div {
   position: relative;
+  cursor: pointer;
+
 }
 
 section.printing > div > div >  article {
-  cursor: pointer;
-  position: relative;
+  /*margin-top: -250px;*/
+  background-color:rgba(255, 255, 255, 0.5);
+  position: absolute;
   z-index: 1;
+  /*background-color: white;*/
+  padding: 5vw;
+  /*top: 50%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);  
+
 }
+
+section.printing > div > div >  article p {
+  font-size: 1vw;
+}
+
 section.printing > div > div > img {
   position: relative;
+  z-index: 0;
   width: 100%;
-  height: auto;
-  /*margin-top: -250px;*/
-  /*z-index: 0;*/
 }
 
 
@@ -521,6 +552,22 @@ var _hmt = _hmt || [];
 </head>
 
 <body>
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+    var u="//da-qu.piwikpro.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', 1]);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+    </script>
+<noscript><p><img src="//da-qu.piwikpro.com/piwik.php?idsite=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Piwik Code -->
 
 <main>
 
