@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+<title>{layout:title}</title>
+
+{exp:minimee:css}
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
+{/exp:minimee:css}
+
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+{/exp:minimee:js}
+
+<style>
+
+@charset "utf-8";
+
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+body {
+  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 62.5%;
+}
+
+#backstretch{
+  display:none;
+}
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  letter-spacing: 1px;
+}
+
+* a, * span {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: 1.1em;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+ul.block li {
+  display: block;
+} 
+
+ul li a {
+  font-size: 1em;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(209, 230, 223, 0.7);
+}
+
+li.underline a {
+  position: relative;
+  top: 10px;
+  /*left: 5px;*/
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+a:active {
+  border-bottom: none;
+}
+
+nav a:link, nav a:visited {
+  border-bottom: none;
+}
+
+nav a.selected:link, nav a.selected:visited {
+  border-bottom: 2px solid black;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-weight: bold;
+}
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+  margin-top:100px;
+  margin-left: 25px;
+}
+
+nav ul {  
+  display: -webkit-flex;
+  display: flex;
+}
+
+nav ul li {
+  font-size: 1.5em;
+  margin-right: 1em;
+  list-style: none;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+
+main > * {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+main section {
+  margin-top: 2em;
+}
+
+main section.backstretch {
+  margin: 0;
+  width: 100%;
+  height: 200px;
+}
+
+main section.weather {
+  display: flex;
+  /*justify-content: space-between;*/
+  /*flex-wrap: wrap;*/
+}
+
+main section.weather > div {
+  margin-right: 50px;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  margin: 25px;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.1em;
+}
+
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?82b15a950fa42d8617f0ec20108acfc5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90740277-4', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>小岛南舍｜海南岛</h1>
+    <img src="{site_url}assets/images/uploads/studio/search.png" width="16" height="16">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a {if segment_1 == '' OR segment_1 == 'studio'}class="selected" {/if}href="{path="studio/index"}">房间</a></li>
+      <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="dining/index"}">餐厅</a></li>
+      <li><a {if segment_1 == 'guide'}class="selected" {/if}href="{path="guide/index"}">指南</a></li>
+      <li><a {if segment_1 == 'photography'}class="selected" {/if}href="{path="nearby/index"}">周边</a></li>
+    </ul>
+  </nav>
+
+{layout:contents}
+
+</body>
+
+</html>

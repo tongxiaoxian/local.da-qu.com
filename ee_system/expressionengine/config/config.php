@@ -33,9 +33,8 @@ $config['multiple_sites_enabled'] = "y";
 $config['tz_country'] = "cn";
 
 
-// $config['site_url'] = "http://local.da-qu.com/";
-
-// $config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/templates";
+$config['site_url'] = "http://local.da-qu.com/";
+$config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/templates";
 
 $config['theme_folder_url'] = "http://local.da-qu.com/assets/themes/";
 $config['theme_folder_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/themes/";
