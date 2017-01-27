@@ -43,24 +43,24 @@ $config['tz_country'] = "cn";
 
 
 $config['site_url'] = "http://www.da-qu.com/";
-$config['tmpl_file_basepath']   = "/var/www/html/da-qu.com/public/templates";
+$config['tmpl_file_basepath']   = "/var/www/html/da-qu.com/public_html/templates";
 
 $config['theme_folder_url'] = "http://www.da-qu.com/assets/themes/";
-$config['theme_folder_path'] = "/var/www/html/da-qu.com/public/assets/themes/";
+$config['theme_folder_path'] = "/var/www/html/da-qu.com/public_html/assets/themes/";
 
 $config['captcha_url'] = "http://www.da-qu.com/assets/images/captchas/";
-$config['captcha_path'] = "/var/www/html/da-qu.com/public/assets/images/captchas";
+$config['captcha_path'] = "/var/www/html/da-qu.com/public_html/assets/images/captchas";
 
 $config['emoticon_url'] = "http://www.da-qu.com/assets/images/smileys/";
 
 $config['avatar_url'] = "http://www.da-qu.com/assets/images/avatars/";
-$config['avatar_path'] = "/var/www/html/da-qu.com/public/assets/images/avatars";
+$config['avatar_path'] = "/var/www/html/da-qu.com/public_html/assets/images/avatars";
 
 $config['photo_url'] = "http://www.da-qu.com/assets/images/member_photos/";
-$config['photo_path'] = "/var/www/html/da-qu.com/public/assets/images/member_photos/";
+$config['photo_path'] = "/var/www/html/da-qu.com/public_html/assets/images/member_photos/";
 
 $config['sig_img_url'] = "http://www.da-qu.com/assets/images/signature_attachments/";
-$config['sig_img_path'] = "/var/www/html/da-qu.com/public/assets/images/signature_attachments/";
+$config['sig_img_path'] = "/var/www/html/da-qu.com/public_html/assets/images/signature_attachments/";
 
 
 // END EE config items
