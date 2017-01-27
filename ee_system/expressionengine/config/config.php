@@ -85,7 +85,7 @@ $config['dynamic_tracking_disabling'] = '';
 |	http://local.da-qu.com/
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'local.da-qu.com';
 
 /*
 |--------------------------------------------------------------------------
