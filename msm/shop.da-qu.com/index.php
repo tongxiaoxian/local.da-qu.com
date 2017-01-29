@@ -1,4 +1,4 @@
-<?php
+ <?php
 /**
  * ExpressionEngine - by EllisLab
  *
@@ -40,9 +40,9 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'studio';
-   $assign_to_config['cp_url'] = 'http://studio.da-qu.com/admin.php';
-   $assign_to_config['site_url'] = 'http://studio.da-qu.com/';
+   $assign_to_config['site_name']  = 'shop'; 
+   $assign_to_config['cp_url'] = 'http://local.shop.da-qu.com/admin.php';
+   $assign_to_config['site_url'] = 'http://local.shop.da-qu.com/'; 
 
 
 /*
@@ -87,12 +87,12 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://studio.da-qu.com/";
+$assign_to_config['site_url'] = "http://local.shop.da-qu.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/studio.da-qu.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/shop.da-qu.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
-     
+
 );
 
 //	$assign_to_config['template_group'] = '';
@@ -212,13 +212,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/studio.da-qu.com/cache',
+    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/shop.da-qu.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://studio.da-qu.com/cache',
+    'cache_url'         => 'http://local.shop.da-qu.com/cache',
  
     /**
      * ==============================================
