@@ -186,13 +186,6 @@ a:hover, a:active {
   justify-content: space-between;
 }
 
-.headroom--pinned {
-    display: block;
-}
-.headroom--unpinned {
-    display: none;
-}
-
 /**
  * Note: I have omitted any vendor-prefixes for clarity.
  * Adding them is left as an exercise for the reader.
@@ -202,10 +195,14 @@ a:hover, a:active {
     transition: transform 200ms linear;
 }
 .headroom--pinned {
-    transform: translateY(0%);
+    transform: translateY(-100%);
 }
 .headroom--unpinned {
     transform: translateY(-100%);
+}
+
+.headroom--top {
+    transform: translateY(0%);
 }
 
 
