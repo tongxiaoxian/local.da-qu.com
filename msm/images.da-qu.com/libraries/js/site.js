@@ -23,8 +23,8 @@ $(document).ready(function() {
     });
 });
 
-
 $("#header").headroom();
+
 
 // $(document).ready(function() {
 
