@@ -23,15 +23,8 @@ $(document).ready(function() {
     });
 });
 
-$(document).ready(function() {
-    var $grid = $('div#masonry').imagesLoaded( function() {
-      // init Masonry after all images have loaded
-      $grid.masonry({
-        itemSelector: '.box',
-        columnWidth: 160
-      });
-    });
-});
+
+$("#header").headroom();
 
 // $(document).ready(function() {
 

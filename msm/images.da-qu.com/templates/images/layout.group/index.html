@@ -33,25 +33,11 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/animate.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
 {/exp:minimee:css}
 
-{exp:minimee:js}
-<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
-{/exp:minimee:js}
+
 
 <style>
 
@@ -188,19 +174,42 @@ a:hover, a:active {
    Header
    ========================================================================== */
 
-main > header {
+#header {
   position: fixed;
   left: 0;
   z-index: 1;
   width: 100%;
   height: 63px;
-  /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));*/
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
   padding: 25px;
   display: flex;
   justify-content: space-between;
 }
 
-main > header > h1 {
+.headroom--pinned {
+    display: block;
+}
+.headroom--unpinned {
+    display: none;
+}
+
+/**
+ * Note: I have omitted any vendor-prefixes for clarity.
+ * Adding them is left as an exercise for the reader.
+ */
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+
+#header > h1 {
   margin: 0;
   padding: 0;
   /*display: none;*/
@@ -211,7 +220,7 @@ main > header > h1 {
 }
 
 
-main > header img {
+#header img {
   display: block;
   margin-left: inherit;
   margin-right: inherit;
@@ -220,13 +229,13 @@ main > header img {
 }
 
 
-main > header > nav > ul{ 
+#header > nav > ul{ 
   margin: 0;
   display: -webkit-flex;
   display: flex;
 }
 
-main > header > nav > ul {
+#header > nav > ul {
   list-style: none;
 }
 
@@ -238,13 +247,13 @@ nav ul li {
   list-style: none;
 }
 
-header a:link, header a:visited {
+#header a:link, #header a:visited {
   color: #000;
 
   border-bottom: none;
 }
 
-header a.current:link, header a.current:visited {
+#header a.current:link, #header a.current:visited {
   font-weight: bold;
   /*border-bottom: 2px solid #fff;*/
 }
@@ -680,6 +689,23 @@ var _hmt = _hmt || [];
 {layout:contents}
 
 </main>
+
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
+{/exp:minimee:js}
 
 </body>
 
