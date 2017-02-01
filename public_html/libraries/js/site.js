@@ -17,7 +17,7 @@ $(document).ready(function() {
         breakpoints: {
         // when window width is <= 1001px
             1001: {
-                slidesPerView: 2,
+                slidesPerView: 1,
             }
         }
     });
