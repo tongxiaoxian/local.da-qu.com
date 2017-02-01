@@ -7,9 +7,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
     var image = $('img#bgback').attr("src");
-    $.backstretch(image);
-
+     $('div.bgback').backstretch(image);
 });
+
+
 
 $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
