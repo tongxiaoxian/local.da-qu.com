@@ -262,19 +262,11 @@ nav ul li {
 
 #sticky {
   z-index: -2;
-
-  background-image: url(../../../assets/images/uploads/home/background.jpg);
-  /*z-index: -100;*/
-  /*top: 0;*/
-  /*left: 0;*/
-    background-attachment: fixed;
-
-  /* center it */
-  background-position: center center;
-
-  /* Scale it nicely to the element */
+  background: url(../../../assets/images/uploads/home/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  /*position: absolute;*/
 }
 
 #sticky header {
