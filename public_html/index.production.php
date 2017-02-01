@@ -92,7 +92,46 @@ $assign_to_config['site_url'] = "http://www.da-qu.com/";
 $assign_to_config['tmpl_file_basepath']   = "/var/www/html/da-qu.com/public_html/templates";
 
 $assign_to_config['upload_preferences'] = array(
-    
+    44 => array(                                                            // ID of upload destination
+        'name'        => 'portrait',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/portrait/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/portrait/'      // URL of upload directory
+    ),
+    59 => array(                                                            // ID of upload destination
+        'name'        => 'wedding',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/uploads/images/wedding/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/wedding/'      // URL of upload directory
+    ),    
+    46 => array(                                                            // ID of upload destination
+        'name'        => 'art',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/art/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/art/'      // URL of upload directory
+    ),
+    47 => array(                                                            // ID of upload destination
+        'name'        => 'sample',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/sample/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/sample/'      // URL of upload directory
+    ),
+    56 => array(                                                            // ID of upload destination
+        'name'        => 'message',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/message/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/message/'      // URL of upload directory
+    ),
+    57 => array(                                                            // ID of upload destination
+        'name'        => 'flowers',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/flowers/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/flowers/'      // URL of upload directory
+    ),
+    58 => array(                                                            // ID of upload destination
+        'name'        => 'brides',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/wedding/brides/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/wedding/brides/'      // URL of upload directory
+    ),
+    55 => array(                                                            // ID of upload destination
+        'name'        => 'couples',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/images/wedding/couples/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/images/wedding/couples/'      // URL of upload directory
+    )
 );
 
 //	$assign_to_config['template_group'] = '';

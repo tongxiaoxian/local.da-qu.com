@@ -28,7 +28,14 @@
 <script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.ScrollMagic.min.js"></script>
+
+<script type="text/javascript" src="{site_url}libraries/js/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/sticky.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.fixedbg.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/base.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/images.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
@@ -190,18 +197,18 @@ a:hover, a:active {
     transition: transform 200ms linear;
 }
 .headroom--pinned {
-    transform: translateY(-100%);
+    transform: translateY(0%);
 }
 .headroom--unpinned {
     transform: translateY(-100%);
 }
 
 .headroom--top {
-    transform: translateY(0%);
+    /*transform: translateY(0%);*/
 }
 
 .headroom--not--top {
-    transform: translateY(0%);
+    /*transform: translateY(0%);*/
 }
 
 
@@ -253,7 +260,21 @@ nav ul li {
   border-bottom: 2px solid #000;
 }
 
+#sticky {
 
+  background-image: url(../../../assets/images/uploads/home/background.jpg);
+  /*z-index: -100;*/
+  /*top: 0;*/
+  /*left: 0;*/
+    background-attachment: fixed;
+
+  /* center it */
+  background-position: center center;
+
+  /* Scale it nicely to the element */
+  background-size: cover;
+  /*position: absolute;*/
+}
 
 
 /* ==========================================================================

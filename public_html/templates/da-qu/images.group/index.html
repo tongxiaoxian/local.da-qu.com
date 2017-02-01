@@ -7,7 +7,7 @@
 	<header id="header" class="header header--fixed hide-from-print" role="banner">
 		
 		<h1>大屈摄影工作室</h1>
-
+<!-- 
 		<nav>
 		  <ul>
 		    <li><a {if segment_1 == '' OR segment_1 == 'suites'}class="current" {/if}href="{path="suites/index"}">影像</a></li>
@@ -15,13 +15,13 @@
 		    <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="dining/index"}">旅行</a></li>
 		    <li><a {if segment_1 == 'dining'}class="selected" {/if}href="{path="dining/index"}">指南</a></li>
 		  </ul>
-		</nav>
+		</nav> -->
 
 		<a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/images/home/calendar.png" width="38"/></a>
 
 	</header>
 
-	<section class="backstretch">
+	<section id="sticky">
 
 		<header>
 			<p>欢迎来到大屈*</p>
@@ -32,57 +32,16 @@
 			<span class="icon-phone-portrait orientation"></span>
 			<p>* 上下滑动或翻转屏幕浏览</p>
 		</footer>
-	
-		{portrait_cover}
-			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-		{/portrait_cover}
 
 	</section>
-
-	{portrait_gallery}
-
-		{portrait_gallery:portrait_gallery_file}
-
-			<section class="backstretch">
-
-				<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-			</section>
-				
-		{/portrait_gallery:portrait_gallery_file}
-
-	{/portrait_gallery}
-
-	<section class="backstretch">
-
-		<header>
-			<p>工作地点：广州／深圳／海南</p>
-			<h1>Guangdong and Hainan.</h1>
-			<br>
-			<br>
-			<br>
-			<p>预订拍摄：<a href="{path="about/wechat"}">daqustudio</a></p>
-
-			
-		</header>
-
-		<footer>
-			<p><a href="{path="about/public"}">微信公众号</a></p>
-		</footer>
-
-		{portrait_footer}
-			<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-		{/portrait_footer}
-		
-	</section>
 	
-	<a href="{path="service/index#portrait"}">
+	<!-- <a href="{path="service/index#portrait"}"> -->
 	<section>
 		<span class="pointer">&#8681;</span>
 		<p class="direction">点击查看服务及价格</p>
 		<span class="icon-camera guide"></span>
 	</section>
-	</a>
+	<!-- </a> -->
 <!-- 
 	<a href="{path="home/arts"}">
 	<section>
