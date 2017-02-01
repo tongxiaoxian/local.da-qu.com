@@ -25,6 +25,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     $("#header").headroom();
+    
 
 });
 
@@ -43,3 +44,4 @@ $(document).ready(function() {
         .addTo(controller); // assign the scene to the controller
 
 });
+

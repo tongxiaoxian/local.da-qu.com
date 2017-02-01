@@ -261,6 +261,7 @@ nav ul li {
 }
 
 #sticky {
+  z-index: -2;
 
   background-image: url(../../../assets/images/uploads/home/background.jpg);
   /*z-index: -100;*/
@@ -276,12 +277,19 @@ nav ul li {
   /*position: absolute;*/
 }
 
+#sticky header {
+  z-index: -10;
+  position: fixed;
+
+}
+
 
 /* ==========================================================================
    Section
    ========================================================================== */
 
 section {
+  z-index: 100;
   position: relative;
   height: 100vh;
   box-shadow: 1px 1px 20px #000;
