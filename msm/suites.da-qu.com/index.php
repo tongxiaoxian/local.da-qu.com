@@ -40,7 +40,7 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'suites'; 
+   $assign_to_config['site_name']  = 'nan-su'; 
    $assign_to_config['cp_url'] = 'http://local.suites.da-qu.com/admin.php';
    $assign_to_config['site_url'] = 'http://local.suites.da-qu.com/'; 
 

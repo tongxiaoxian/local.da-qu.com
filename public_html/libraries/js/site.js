@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	$("section.backstretch").each(function(index) {
-		var image = $(this).children("img#backstretch").attr("src");
-  		$(this).backstretch(image);
-	});
+    $("section.backstretch").each(function(index) {
+        var image = $(this).children("img#backstretch").attr("src");
+        $(this).backstretch(image);
+    });
 });
 
 
@@ -23,22 +23,15 @@ $(document).ready(function() {
     });
 });
 
-// $(document).ready(function() {
-//     $("a.reserve").click(function() {
-//         $("p.reservation, div.standard, p.sample, p.price, p#return").velocity('transition.fadeOut', {duration: 800, complete: function() {
-//             $("div.contact").velocity('transition.fadeIn', {duration: 1500, complete: function() {
-//             }});
-//         }});    
-//     });    
-// });
-
-
-$('section.stories').masonry({
-  // options...
-  itemSelector: '.box',
-  columnWidth: 160
+$(document).ready(function() {
+    var $grid = $('div#masonry').imagesLoaded( function() {
+      // init Masonry after all images have loaded
+      $grid.masonry({
+        itemSelector: '.box',
+        columnWidth: 160
+      });
+    });
 });
-
 
 // $(document).ready(function() {
 

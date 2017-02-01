@@ -6,7 +6,7 @@ $active_record = TRUE;
 $db['expressionengine']['hostname'] = 'localhost';
 $db['expressionengine']['username'] = 'root';
 $db['expressionengine']['password'] = 'Ecopillow123=';
-$db['expressionengine']['database'] = 'txx_DB';
+$db['expressionengine']['database'] = 'dq_DB';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = FALSE;
 $db['expressionengine']['dbprefix'] = 'exp_';
