@@ -13,7 +13,7 @@ $(document).ready(function() {
         mousewheelControl: true,
         touchAngle: 75,
         hashnav: true,
-        slidesPerView: 1,
+        slidesPerView: 2,
         breakpoints: {
         // when window width is <= 1001px
             1001: {
