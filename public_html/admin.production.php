@@ -38,7 +38,7 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'index'; 
+ $assign_to_config['site_name']  = 'da-qu'; 
  $assign_to_config['cp_url'] = 'http://www.da-qu.com/admin.php';
 
 

@@ -40,7 +40,7 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'index'; 
+   $assign_to_config['site_name']  = 'da-qu'; 
    $assign_to_config['cp_url'] = 'http://local.da-qu.com/admin.php'; 
    $assign_to_config['site_url'] = 'http://local.da-qu.com/'; 
 
