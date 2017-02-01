@@ -4,26 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="content-language" content="zh-CN">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
 
 <title>{layout:title}</title>
 
@@ -41,13 +21,12 @@
 <script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/base.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/home.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
 {/exp:minimee:js}
 
@@ -86,7 +65,7 @@ html {
 
 body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
   font-size: 62.5%;
   color: white;
   min-height: 100%;
@@ -120,47 +99,12 @@ p, figcaption, time, blockquote {
   margin: 0 auto;
 }
 
-p.center {
-  /*font-weight: bold;*/
-  text-align: center;
-}
-
-p.direction {
-  font-weight: bold;
-  font-size: 2em;
-}
-
 time {
   font-size: 1em;
 }
 
 p a, p span {
   font-size: 1em;
-}
-
-p a.prev, p a.next {
-  font-size: 0.9em;
-}
-
-ol {
-  padding: 0;
-  list-style-position:inside;
-}
-
-ol li {
-  font-size: 1.1em;
-  line-height: 2;
-  margin-top: 2em;
-}
-
-img {
-  display: block;
-  margin: 0 auto;
-}
-
-img#wechat {
-  display: inline;
-  text-align: center;
 }
 
 #backstretch{
@@ -200,22 +144,6 @@ section h1 {
   font-size: 3.5em;
   margin: 0;
 }
-
-section span.guide {
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-section span.pointer {
-  font-size: 2em;
-  z-index: 100;
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  transform: translate(-50%,0);
-}
-
 /* ==========================================================================
    Swiper
    ========================================================================== */
@@ -233,275 +161,6 @@ section div.swiper-slide a:link, section div.swiper-slide a:visited {
 }
 
 /* ==========================================================================
-   Section Document
-   ========================================================================== */
-
-section.document {
-  height: auto;
-  min-height: 100vh;
-  overflow: hidden;
-}
-
-section.document p {
-  margin-top: 1em;
-  margin-bottom: 1em;
-}
-
-section.document header h1 {
-  text-align: left; 
-}
-
-section.document header p {
-  max-width: 100%;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  text-align: left;
-}
-
-section.document > div, section.document > article {
-  padding-top: 5em;
-  flex: 1;
-}
-
-section.document > div > * {
-  margin-bottom: 5em;
-}
-
-section.document > div > div.standard {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 400px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-section.document > div > div.standard div {
-  width: 33%;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-section.document > div > div.aboutus {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 250px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-section.document > div > div.aboutus div {
-  width: 50%;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-
-section.document > div > div.standard div p:first-child {
-  line-height: 1;
-}
-
-section.document > div > div.standard div p:first-child span {
-  font-size: 2em;
-  padding-right: 5px;
-}
-
-section.document div.description, section.document div.contact {
-  display: none;
-}
-
-div.contact {
-  display: none;
-}
-
-section.document div.description {
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-section.document div.description p {
-  text-align: left;
-}
-
-section.document p#return, section.document p#specs {
-  margin: 0 auto;
-  font-size: 1em;
-  margin-top: 5em;
-  padding-bottom: 4em;
-}
-
-section.document p#return a, section.document p#specs a {
-  position: relative;
-}
-
-section.document p#return a:before, section.document p#specs a:before {
-  padding: 75px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* ==========================================================================
-   Section Center
-   ========================================================================== */
-
-section.middle {
-  overflow: hidden;
-}
-
-section.middle header {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-}
-
-section.middle header h1, section.middle header p {
-  text-align: left;
-}
-
-/* ==========================================================================
-   Section Message
-   ========================================================================== */
-
-section.message {
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
-}
-
-section.message p.author {
-  text-align: center;
-  font-size: 1em;
-}
-
-section.message p.author, section.message p.pagination {
-  margin-top: 3em;
-}
-
-/* ==========================================================================
-   Section Message Content
-   ========================================================================== */
-
-section.message.content {
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
-}
-
-section.message.content p {
-  margin-bottom: 2em;
-}
-
-
-/* ==========================================================================
-   Section Stories
-   ========================================================================== */
-
-section.stories {
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
-}
-
-section.stories div#masonry {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 130%;
-}
-
-section.stories p.visit {
-  width: 100px;
-  margin: 2em auto;
-  padding: 0.5em;
-  border: 1px solid white;
-  text-align: center;
-}
-
-section.stories a.visit:link, section.stories a:visited {
-  border-bottom: none;
-}
-
-section.stories a:hover, section.stories a:active {
-  /*border: 1px solid gray;*/
-}
-
-
-/* ==========================================================================
-   Section Printing
-   ========================================================================== */
-
-section.printing {
-  color: black;
-  background-image: none;
-  background-color: #eeedeb;
-}
-
-section.printing a:link, section.printing a:visited {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted black;
-}
-
-section.printing > div {
-  margin-bottom: 10em;
-}
-
-section.printing > div > div {
-  position: relative;
-  cursor: pointer;
-
-}
-
-section.printing > div > div >  article {
-  /*margin-top: -250px;*/
-  background-color:rgba(255, 255, 255, 0.5);
-  position: absolute;
-  z-index: 1;
-  /*background-color: white;*/
-  padding: 5vw;
-  /*top: 50%;*/
-  left: 50%;
-  transform: translate(-50%, -50%);  
-
-}
-
-section.printing > div > div >  article p {
-  font-size: 1vw;
-}
-
-section.printing > div > div > img {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-}
-
-
-/* ==========================================================================
-   Text
-   ========================================================================== */
-
-p.paragraph {
-  max-width: 600px;
-  text-align: left;
-}
-
-article {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-article p {
-  text-align: left;
-}
-
-article p.question {
-  font-weight: bold;
-}
-
-article p.anwser {
-  margin-bottom: 2em;
-}
-
-/* ==========================================================================
    Footer
    ========================================================================== */
 
@@ -516,12 +175,6 @@ footer {
 footer p {
   margin: auto;
   font-size: 1em;
-}
-
-footer span.orientation {
-  display: block;
-  text-align: center;
-  font-size: 3em;
 }
 
 footer p#da-qu {
@@ -543,26 +196,19 @@ footer a.da-qu:before {
   transform: translate(-50%, -50%);
 }
 
-footer a.nan-su:before {
-  padding: 75px;
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 200%;
-  transform: translate(-50%, -50%);
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (min-width: 1001px) {
+
+    div.swiper-pagination {
+      display: none;
+    }
+
 }
 
 </style>
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?326c88b500a8faa47dc2fd994620acbd";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 </head>
 

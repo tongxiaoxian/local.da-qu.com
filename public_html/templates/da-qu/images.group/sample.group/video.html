@@ -1,0 +1,37 @@
+{layout="layout/index"}
+
+{exp:channel:entries channel="sample" limit="1" disable="categories|member_data"}
+	
+	{layout:set name="title"}大屈影像 - 视频 - {title} - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口{/layout:set}
+
+			<section class="backstretch">
+				<header>
+					<p>样张*</p>
+					<h1>{sample_title}</h1>
+				</header>
+				<footer>
+					<span class="icon-phone-portrait orientation"></span>
+					<p>* 上下滑动或翻转屏幕浏览</p>
+				</footer>							
+				{sample_cover}
+					<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+				{/sample_cover}
+			</section>
+
+			{sample_gallery}
+				{sample_gallery:sample_gallery_file}
+					<section class="backstretch">
+						<video class="afterglow" id="myvideo" width="1280" height="720" data-autoresize="fit" src="{url}" /></video>
+					</section>
+				{/sample_gallery:sample_gallery_file}
+			{/sample_gallery}
+			
+			<a href="{path="service/mini"}">
+			<section>
+				<span class="pointer">&#8681;</span>
+				<p class="direction">点击此处返回</p>
+				<span class="icon-camera guide"></span>
+			</section>
+			</a>
+			
+{/exp:channel:entries}
