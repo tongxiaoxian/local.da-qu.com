@@ -1,8 +1,14 @@
 $(document).ready(function() {
-    $("section.backstretch").each(function(index) {
-        var image = $(this).children("img#backstretch").attr("src");
+    $('section.backstretch').each(function(index) {
+        var image = $(this).children('img#backstretch').attr("src");
         $(this).backstretch(image);
     });
+});
+
+$(document).ready(function() {
+    var image = $('img#bgback').attr("src");
+    $.backstretch(image);
+
 });
 
 $(document).ready(function() {
@@ -25,7 +31,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
     $("#header").headroom();
-    
+
 
 });
 
