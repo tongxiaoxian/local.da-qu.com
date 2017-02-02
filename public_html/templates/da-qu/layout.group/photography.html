@@ -208,11 +208,12 @@ main > header {
 }
 
 .headroom--top {
-    /*transform: translateY(0%);*/
+    transform: translateY(-100%);
+
 }
 
 .headroom--not--top {
-    /*transform: translateY(0%);*/
+    transform: translateY(-100%);
 }
 
 
@@ -315,7 +316,7 @@ section span.pointer {
 
 section.background {
   position: fixed;
-  height: 85vh;
+  height: 100vh;
   z-index: 0;
 }
 
@@ -327,7 +328,7 @@ section.background {
 
 section.start {
   position: relative;
-  height: 85vh;
+  height: 100vh;
   background-color: transparent;
   color: #fff;
   /*height: 90vh;*/
@@ -338,6 +339,10 @@ section.start header {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+}
+
+section.start header p {
+  text-align: center;
 }
 
 section.start footer {
@@ -353,6 +358,26 @@ section.start footer {
    Section Main
    ========================================================================== */
 
+section ul {
+
+}
+
+ul li {
+  list-style: none;
+
+  /*display: inline-block;*/
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+ul.block li {
+  display: block;
+} 
+
+ul li a {
+  font-size: 1em;
+}
 
 
 /* ==========================================================================
