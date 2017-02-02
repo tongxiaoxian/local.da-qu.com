@@ -54,7 +54,14 @@
 			<li>— 工作日记</li>
 			<li></li>
 		</ul>
-
+		<nav>
+		  <ul>
+		    <li><a {if segment_2 == '' OR segment_2 == 'portrait'}class="current" {/if}href="{path="suites/index"}">影像</a></li>
+		    <li><a {if segment_2 == 'work'}class="current" {/if}href="{path="dining/index"}">印铺</a></li>
+		    <li><a {if segment_1 == 'dining'}class="current" {/if}href="{path="service/index"}">服务及价格</a></li>
+		    <li><a {if segment_2 == 'wechat'}class="current" {/if}href="{path="dining/index"}">公众号</a></li>
+		  </ul>
+		</nav>
 
     <p>营业时间：周一到周日 / 1:00pm–10:30pm<br>
       微信公众号：daquimage<br>
