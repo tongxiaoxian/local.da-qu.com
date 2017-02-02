@@ -6,8 +6,8 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    var image = $('img#bgback').attr("src");
-     $('div.bgback').backstretch(image);
+    var image = $('img#background').attr("src");
+     $('section.background').backstretch(image);
 });
 
 
