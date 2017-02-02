@@ -17,7 +17,7 @@ $(document).ready(function() {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 75,
+        touchAngle: 90,
         hashnav: true,
         slidesPerView: 1,
         breakpoints: {
