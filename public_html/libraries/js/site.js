@@ -23,7 +23,7 @@ $(document).ready(function() {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 90,
+        touchAngle: 75,
         hashnav: true,
         slidesPerView: 1,
         breakpoints: {
