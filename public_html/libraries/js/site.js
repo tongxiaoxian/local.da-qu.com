@@ -1,9 +1,15 @@
 $(document).ready(function() {
-    $("section.backstretch").each(function(index) {
-        var image = $(this).children("img#backstretch").attr("src");
+    $('section.backstretch').each(function(index) {
+        var image = $(this).children('img#backstretch').attr("src");
         $(this).backstretch(image);
     });
 });
+
+$(document).ready(function() {
+    var image = $('img#banner').attr("src");
+     $('section.banner').backstretch(image);
+});
+
 
 
 $(document).ready(function() {
@@ -11,7 +17,7 @@ $(document).ready(function() {
         pagination: '.swiper-pagination',
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 75,
+        touchAngle: 90,
         hashnav: true,
         slidesPerView: 1,
         breakpoints: {
@@ -23,7 +29,9 @@ $(document).ready(function() {
     });
 });
 
-$("#header").headroom();
+$(document).ready(function() {
+    $('#header').headroom();
+});
 
 
 // $(document).ready(function() {

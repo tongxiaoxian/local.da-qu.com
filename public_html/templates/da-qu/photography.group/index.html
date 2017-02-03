@@ -1,52 +1,47 @@
-{layout="layout/photography" title="大屈影像 - 写真作品精选 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
-
-{exp:channel:entries channel="portrait" limit="1" orderby="random" disable="categories|member_data"}
+{layout="layout/site" title="大屈影像 - 写真作品精选 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
 
 	{layout:set name="description"}大屈写真摄影工作室的写真及婚拍类作品展示，包含了历年来大屈影像创作的写真及婚拍摄影精选。{/layout:set}
 
-	<header class="header">
+	<header id="header">
 		
 		<h1>大屈摄影工作室</h1>
 
 		<nav>
 		  <ul>
-		    <li><a {if segment_2 == 'portrait'}class="current" {/if}href="{path="suites/index"}">写真及婚拍</a></li>
-		    <li><a {if segment_2 == 'work'}class="current" {/if}href="{path="dining/index"}">肖像</a></li>
-		    <li><a {if segment_1 == 'dining'}class="current" {/if}href="{path="servicex/index"}">套系及价格</a></li>
-		    <li><a {if segment_2 == 'wechat'}class="current" {/if}href="{path="dining/index"}">微信</a></li>
+		    <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">影像</a></li>
+		    <li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印铺</a></li>
+		    <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index"}">服务及价格</a></li>
+		    <li><a {if segment_1 == 'wechat'}class="current" {/if}href="{path="wechat/index"}">微信</a></li>
 		  </ul>
 		</nav>
 
-		<a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/photography/home/calendar_black.png" width="38"/></a>
+		<a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/photography/calendar_black.png" width="38"/></a>
 
 	</header>
 	
-	<section class="background">
+	<main>
 
-		<img id="background" src="{site_url}assets/images/uploads/photography/home/p18ep9yka7a-noah-silliman.jpg" width="38"/>
-				
-	</section>
+		<section class="banner">
 
-	<section class="start">
-<!-- 
-		<header>
-			<p>欢迎来到大屈*</p>
-			<h1>Welcome.</h1>
-		</header> -->
+			<img id="banner" src="{site_url}assets/images/uploads/photography/p18ep9yka7a-noah-silliman.jpg" width="38"/>
+					
+		</section>
 
-		<footer>
-			<span class="icon-phone-portrait orientation"></span>
-			<p>* 上下滑动或翻转屏幕浏览</p>
-		</footer>
+		<section class="placeholder">
 
+			<footer>
+				<span class="icon-phone-portrait orientation"></span>
+				<p>* 上下滑动或翻转屏幕浏览</p>
+			</footer>
 
-	</section>
+		</section>
 
+		<section class="content">
+			
+			<p>大屈是来自小岛的原创摄影品牌，在这里可以拍到温暖的写真集以及最美的证件照，更有精致的相片书以及深入的旅行指南跟大家分享～从快门按下的那一刻，回忆就被永远珍藏在相片里了^_^</p>
 
-	<section class="content">
-		
-		<p>大屈是来自小岛的原创摄影品牌，在这里可以拍到温暖的写真集以及最美的证件照，更有精致的相片书以及深入的旅行指南跟大家分享～从快门按下的那一刻，回忆就被永远珍藏在相片里了^_^</p>
+		</section>
 
-	</section>
+	{/exp:channel:entries}
 
-{/exp:channel:entries}
+	</main>
