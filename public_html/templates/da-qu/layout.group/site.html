@@ -359,36 +359,20 @@ section.content {
 }
 
 /* ==========================================================================
-   Section Main
+   Swiper
    ========================================================================== */
 
-section.wechat {
-  width: 100%;
-  /*margin: 0 auto;*/
-}
-
-section.document p {
-  text-align: center;
-  /*max-width: 600px;*/
-}
-
-section.wechat > div {
+section div.swiper-wrapper div.swiper-slide {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  /*max-width: 900px;*/
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-section.wechat > div > div {
-  margin: 0 auto;
-  /*width: 300px;*/
+section div.swiper-slide a:link, section div.swiper-slide a:visited {
+  border-bottom: none; 
 }
-
-section.wechat > div > div {
-  /*width: 300px;*/
-}
-
 
 /* ==========================================================================
    Section Flow
@@ -426,20 +410,27 @@ section span.guide {
 
 
 /* ==========================================================================
-   Swiper
+   Section Main
    ========================================================================== */
 
-section div.swiper-wrapper div.swiper-slide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+section.wechat {
 }
 
-section div.swiper-slide a:link, section div.swiper-slide a:visited {
-  border-bottom: none; 
+section.document p {
+  text-align: center;
 }
+
+section.wechat > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+section.wechat > div > div {
+  margin: 0 auto;
+}
+
 
 /* ==========================================================================
    Section Document
