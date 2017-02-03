@@ -212,7 +212,7 @@ main {
   display: block;
   margin-left: inherit;
   margin-right: inherit;
-  margin-top: -15px;
+  margin-top: -3px;
   height: auto;
 }
 
@@ -243,6 +243,14 @@ main {
   font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
+}
+
+#header.photography a:link, #header.photography a:visited {
+  color: black;
+}
+
+#header.photography {
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
 
 
@@ -779,23 +787,6 @@ var _hmt = _hmt || [];
 </head>
 
 <body>
-
-  <header id="header" class="{layout:header}">
-    
-    <h1>大屈摄影工作室</h1>
-
-    <nav>
-      <ul>
-        <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">影像</a></li>
-        <li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印铺</a></li>
-        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index"}">价格</a></li>
-        <li><a {if segment_1 == 'wechat'}class="current" {/if}href="{path="wechat/index"}">微信</a></li>
-      </ul>
-    </nav>
-
-    <a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/photography/calendar_white.png" width="38"/></a>
-
-  </header>
 
   {layout:contents}
 
