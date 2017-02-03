@@ -180,7 +180,8 @@ a:hover, a:active {
    ========================================================================== */
 
 main {
-
+  margin:0;
+  padding:0;
 }
 
 /* ==========================================================================
@@ -193,7 +194,7 @@ main {
   z-index: 1000;
   width: 100%;
   height: 63px;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));*/
   padding: 25px;
   display: flex;
   justify-content: space-between;
@@ -228,7 +229,7 @@ main {
 
 
 #header a:link, #header a:visited {
-  color: #000;
+  color: #FFF;
   border-bottom: none;
 }
 
@@ -276,12 +277,12 @@ main {
 section {
 
   /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));*/
-  /*background-color: #fff;*/
+  background-color: #fff;
   z-index: 100;
   position: relative;
   width: 100%;
   height: 100vh;
-  box-shadow: 1px 1px 20px #000;
+  /*box-shadow: 1px 1px 20px #000;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -356,7 +357,7 @@ section.placeholder footer {
 
 section.content {
   /*background-color: */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
+  /*background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));*/
 
 }
 
@@ -779,7 +780,7 @@ var _hmt = _hmt || [];
 
 <body>
 
-  <header id="header">
+  <header id="header" class="{layout:header}">
     
     <h1>大屈摄影工作室</h1>
 
@@ -792,7 +793,7 @@ var _hmt = _hmt || [];
       </ul>
     </nav>
 
-    <a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/photography/calendar_black.png" width="38"/></a>
+    <a href="{path="home/index"}"><img src="{site_url}assets/images/uploads/photography/calendar_white.png" width="38"/></a>
 
   </header>
 
