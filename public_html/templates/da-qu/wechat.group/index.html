@@ -2,11 +2,11 @@
 
 	{layout:set name="description"}大屈写真摄影工作室的微信及微信公众号，朋友圈里有最新的摄影作品展示{/layout:set}
 
-	<header id="header" class="wechat">
+	<header id="header">
 	    
 		<h1>大屈写真摄影工作室</h1>
 
-		<nav>
+		<nav class="black">
 	    	<ul>
 	        <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">影像</a></li>
 			<li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印铺</a></li>
@@ -15,7 +15,7 @@
 			</ul>
 		</nav>
 
-		<a href="#"><img src="{site_url}libraries/icons/menu_white.png" width="46"/></a>
+		<a href="#"><img src="{site_url}libraries/icons/menu_black.png" width="46"/></a>
 
 	</header>
 
