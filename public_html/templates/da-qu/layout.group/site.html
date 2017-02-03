@@ -173,9 +173,15 @@ img#backstretch{
   display:none;
 }
 
+
 img#banner {
   display: none;
 }
+
+img#background {
+  display: none;
+}
+
 
 /* ==========================================================================
    General Links
@@ -271,12 +277,17 @@ a:hover, a:active {
     transform: translateY(0%);
 }
 
+main {
+  /*width: 100%;*/
+  /*min-height: 100vh;*/
+}
+
 /* ==========================================================================
    Section
    ========================================================================== */
 
 section {
-  background-color: #fff;
+  /*background-color: #fff;*/
   z-index: 100;
   position: relative;
   width: 100%;
@@ -314,8 +325,15 @@ section span.pointer {
 
 section.banner {
   position: fixed;
-  height: 90vh;
-  z-index: 0;
+  min-height: 100vh;
+  z-index: -10000;
+}
+
+section.background {
+  background-color: transparent;
+  position: fixed;
+  /*min-height: 100vh;*/
+  /*z-index: -10000;*/
 }
 
 /* ==========================================================================
@@ -353,7 +371,7 @@ section.placeholder footer {
    ========================================================================== */
 
 section.content {
-  /*background-color: */
+  background-color: #fff;
   /*background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));*/
 
 }

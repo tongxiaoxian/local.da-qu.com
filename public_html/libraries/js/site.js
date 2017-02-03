@@ -10,6 +10,12 @@ $(document).ready(function() {
      $('section.banner').backstretch(image);
 });
 
+$(document).ready(function() {
+    var image = $('img#background').attr("src");
+     $('section.background').backstretch(image);
+});
+
+
 
 
 $(document).ready(function() {
