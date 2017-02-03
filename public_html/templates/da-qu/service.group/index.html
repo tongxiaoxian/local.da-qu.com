@@ -2,7 +2,7 @@
 
 	{layout:set name="description"}大屈写真摄影工作室的微信及微信公众号，朋友圈里有最新的摄影作品展示{/layout:set}
 
-	<header id="header" class="wechat">
+	<header id="header">
 	    
 		<h1>大屈写真摄影工作室</h1>
 
@@ -21,66 +21,126 @@
 
 	<main>
 
-		<section class="background">
+  <section class="backstretch swiper-container">
+    
+    <div class="swiper-wrapper">
 
-			<img id="background" src="{site_url}assets/images/uploads/service/background.jpg"/>
+          <div class="swiper-slide" data-hash="work">
+            <a href="{path="service/work"}">
+          <h1>Work.</h1>
+          <p>证件照&amp;形象照</p>
+        </a>
+          </div>
 
-		</section>
+          <div class="swiper-slide" data-hash="mini">
+            <a href="{path="service/mini"}">
+          <h1>Mini.</h1>
+          <p>迷你</p>
+        </a>
+          </div>
 
-		<section class="document">
+        <div class="swiper-slide" data-hash="portrait">
+            <a href="{path="service/portrait"}">
+          <h1>Portrait.</h1>
+          <p>写真及婚拍</p>
+        </a>
+          </div>
 
-			<header>
-				<h1>Portrait.</h1>
-				<p>写真及婚拍*</p>
-			</header>
-		    		
-		    <div>
+          <div class="swiper-slide" data-hash="flowers">
+            <a href="{path="service/flowers"}">
+          <h1>Flowers.</h1>
+          <p>花事</p>
+        </a>
+          </div>
 
-				<div class="standard">
-					<div>	
-						<p><span>100</span>张</p>
-						<p>底片</p>
-					</div>
-					<div>	
-						<p><span>10</span>张</p>
-						<p>成片</p>
-					</div>
-					<div>	
-						<p><span>5</span>小时</p>
-						<p>拍摄时长</p>
-					</div>
-					<div>	
-						<p><span>1</span>组</p>
-						<p>拍摄</p>
-					</div>
-					<div>	
-						<p><span>☑</span></p>
-						<p>提供化妆</p>
-					</div>
-					<div>	
-						<p><span>☑</span></p>
-						<p>提供服装</p>
-					</div>
-				</div>
+          <div class="swiper-slide" data-hash="children">
+            <a href="{path="service/children"}">
+          <h1>Children.</h1>
+          <p>家庭／小时候</p>
+        </a>
+          </div>
 
-				<p>点击查看<br><a href="{site_url}index.php/sample/portrait/tian-tian">样张一</a>、<a href="{site_url}index.php/sample/portrait/tao-yuan">样张二</a>、<a href="{site_url}index.php/sample/portrait/xiao-mo">样张三</a>、<a href="{site_url}index.php/sample/portrait/wu-si-min">样张四</a>、<a href="{site_url}index.php/sample/portrait/lu-man-qiu">样张五</a>、<a href="{site_url}index.php/sample/portrait/chen-miao-miao">样张六</a>、<a href="{site_url}index.php/sample/portrait/sun-die">样张七</a>、<a href="{site_url}index.php/sample/portrait/xi-hua-liu-shui">样张八</a><br><br><a href="http://images.da-qu.com/index.php/about">我们的摄影团队</a></p>
+          <div class="swiper-slide" data-hash="video">
+            <a href="{path="service/video"}">
+          <h1>Video.</h1>
+          <p>视频</p>
+        </a>
+          </div>
 
-				<!-- <p>点击查看<br><a href="{site_url}index.php/sample/portrait/xiao-mo">样张一</a>、<a href="{site_url}index.php/sample/portrait/sun-die">样张二</a>、<a href="{site_url}index.php/sample/portrait/tian-tian">样张三</a>、<a href="{site_url}index.php/sample/portrait/tao-yuan">样张四</a>、<a href="{site_url}index.php/sample/portrait/lu-man-qiu">样张五</a>、<a href="{site_url}index.php/sample/portrait/chen-miao-miao">样张六</a>、<a href="{site_url}index.php/sample/portrait/zhao-sang">样张七</a>、<a href="{site_url}index.php/sample/portrait/xi-hua-liu-shui">样张八</a><br><br><a href="{path="service/mini"}">Mini迷你</a>／<a href="{path="wedding/couples"}">旅行婚拍</a></p> -->
+          <div class="swiper-slide" data-hash="creativity">
+            <a href="{path="service/creativity"}">
+          <h1>Creativity.</h1>
+          <p>艺术创作</p>
+        </a>
+          </div>
 
+<!--          <div class="swiper-slide" data-hash="printing">
+            <a href="http://prints.da-qu.com">  
+          <h1>Printing.</h1>
+          <p>印铺</p>
+        </a>
+          </div>        -->   
 
-				<p>微信｜团购价：<del>980.0元</del> 780.0元，需付定金：100.0元
-					<br>可两人同时入镜，<a href="{path="payment/index"}">支持分期付款</a>
-				</p>
+          <div class="swiper-slide" data-hash="message">
+        <a href="{path="message/index/rang-wo-men-lai-liao-liao-kou-hong"}">
+          <h1>Message.</h1>
+          <p>工作日记</p>
+        </a>
+          </div>
 
-				<p>* <a href="{path="about/wechat"}">通过微信／淘宝浏览更多摄影作品</a></p>
+          <div class="swiper-slide" data-hash="promotions">
+            <a href="{path="promotions/index"}">
+          <h1>Promotions.</h1>
+          <p>有礼</p>
+        </a>
+          </div>  
 
+          <div class="swiper-slide" data-hash="schedule">
+            <a href="{path="schedule/index"}">  
+          <h1>Schedule.</h1>
+          <p>预订</p>
+        </a>
+          </div>          
 
-		    </div>
+          <div class="swiper-slide" data-hash="wechat">
+            <a href="{path="about/wechat"}">
+          <h1>Wechat.</h1>
+          <p>微信</p>
+        </a>
+          </div>
 
-			<p id="return"><a href="{path="service/index#portrait"}">返回</a></p>
-			
-			<!-- <img id="backstretch" src="{site_url}assets/images/uploads/service/background.jpg"/> -->
+          
+<!--          <div class="swiper-slide" data-hash="locations">
+            <a href="{path="locations/haikou"}">
+          <h1>Locations.</h1>
+          <p>位置</p>
+        </a>
+          </div> -->
 
-		</section>
+          <div class="swiper-slide" data-hash="about">
+            <a href="{path="about/index"}">  
+          <h1>About.</h1>
+          <p>关于</p>
+        </a>
+          </div>
+
+          <div class="swiper-slide" data-hash="home">
+            <a href="http://www.da-qu.com">  
+          <h1>Home.</h1>
+          <p>首页</p>
+        </a>
+          </div>
+
+    </div>
+
+        <div class="swiper-pagination"></div>
+  
+    <footer>
+      <p id="da-qu">大直若屈，大巧若拙</p>
+    </footer>
+    
+    <img id="backstretch" src="{site_url}assets/images/uploads/service/background.jpg"/>
+
+  </section>
 
 	</main>
