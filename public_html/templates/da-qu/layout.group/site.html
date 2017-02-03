@@ -13,7 +13,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
-<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/> -->
 {/exp:minimee:css}
 
 {exp:minimee:js}
@@ -23,7 +23,7 @@
 <script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
+<!-- <script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script> -->
 <script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
@@ -77,8 +77,26 @@ html {
 body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  color: #FFF;
+  color: #000;
   min-height: 100%;
+}
+
+body.white {
+  color: #fff;
+}
+
+body.black {
+  color: #000;
+}
+
+body.white a:link, body.white a:visited {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+body.black a:link, body.black a:visited {
+  color: #000;
+  border-bottom: 1px dotted #000;
 }
 
 /* ==========================================================================
@@ -110,7 +128,6 @@ p, figcaption, time, blockquote {
 }
 
 p.center {
-  /*font-weight: bold;*/
   text-align: center;
 }
 
@@ -147,11 +164,6 @@ img {
   margin: 0 auto;
 }
 
-img#wechat {
-  display: inline;
-  text-align: center;
-}
-
 img#backstretch{
   display:none;
 }
@@ -165,9 +177,8 @@ img#banner {
    ========================================================================== */
 
 a:link, a:visited {
-  color: white;
   text-decoration: none;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #000;
 }
 
 a:hover, a:active {
@@ -212,7 +223,7 @@ main {
   display: block;
   margin-left: inherit;
   margin-right: inherit;
-  margin-top: -3px;
+  margin-top: -2px;
   height: auto;
 }
 
@@ -229,7 +240,7 @@ main {
 
 
 #header a:link, #header a:visited {
-  color: #FFF;
+  /*color: #FFF;*/
   border-bottom: none;
 }
 
@@ -245,11 +256,11 @@ main {
   list-style: none;
 }
 
-#header.photography a:link, #header.photography a:visited {
-  color: black;
+#header.white a:link, #header.white a:visited {
+  /*color: black;*/
 }
 
-#header.photography {
+#header.white {
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
 
@@ -258,23 +269,25 @@ main {
    Headroom
    ========================================================================== */
 
-.headroom {
+#header .headroom {
     will-change: transform;
     transition: transform 200ms linear;
 }
-.headroom--pinned {
+
+#header .headroom--pinned {
     transform: translateY(0%);
 }
-.headroom--unpinned {
+
+#header .headroom--unpinned {
     transform: translateY(-100%);
 }
 
-.headroom--top {
+#header .headroom--top {
     /*transform: translateY(-100%);*/
 
 }
 
-.headroom--not--top {
+#header .headroom--not--top {
     transform: translateY(0%);
 }
 
@@ -283,14 +296,11 @@ main {
    ========================================================================== */
 
 section {
-
-  /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));*/
   background-color: #fff;
   z-index: 100;
   position: relative;
   width: 100%;
   height: 100vh;
-  /*box-shadow: 1px 1px 20px #000;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -457,6 +467,7 @@ section div.swiper-slide a:link, section div.swiper-slide a:visited {
    ========================================================================== */
 
 section.document {
+  padding-top: 75px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
@@ -613,39 +624,6 @@ section.message.content p {
 
 
 /* ==========================================================================
-   Section Stories
-   ========================================================================== */
-
-section.stories {
-  background-image: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
-}
-
-section.stories div#masonry {
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 130%;
-}
-
-section.stories p.visit {
-  width: 100px;
-  margin: 2em auto;
-  padding: 0.5em;
-  border: 1px solid white;
-  text-align: center;
-}
-
-section.stories a.visit:link, section.stories a:visited {
-  border-bottom: none;
-}
-
-section.stories a:hover, section.stories a:active {
-  /*border: 1px solid gray;*/
-}
-
-
-/* ==========================================================================
    Section Printing
    ========================================================================== */
 
@@ -786,7 +764,7 @@ var _hmt = _hmt || [];
 
 </head>
 
-<body>
+<body class="{layout:type}">
 
   {layout:contents}
 
