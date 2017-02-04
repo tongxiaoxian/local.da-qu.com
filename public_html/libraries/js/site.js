@@ -22,7 +22,7 @@ $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         direction: 'vertical',
-        freeMode: 'true',
+        centeredSlides: true,
         paginationClickable: true,
         mousewheelControl: true,
         touchAngle: 75,
