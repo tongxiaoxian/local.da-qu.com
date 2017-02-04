@@ -25,13 +25,13 @@ $(document).ready(function() {
         centeredSlides: true,
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 75,
+        touchAngle: 65,
         hashnav: true,
-        slidesPerView: 3,
+        slidesPerView: 1,
         breakpoints: {
         // when window width is <= 1001px
             1001: {
-                slidesPerView: 3,
+                slidesPerView: 1,
             }
         }
     });
