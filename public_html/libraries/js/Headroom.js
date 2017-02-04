@@ -443,7 +443,7 @@
       up : 0,
       down : 0
     },
-    offset : 0,
+    offset : 50,
     scroller: window,
     classes : {
       pinned : 'headroom--pinned',
