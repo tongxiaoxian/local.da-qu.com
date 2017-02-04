@@ -12,7 +12,7 @@ $(document).ready(function() {
         centeredSlides: true,
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 70,
+        touchAngle: 75,
         hashnav: true,
         slidesPerView: 4,
         breakpoints: {

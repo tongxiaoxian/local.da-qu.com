@@ -292,6 +292,51 @@ a:hover, a:active {
     transform: translateY(0%);
 }
 
+
+/* ==========================================================================
+   Swiper
+   ========================================================================== */
+
+div.swiper-wrapper div.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div.swiper-slide a:link, div.swiper-slide a:visited {
+  border-bottom: none; 
+}
+
+div.swiper-slide p {
+  font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+footer p {
+  margin: auto;
+  font-size: 1em;
+}
+
+footer span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
+
 /* ==========================================================================
    Section
    ========================================================================== */
@@ -311,24 +356,8 @@ section h1 {
   margin: 0;
 }
 
-section span.icon-camera {
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-}
-
-section span.pointer {
-  font-size: 2em;
-  z-index: 100;
-  position: absolute;
-  left: 50%;
-  top: 10px;
-  transform: translate(-50%,0);
-}
-
-
 /* ==========================================================================
-   Section Background
+   Section Backstretch Background
    ========================================================================== */
 
 section.backstretch.background {
@@ -363,28 +392,6 @@ section.content {
   background-color: #fff;
   /*background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));*/
 
-}
-
-/* ==========================================================================
-   Swiper
-   ========================================================================== */
-
-section div.swiper-wrapper div.swiper-slide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-section div.swiper-slide a:link, section div.swiper-slide a:visited {
-  border-bottom: none; 
-}
-
-section div.swiper-slide p {
-  /*display: none;*/
-  /*text-transform: uppercase;*/
-  font-weight: bold;
 }
 
 /* ==========================================================================
@@ -601,57 +608,6 @@ section.message.content p {
   margin-bottom: 2em;
 }
 
-
-/* ==========================================================================
-   Section Printing
-   ========================================================================== */
-
-section.printing {
-  color: black;
-  background-image: none;
-  background-color: #eeedeb;
-}
-
-section.printing a:link, section.printing a:visited {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted black;
-}
-
-section.printing > div {
-  margin-bottom: 10em;
-}
-
-section.printing > div > div {
-  position: relative;
-  cursor: pointer;
-
-}
-
-section.printing > div > div >  article {
-  /*margin-top: -250px;*/
-  background-color:rgba(255, 255, 255, 0.5);
-  position: absolute;
-  z-index: 1;
-  /*background-color: white;*/
-  padding: 5vw;
-  /*top: 50%;*/
-  left: 50%;
-  transform: translate(-50%, -50%);  
-
-}
-
-section.printing > div > div >  article p {
-  font-size: 1vw;
-}
-
-section.printing > div > div > img {
-  position: relative;
-  z-index: 0;
-  width: 100%;
-}
-
-
 /* ==========================================================================
    Text
    ========================================================================== */
@@ -678,28 +634,6 @@ article p.anwser {
   margin-bottom: 2em;
 }
 
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-footer {
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
-}
-
-footer p {
-  margin: auto;
-  font-size: 1em;
-}
-
-footer span.orientation {
-  display: block;
-  text-align: center;
-  font-size: 3em;
-}
 
 </style>
 
@@ -715,9 +649,9 @@ footer span.orientation {
     
       <ul>
         <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a></li>
-        <li><a {if segment_1 == 'work'}class="current" {/if}href="{path="work/index"}">肖像</a></li>
-        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index"}">套系及价格</a></li>
-       <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">实体店</a></li>
+        <li><a {if segment_1 == 'work'}class="current" {/if}href="#">肖像</a></li>
+        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index#photography"}">套系及价格</a></li>
+       <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">工作室</a></li>
       </ul>
     
     </nav>
