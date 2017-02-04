@@ -26,11 +26,11 @@ $(document).ready(function() {
         mousewheelControl: true,
         touchAngle: 75,
         hashnav: true,
-        slidesPerView: 3,
+        slidesPerView: 4,
         breakpoints: {
         // when window width is <= 1001px
             1001: {
-                slidesPerView: 3,
+                slidesPerView: 4,
             }
         }
     });
