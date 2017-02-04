@@ -6,23 +6,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    var image = $('img#banner').attr("src");
-     $('section.banner').backstretch(image);
-});
-
-$(document).ready(function() {
-    var image = $('img#background').attr("src");
-     $('section.background').backstretch(image);
-});
-
-$(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         direction: 'vertical',
         centeredSlides: true,
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 75,
+        touchAngle: 70,
         hashnav: true,
         slidesPerView: 4,
         breakpoints: {

@@ -204,7 +204,7 @@ a:hover, a:active {
 
 #header {
   position: fixed;
-  z-index: 1000;
+  z-index: 2;
   width: 100%;
   height: 63px;
   padding: 25px;
@@ -302,8 +302,7 @@ main {
    ========================================================================== */
 
 section {
-  /*background-color: #fff;*/
-  z-index: 100;
+  z-index: 0;
   position: relative;
   width: 100%;
   height: 100vh;
@@ -338,17 +337,10 @@ section span.pointer {
    Section Background
    ========================================================================== */
 
-section.banner {
+section.backstretch.background {
   position: fixed;
   min-height: 100vh;
-  z-index: -10000;
-}
-
-section.background {
-  background-color: transparent;
-  position: fixed;
-  /*min-height: 100vh;*/
-  /*z-index: -10000;*/
+  z-index: -1;
 }
 
 /* ==========================================================================
@@ -358,7 +350,6 @@ section.background {
 section.placeholder {
   position: relative;
   height: 90vh;
-  background-color: transparent;
   color: #fff;
 }
 
@@ -377,7 +368,6 @@ section.placeholder footer {
   position: absolute;
   left: 50%;
   bottom: 5px;
-  /*bottom: 30vh;*/
   transform: translate(-50%, 0);
 }
 
@@ -451,10 +441,7 @@ section span.guide {
 /* ==========================================================================
    Section Main
    ========================================================================== */
-
-section.wechat {
-}
-
+   
 section.document p {
   text-align: center;
 }
@@ -731,45 +718,7 @@ footer span.orientation {
   font-size: 3em;
 }
 
-footer p#da-qu {
-  margin-bottom: 0;
-}
-
-footer a {
-  position: relative;
-}
-
-footer a.da-qu:before {
-  padding: 75px;
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: -200%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-footer a.nan-su:before {
-  padding: 75px;
-  content: '';
-  position: absolute;
-  top: 100%;
-  left: 200%;
-  transform: translate(-50%, -50%);
-}
-
 </style>
-
-<script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?326c88b500a8faa47dc2fd994620acbd";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
 
 </head>
 
