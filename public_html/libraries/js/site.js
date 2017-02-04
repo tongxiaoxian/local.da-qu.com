@@ -22,15 +22,16 @@ $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         direction: 'vertical',
+        freeMode: 'true',
         paginationClickable: true,
         mousewheelControl: true,
         touchAngle: 75,
         hashnav: true,
-        slidesPerView: 4,
+        slidesPerView: 3,
         breakpoints: {
         // when window width is <= 1001px
             1001: {
-                slidesPerView: 4,
+                slidesPerView: 3,
             }
         }
     });
