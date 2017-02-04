@@ -183,13 +183,14 @@
 }
 /* Bullets */
 .swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   display: inline-block;
   border-radius: 100%;
   background: #fff;
   opacity: 0.2;
 }
+
 button.swiper-pagination-bullet {
   border: none;
   margin: 0;
@@ -226,7 +227,7 @@ button.swiper-pagination-bullet {
   transform: translate3d(0px, -50%, 0);
 }
 .swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 5px 0;
+  margin: 6px 0;
   display: block;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
