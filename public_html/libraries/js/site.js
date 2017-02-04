@@ -15,9 +15,6 @@ $(document).ready(function() {
      $('section.background').backstretch(image);
 });
 
-
-
-
 $(document).ready(function() {
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
@@ -25,13 +22,13 @@ $(document).ready(function() {
         centeredSlides: true,
         paginationClickable: true,
         mousewheelControl: true,
-        touchAngle: 65,
+        touchAngle: 75,
         hashnav: true,
-        slidesPerView: 1,
+        slidesPerView: 4,
         breakpoints: {
         // when window width is <= 1001px
             1001: {
-                slidesPerView: 1,
+                slidesPerView: 4,
             }
         }
     });
