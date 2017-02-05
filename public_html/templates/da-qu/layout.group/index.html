@@ -97,6 +97,10 @@ body.black a:link, body.black a:visited {
 }
 
 /* ==========================================================================
+   Main
+   ========================================================================== */
+   
+/* ==========================================================================
    General Typography
    ========================================================================== */
 
@@ -351,12 +355,14 @@ footer span.orientation {
    ========================================================================== */
 
 section {
+  /*background-color: white;*/
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 25px;
+  z-index: 1;
 }
 
 section.black {
@@ -399,22 +405,8 @@ section.sample {
   flex-direction: column;
 }
 
-
-/* ==========================================================================
-   Section Return
-   ========================================================================== */
-
-section.return {
-  background-color: #222;
-  /*position: fixed;*/
-  /*min-height: 100vh;*/
-  /*z-index: -1000;*/
-}
-
-section.return > * {
-  /*background-color: #222;*/
-  /*position: absolute;*/
-  /*z-index: 1000;*/
+section.sample.return {
+  background-color: #111;
 }
 
 /* ==========================================================================
