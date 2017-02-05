@@ -59,6 +59,7 @@
   -webkit-touch-callout: none;
   -ms-touch-callout: none;
   -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
 }
 
 p {
@@ -363,6 +364,19 @@ section.black {
   background-color: #000;
 }
 
+section header {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+}
+
+section header h1 {
+  font-size: 3.5em;
+  margin: 0;
+}
+
+
 /* ==========================================================================
    Section Backstretch Background
    ========================================================================== */
@@ -382,14 +396,6 @@ section.placeholder {
   height: 90vh;
   color: #fff;
 }
-
-section.placeholder header {
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-}
-
 
 /* ==========================================================================
    Section Content
@@ -433,6 +439,7 @@ section span.guide {
   text-align: center;
   font-size: 1.5em;
 }
+
 
 
 /* ==========================================================================
@@ -666,7 +673,7 @@ article p.anwser {
       <ul>
         <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a></li>
         <li><a {if segment_1 == 'work'}class="current" {/if}href="#">肖像</a></li>
-        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index#photography"}">套系及价格</a></li>
+        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index#portrait"}">套系及价格</a></li>
        <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">实体店</a></li>
       </ul>
     
