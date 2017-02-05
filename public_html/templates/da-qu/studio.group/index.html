@@ -1,5 +1,7 @@
 {layout="layout/index" text="white" header="black" title="大屈影像 - 写真作品精选 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
 
+<main>
+
 {exp:channel:entries channel="studio" limit="1" orderby="random" disable="categories|member_data"}
 
     {layout:set name="description"}大屈写真摄影工作室的写真及婚拍类作品展示，包含了历年来大屈影像创作的写真及婚拍摄影精选。{/layout:set}
@@ -49,7 +51,7 @@
         </header>
 
         <footer>
-            <p><a href="{path="about/public"}">微信公众号</a></p>
+            <p>大屈</p>
         </footer>
 
         {studio_footer}
@@ -58,5 +60,7 @@
         
     </section>
 
-
 {/exp:channel:entries}
+
+</main>
+
