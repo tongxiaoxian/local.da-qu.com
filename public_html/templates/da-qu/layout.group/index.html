@@ -76,7 +76,8 @@ html {
 }
 
 body {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  /*font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;*/
   font-size: 62.5%;
   color: #000;
   min-height: 100%;
@@ -309,7 +310,7 @@ a:hover, a:active {
    Swiper
    ========================================================================== */
 
-div.swiper-wrapper div.swiper-slide {
+div.swiper-wrapper div.swiper-slide {  
   position: relative;
   display: flex;
   align-items: center;
@@ -358,7 +359,7 @@ footer span.orientation {
    Section
    ========================================================================== */
 
-section {
+section {  
   position: relative;
   width: 100%;
   height: 100vh;
@@ -376,12 +377,16 @@ section header h1 {
   margin: 0;
 }
 
+section {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
 
 /* ==========================================================================
    Section Backstretch Background
    ========================================================================== */
 
 section.backstretch.background {
+
   position: fixed;
   min-height: 100vh;
   z-index: -1;
@@ -392,7 +397,8 @@ section.backstretch.background {
    ========================================================================== */
 
 section.placeholder {
-  background-color: transparent;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));
+  /*background-color: transparent;*/
   position: relative;
   color: #fff;
 }
@@ -516,6 +522,7 @@ main div.gallery figure a:hover {
    ========================================================================== */
 
 section.document {
+  padding-top: 150px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;

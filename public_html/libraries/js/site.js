@@ -29,11 +29,11 @@ $(document).ready(function() {
 });
 
 
-$(document).ready(function() {
-    $('.ajax-popup-link').magnificPopup({
-      type: 'ajax'
-    });
-});
+// $(document).ready(function() {
+//     $('.ajax-popup-link').magnificPopup({
+//       type: 'ajax'
+//     });
+// });
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 

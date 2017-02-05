@@ -4,52 +4,20 @@
 
 	<section class="backstretch background">
 
-		<img id="backstretch" src="{site_url}assets/images/uploads/service/background.jpg" width="38"/>
+		<img id="backstretch" src="{site_url}assets/images/uploads/service/background.jpg"/>
 				
 	</section>
 
-	{exp:channel:entries channel="sample"}
-	      
-	      <div class="gallery">
+	<section class="document">
 
-	          <article>
+          <div class="swiper-slide" data-hash="portrait">
+              <a href="{path="service/portrait"}">
+                <h1>写真及婚拍</h1>
+                <p>Portrait</p>
+                <p>及Mini迷你包含在内</p>
+              </a>
+          </div>
 
-	            {sample_gallery}
-	              
-	              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-	                
-	                {sample_gallery:sample_gallery_file}
-
-	                    <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-	                {/sample_gallery:sample_gallery_file}
-
-	                {sample_gallery:sample_gallery_thumb}
-
-	                  <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-	                {/sample_gallery:sample_gallery_thumb}
-	                
-	              </a>
-	              
-	              </figure>
-
-	            {/sample_gallery}
-
-	          </article>
-
-	      </div>
-	      
-	{/exp:channel:entries}
-
-
-	<section class="document backstretch">
-
-	<!-- 	<header>
-			<h1>Portrait.</h1>
-			<p>写真及婚拍*</p>
-		</header> -->
-	    		
 	    <div>
 
 			<div class="standard">
@@ -90,3 +58,39 @@
 		<p id="return"><a href="{path="service/index#photography"}">返回</a></p>
 		
 	</section>
+
+	{exp:channel:entries channel="sample"}
+	      
+	      <div class="gallery">
+
+	          <article>
+
+	            {sample_gallery}
+	              
+	              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+	                
+	                {sample_gallery:sample_gallery_file}
+
+	                    <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+	                {/sample_gallery:sample_gallery_file}
+
+	                {sample_gallery:sample_gallery_thumb}
+
+	                  <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+	                {/sample_gallery:sample_gallery_thumb}
+	                
+	              </a>
+	              
+	              </figure>
+
+	            {/sample_gallery}
+
+	          </article>
+
+	      </div>
+	      
+	{/exp:channel:entries}
+
+
