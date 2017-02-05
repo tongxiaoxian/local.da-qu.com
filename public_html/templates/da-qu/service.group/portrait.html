@@ -1,13 +1,54 @@
-{layout="layout/index" text="white" header="none" title="大屈影像 - 写真及婚拍 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
+{layout="layout/index" text="white" header="black" title="大屈影像 - 写真及婚拍 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
 
-{layout:set name="description"}大屈写真摄影工作室的写真摄影套系及样张{/layout:set}
+{layout:set name="description"}大屈的写真摄影套系及样张{/layout:set}
+
+	<section class="backstretch background">
+
+		<img id="backstretch" src="{site_url}assets/images/uploads/service/background.jpg" width="38"/>
+				
+	</section>
+
+	{exp:channel:entries channel="sample"}
+	      
+	      <div class="gallery">
+
+	          <article>
+
+	            {sample_gallery}
+	              
+	              <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+	                
+	                {sample_gallery:sample_gallery_file}
+
+	                    <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+	                {/sample_gallery:sample_gallery_file}
+
+	                {sample_gallery:sample_gallery_thumb}
+
+	                  <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+	                {/sample_gallery:sample_gallery_thumb}
+	                
+	              </a>
+	              
+	              </figure>
+
+	            {/sample_gallery}
+
+	          </article>
+
+	      </div>
+	      
+	{/exp:channel:entries}
+
 
 	<section class="document backstretch">
 
-		<header>
+	<!-- 	<header>
 			<h1>Portrait.</h1>
 			<p>写真及婚拍*</p>
-		</header>
+		</header> -->
 	    		
 	    <div>
 
@@ -38,19 +79,14 @@
 				</div>
 			</div>
 
-			<p>点击查看<br><a href="{site_url}index.php/sample/photography/tian-tian">样张一</a>、<a href="{site_url}index.php/sample/photography/tao-yuan">样张二</a>、<a href="{site_url}index.php/sample/photography/xiao-mo">样张三</a>、<a href="{site_url}index.php/sample/photography/wu-si-min">样张四</a>、<a href="{site_url}index.php/sample/photography/lu-man-qiu">样张五</a>、<a href="{site_url}index.php/sample/photography/chen-miao-miao">样张六</a>、<a href="{site_url}index.php/sample/photography/sun-die">样张七</a>、<a href="{site_url}index.php/sample/photography/xi-hua-liu-shui">样张八</a><br><br><a href="http://travels.da-qu.com/index.php/">旅行婚拍</a></p>
-
 			<p>微信｜团购价：<del>980.0元</del> 780.0元，需付定金：100.0元
 				<br>可两人同时入镜，<a href="{path="service/payment"}">支持分期付款</a>
 			</p>
 
 			<p>* <a href="{path="service/wechat"}">点击预约拍摄时间</a></p>
 
-
 	    </div>
 
 		<p id="return"><a href="{path="service/index#photography"}">返回</a></p>
-		
-		<img id="backstretch" src="{site_url}assets/images/uploads/service/service.jpg"/>
 		
 	</section>
