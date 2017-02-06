@@ -13,7 +13,7 @@
 
 $config['app_version'] = "2.11.2";
 $config['install_lock'] = "";
-$config['license_number'] = "5422-7089-0308-3957";
+$config['license_number'] = "8815-0272-5438-4667";
 $config['debug'] = '1';
 $config['cp_url'] = 'http://local.da-qu.com/admin.php';
 $config['doc_url'] = "http://ellislab.com/expressionengine/user-guide/";
@@ -62,8 +62,10 @@ $config['enable_online_user_tracking'] = 'n';
 $config['enable_hit_tracking'] = 'n';
 $config['enable_entry_view_tracking'] = 'n';
 $config['dynamic_tracking_disabling'] = '';
+$config['license_contact'] = 'tongxiaoxian@outlook.com';
 
 // END EE config items
+
 
 
 
