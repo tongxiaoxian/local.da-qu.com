@@ -488,7 +488,7 @@ p.english {
 
 section.service p {
   /*margin-top: 1em;*/
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
 }
 
 section p.margin {
@@ -508,8 +508,11 @@ section.service > div.standard {
 section.service > div.standard div {
   width: 33%;
   text-align: center;
-  /*margin-bottom: 5em;*/
   margin-top: 3em;
+}
+
+section.service > div.standard div p {
+  margin-bottom: 0.5em;
 }
 
 section.service > div.standard div p:first-child {
