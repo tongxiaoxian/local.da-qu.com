@@ -515,6 +515,10 @@ section.service p {
   /*margin-bottom: 1em;*/
 }
 
+section p.margin {
+  margin: 0;
+}
+
 section.service > * {
   margin-bottom: 5em;
 }
