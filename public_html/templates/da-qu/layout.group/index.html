@@ -40,6 +40,9 @@
 <script type="text/javascript" src="{site_url}libraries/js/sticky.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.fixedbg.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
@@ -85,7 +88,7 @@ body {
 }
 
 body.white {
-  
+
   color: #fff;
 }
 
@@ -180,6 +183,7 @@ ul {
 img {
   display: block;
   margin: 0 auto;
+  margin-right: 3px;
 }
 
 img#backstretch{
@@ -312,7 +316,11 @@ a:hover, a:active {
    Swiper
    ========================================================================== */
 
-div.swiper-wrapper div.swiper-slide {  
+section.swiper-container {
+  height: 100vh;
+}
+
+div.swiper-wrapper div.swiper-slide {
   position: relative;
   display: flex;
   align-items: center;
@@ -364,7 +372,6 @@ footer span.orientation {
 section {  
   position: relative;
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 25px;
@@ -408,6 +415,7 @@ section.placeholder {
    ========================================================================== */
 
 section.studio {
+  height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -495,23 +503,25 @@ section.studio {
   Section Gallery
    ========================================================================== */
 
-main div.gallery {
-  /*display: -webkit-flex;*/
-  /*display: flex;*/
-  /*-webkit-flex-flow: wrap; */
+section.gallery {
 
 }
 
-main div.gallery article{
+section.gallery article {
   display: inline-block;
+    display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: wrap;
+  flex-direction: row;
   margin-bottom: 2em;
   max-width: 500px;
 }
 
-main div.gallery figure {
+section.gallery figure {
   display: inline;
 }
-main div.gallery figure a:hover {
+
+section.gallery figure a:hover {
   /*opacity: 0.9;*/
   border-bottom: none;
 }

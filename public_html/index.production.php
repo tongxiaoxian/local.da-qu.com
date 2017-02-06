@@ -109,8 +109,8 @@ $assign_to_config['upload_preferences'] = array(
     ),
     47 => array(                                                            // ID of upload destination
         'name'        => 'sample',                          // Display name in control panel
-        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/photography/sample/', // Server path to upload directory
-        'url'         => 'http://www.da-qu.com/assets/images/uploads/photography/sample/'      // URL of upload directory
+        'server_path' => '/var/www/html/da-qu.com/public_html/assets/images/uploads/sample/', // Server path to upload directory
+        'url'         => 'http://www.da-qu.com/assets/images/uploads/sample/'      // URL of upload directory
     ),
     56 => array(                                                            // ID of upload destination
         'name'        => 'message',                          // Display name in control panel
