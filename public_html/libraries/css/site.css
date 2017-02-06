@@ -74,9 +74,9 @@ h1, h2 {
 }
 
 h2 {
-  font-weight: normal;
+  /*font-weight: normal;*/
   margin-top: 5em;
-  /*margin-bottom: 0em;*/
+  margin-bottom: 5px;
 }
 
 * > a, * > span {
@@ -423,38 +423,6 @@ section.white {
 
 }
 
-/* ==========================================================================
-   Section Flow
-   ========================================================================== */
-
-section.flow {
-  position: relative;
-  height: auto;
-  box-shadow: 1px 1px 20px #000;
-  display: flex;
-  padding-top: 5em;
-}
-
-section.flow h1 {
-  text-align: left;
-}
-
-section.flow p {
-  margin: 0 auto;
-  margin-top: 1em;
-  text-align: left;
-}
-
-section.flow img {
-  margin-top: 2em;
-  width: 100%;
-}
-
-section span.guide {
-  display: block;
-  text-align: center;
-  font-size: 1.5em;
-}
 
 
 /* ==========================================================================
@@ -512,11 +480,14 @@ section.service h1 {
 section.service h1 + p {
   font-weight: bold;
   margin-top: 0;
+}
+
+p.english {
   margin-bottom: 5em;
 }
 
 section.service p {
-  margin-left: 2em;
+  /*margin-top: 1em;*/
   /*margin-bottom: 1em;*/
 }
 
@@ -569,77 +540,3 @@ section.service p#return a:before, section.service p#specs a:before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-/* ==========================================================================
-   Section Center
-   ========================================================================== */
-
-section.middle {
-  overflow: hidden;
-}
-
-section.middle header {
-  position: absolute;
-  top: 25px;
-  left: 25px;
-}
-
-section.middle header h1, section.middle header p {
-  text-align: left;
-}
-
-/* ==========================================================================
-   Section Message
-   ========================================================================== */
-
-section.message {
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
-}
-
-section.message p.author {
-  text-align: center;
-  font-size: 1em;
-}
-
-section.message p.author, section.message p.pagination {
-  margin-top: 3em;
-}
-
-/* ==========================================================================
-   Section Message Content
-   ========================================================================== */
-
-section.message.content {
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3));
-}
-
-section.message.content p {
-  margin-bottom: 2em;
-}
-
-/* ==========================================================================
-   Text
-   ========================================================================== */
-
-p.paragraph {
-  max-width: 600px;
-  text-align: left;
-}
-
-article {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-article p {
-  text-align: left;
-}
-
-article p.question {
-  font-weight: bold;
-}
-
-article p.anwser {
-  margin-bottom: 2em;
-}
-
