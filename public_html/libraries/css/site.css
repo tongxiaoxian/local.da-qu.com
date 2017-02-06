@@ -69,10 +69,14 @@ main.black a:link, main.black a:visited {
   letter-spacing: .5px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-style: normal;
-  font-weight: 700;
+h1, h2 {
   font-size: 1.2em;
+}
+
+h2 {
+  font-weight: normal;
+  margin-top: 5em;
+  /*margin-bottom: 0em;*/
 }
 
 * > a, * > span {
@@ -508,10 +512,11 @@ section.service h1 {
 section.service h1 + p {
   font-weight: bold;
   margin-top: 0;
+  margin-bottom: 5em;
 }
 
 section.service p {
-  /*margin-top: 1em;*/
+  margin-left: 2em;
   /*margin-bottom: 1em;*/
 }
 
@@ -520,7 +525,6 @@ section p.margin {
 }
 
 section.service > * {
-  margin-bottom: 5em;
 }
 
 section.service > div.standard {
@@ -542,7 +546,7 @@ section.service > div.standard div p:first-child {
 }
 
 section.service > div.standard div p:first-child span {
-  font-size: 2em;
+  font-size: 1.5em;
   padding-right: 5px;
 }
 
