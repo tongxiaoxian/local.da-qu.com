@@ -86,29 +86,31 @@ body {
   min-height: 100%;
 }
 
-body.white {
-
-  color: #fff;
-}
-
-body.black {
-  color: #000;
-}
-
-body.white a:link, body.white a:visited {
-  color: #fff;
-  border-bottom: 1px dotted #fff;
-}
-
-body.black a:link, body.black a:visited {
-  color: #000;
-  border-bottom: 1px dotted #000;
-}
 
 /* ==========================================================================
    Main
    ========================================================================== */
-   
+
+main.white {
+
+  color: #fff;
+}
+
+main.black {
+  color: #000;
+}
+
+main.white a:link, main.white a:visited {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+main.black a:link, main.black a:visited {
+  color: #000;
+  border-bottom: 1px dotted #000;
+}
+
+
 /* ==========================================================================
    General Typography
    ========================================================================== */
@@ -217,7 +219,7 @@ a:hover, a:active {
    Header
    ========================================================================== */
 
-#header {
+header {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -227,55 +229,55 @@ a:hover, a:active {
   justify-content: space-between;
 }
 
-#header.solid_white {
+header.solid_white {
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
 
-#header.white a:link, #header.white a:visited {
+header.white a:link, header.white a:visited {
   color: white;
 }
 
-#header.solid_black {
+header.solid_black {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }
 
-#header.black a:link, #header.black a:visited {
+header.black a:link, header.black a:visited {
   color: black;
 }
 
-#header.none {
+header.none {
   display: none;
 }
 
-#header h1 {
+header h1 {
   margin: 0;
   padding: 0;
   display: none;
   font-size: 1.5em;
 }
 
-#header nav ul { 
+header nav ul { 
   margin: 0;
   display: -webkit-flex;
   display: flex;
 
 }
 
-#header nav ul li {
+header nav ul li {
   font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
 }
 
-#header a:link, #header a:visited {
+header a:link, header a:visited {
   border-bottom: none;
 }
 
-#header a.current:link, #header a.current:visited {
+header a.current:link, header a.current:visited {
   font-weight: bold;
 }
 
-#header img {
+header img {
   display: block;
   margin-left: inherit;
   margin-right: inherit;
@@ -333,10 +335,12 @@ div.swiper-slide a:link, div.swiper-slide a:visited {
 div.swiper-slide h1 {
   font-size: 2.2em;
   margin: 0;
+  text-align: center;
 }
 
 div.swiper-slide p {
   font-weight: bold;
+  text-align: center;
 }
 
 /* ==========================================================================
@@ -344,6 +348,7 @@ div.swiper-slide p {
    ========================================================================== */
 
 footer {
+  color: #fff;
   z-index: 2;
   position: absolute;
   left: 50%;
@@ -486,26 +491,6 @@ section span.guide {
 }
 
 
-
-/* ==========================================================================
-   Section Main
-   ========================================================================== */
-   
-section.document p {
-  /*text-align: center;*/
-}
-
-section.wechat > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-section.wechat > div > div {
-  margin: 0 auto;
-}
-
 /* ==========================================================================
    Section Sample
    ========================================================================== */
@@ -548,10 +533,15 @@ section.gallery figure a:hover {
    ========================================================================== */
 
 section.document {
-  padding-top: 150px;
+  padding-top: 250px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
+}
+
+section.document > * {
+  /*margin-left: auto;*/
+  /*margin-right: auto;*/
 }
 
 section.document p {
@@ -559,17 +549,14 @@ section.document p {
   margin-bottom: 1em;
 }
 
-section.document header h1 {
+section.document h1 {
   font-size: 2.2em;
   margin: 0;
-  /*text-align: left; */
+  text-align: center; 
 }
 
-section.document header p {
-  max-width: 100%;
-  margin-top: 0em;
-  margin-bottom: 0em;
-  /*text-align: left;*/
+section.document p {
+  text-align: center;
 }
 
 section.document > div, section.document > article {
@@ -596,22 +583,6 @@ section.document > div > div.standard div {
   margin-bottom: 1em;
 }
 
-section.document > div > div.aboutus {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 250px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-section.document > div > div.aboutus div {
-  width: 50%;
-  text-align: center;
-  margin-bottom: 1em;
-}
-
-
 section.document > div > div.standard div p:first-child {
   line-height: 1;
 }
@@ -619,14 +590,6 @@ section.document > div > div.standard div p:first-child {
 section.document > div > div.standard div p:first-child span {
   font-size: 2em;
   padding-right: 5px;
-}
-
-section.document div.description, section.document div.contact {
-  display: none;
-}
-
-div.contact {
-  display: none;
 }
 
 section.document div.description {
@@ -736,9 +699,9 @@ article p.anwser {
 
 </head>
 
-<body class="{layout:text}">
+<body>
 
-  <header id="header" class="{layout:header}">
+  <header class="{layout:header}">
       
     <h1>大屈写真摄影工作室</h1>
 
@@ -753,78 +716,13 @@ article p.anwser {
     
     </nav>
 
-    <!-- <a href="#"><img src="{site_url}libraries/icons/menu_black.png" width="46"/></a> -->
-
   </header>
-
-  {layout:contents}
-
-  <!-- Root element of PhotoSwipe. Must have class pswp. -->
-  <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-      <!-- Background of PhotoSwipe. 
-           It's a separate element as animating opacity is faster than rgba(). -->
-      <div class="pswp__bg"></div>
-
-      <!-- Slides wrapper with overflow:hidden. -->
-      <div class="pswp__scroll-wrap">
-
-          <!-- Container that holds slides. 
-              PhotoSwipe keeps only 3 of them in the DOM to save memory.
-              Don't modify these 3 pswp__item elements, data is added later on. -->
-          <div class="pswp__container">
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-              <div class="pswp__item"></div>
-          </div>
-
-          <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-          <div class="pswp__ui pswp__ui--hidden">
-
-              <div class="pswp__top-bar">
-
-                  <!--  Controls are self-explanatory. Order can be changed. -->
-
-                  <div class="pswp__counter"></div>
-
-                  <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                  <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
-
-                  <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                  <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                  <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                  <!-- element will get class pswp__preloader-active when preloader is running -->
-                  <div class="pswp__preloader">
-                      <div class="pswp__preloader__icn">
-                        <div class="pswp__preloader__cut">
-                          <div class="pswp__preloader__donut"></div>
-                        </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                  <div class="pswp__share-tooltip"></div> 
-              </div>
-
-              <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-              </button>
-
-              <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-              </button>
-
-              <div class="pswp__caption">
-                  <div class="pswp__caption__center"></div>
-              </div>
-
-          </div>
-
-      </div>
-
-  </div>
+  
+  <main  class="{layout:text}">
+    {layout:contents}
+  </main>
+  
+  {embed="layout/photoswipe"}
 
 </body>
 
