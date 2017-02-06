@@ -380,7 +380,7 @@ section {
 }
 
 section.black {
-  background-color: #000;
+  background-color: #333;
 }
 
 section header h1 {
@@ -392,27 +392,38 @@ section {
 
 }
 
+img.pure {
+width: 100%;
+}
+
 /* ==========================================================================
    Section Backstretch Background
    ========================================================================== */
 
 section.backstretch.background {
-
   position: fixed;
   min-height: 100vh;
   z-index: -1;
 }
+
+section.pure {
+  /*position: fixed;*/
+  min-height: 100vh;
+  /*top: 100vh;*/
+  /*z-index: -1;*/
+  background-color: black;
+}
+
 
 /* ==========================================================================
    Section Placeholder
    ========================================================================== */
 
 section.placeholder {
-    height: 100vh;
+  height: 100vh;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
   position: relative;
   color: #fff;
 }
@@ -526,7 +537,6 @@ section.gallery figure a:hover {
   /*opacity: 0.9;*/
   border-bottom: none;
 }
-
 
 /* ==========================================================================
    Section Document
