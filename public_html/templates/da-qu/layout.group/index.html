@@ -295,7 +295,7 @@ a:hover, a:active {
 }
 
 .headroom--pinned {
-    transform: translateY(0%);
+    transform: translateY(-1000%);
 }
 
 .headroom--unpinned {
@@ -303,12 +303,12 @@ a:hover, a:active {
 }
 
 .headroom--top {
-    /*transform: translateY(-100%);*/
+    transform: translateY(0%);
 
 }
 
 .headroom--not--top {
-    transform: translateY(0%);
+    transform: translateY(-100%);
 }
 
 
@@ -522,18 +522,18 @@ section.studio {
   Section Gallery
    ========================================================================== */
 
-section.gallery {
+section {
+  align-content: center;
 
 }
 
 section.gallery article {
-  display: inline-block;
-    display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: wrap;
   flex-direction: row;
+  flex-flow: wrap;
   margin-bottom: 2em;
   max-width: 500px;
+  align-content: center;
 }
 
 section.gallery figure {
