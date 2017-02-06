@@ -121,7 +121,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-weight: 700;
   font-size: 1.2em;
-  text-align: center;
 }
 
 * > a, * > span {
@@ -133,7 +132,7 @@ p, figcaption, time, blockquote {
   font-size: 1.2em;
   line-height: 2;
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 p.center {
@@ -748,7 +747,7 @@ article p.anwser {
       <ul>
         <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a></li>
         <li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印务</a></li>
-        <li><a {if segment_1 == 'service'}class="current" {/if}href="{path="service/index#portrait"}">套系及价格</a></li>
+        <li><a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">套系及价格</a></li>
        <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">实体店</a></li>
       </ul>
     
