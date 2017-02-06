@@ -1,66 +1,41 @@
-{layout="layout/index" text="white" header="black" title="大屈影像 - 写真作品精选 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
+{layout="layout/index" text="white" header="white" title="大屈影像 - 工作室 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
 
-<main>
+    {layout:set name="description"}大屈写真摄影工作室的微信及微信公众号，朋友圈里有最新的摄影作品展示{/layout:set}
 
-{exp:channel:entries channel="studio" limit="1" orderby="random" disable="categories|member_data"}
+    <main>
 
-    {layout:set name="description"}大屈写真摄影工作室的写真及婚拍类作品展示，包含了历年来大屈影像创作的写真及婚拍摄影精选。{/layout:set}
+    <section class="backstretch background" style="height: 100vh;">
 
-    <section class="backstretch studio">
-
-        <!-- <header> -->
-            <!-- <p>欢迎来到大屈*</p> -->
-            <!-- <h1>Welcome.</h1> -->
-        <!-- </header> -->
-<!-- 
-        <footer>
-            <span class="icon-phone-portrait orientation"></span>
-            <p>* 上下滑动或翻转屏幕浏览</p>
-        </footer>
- -->    
-        {studio_cover}
-            <img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-        {/studio_cover}
-
-    </section>
-
-<!--     {studio_gallery}
-
-        {studio_gallery:studio_gallery_file}
-
-            <section class="backstretch studio">
-
-                <img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-
-            </section>
+        <img id="backstretch" src="{site_url}assets/images/uploads/studio/background.jpg"/>
                 
-        {/studio_gallery:studio_gallery_file}
+    </section>    
 
-    {/studio_gallery} -->
+    <section>
 
-    <section class="backstretch studio">
+        <div>
 
-        <header>
-            <p>工作地点：广州／深圳／海南</p>
-            <h1>Guangdong and Hainan.</h1>
-            <br>
-            <br>
-            <br>
-            <p>预订拍摄：<a href="{path="about/wechat"}">daqustudio</a></p>
+            <div>
+                <p>大屈的微信工作号</p>
+                <br>
+                <p><img id="wechat" src="{site_url}assets/images/uploads/studio/daqustudio.jpg" width="150" height="150" /></p>
+                <p>微信：daqustudio</p>
+                <p>短信：<a href="sms:189-7698-4285">+86 189-7698-4285</a></p>
+                <p>朋友圈最后更新：2017年01月10日</p>
+            </div>
 
-        </header>
+            <div>
+                <p>大屈的微信公众号</p>
+                <br>
+                <p><img id="wechat" src="{site_url}assets/images/uploads/studio/daquimage.jpg" width="150" height="150"/></p>
+                <p>微信：大屈影像馆</p>
+                <p>电邮：<a href="mailto:hello@da-qu.com">hello@da-qu.com</a></p>
+                <p>公众号最后更新：2017年1月10日</p>
+            </div>
 
-        <footer>
-            <p>大屈</p>
-        </footer>
+        </div>
 
-        {studio_footer}
-            <img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-        {/studio_footer}
-        
     </section>
 
-{/exp:channel:entries}
+    </main>
 
-</main>
 

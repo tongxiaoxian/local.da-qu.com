@@ -6,7 +6,7 @@
 
 		<main class="black">
 
-			<section class="backstretch studio">
+			<section class="backstretch sample">
 				<header>
 					<p>样张*</p>
 					<h1>{sample_title}</h1>
@@ -22,14 +22,14 @@
 
 			{sample_gallery}
 				{sample_gallery:sample_gallery_file}
-					<section class="backstretch studio">
+					<section class="backstretch sample">
 						<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
 					</section>
 				{/sample_gallery:sample_gallery_file}
 			{/sample_gallery}
 
 			<a href="{path="service/portrait"}">
-			<section class="studio return">
+			<section class="sample return">
 				<header>
 					<p class="direction">点击此处返回</p>
 				</header>
