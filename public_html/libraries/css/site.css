@@ -31,7 +31,7 @@ html {
 body {
   font-family: "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  color: #000;
+  color: #fff;
   min-height: 100%;
 }
 
@@ -40,20 +40,20 @@ body {
    Main
    ========================================================================== */
 
-main.white {
+body.white {
   color: #fff;
 }
 
-main.black {
+body.black {
   color: #000;
 }
 
-main.white a:link, main.white a:visited {
+body.white a:link, body.white a:visited {
   color: #fff;
   border-bottom: 1px dotted #fff;
 }
 
-main.black a:link, main.black a:visited {
+body.black a:link, body.black a:visited {
   color: #000;
   border-bottom: 1px dotted #000;
 }
@@ -171,7 +171,7 @@ a:hover, a:active {
    Header
    ========================================================================== */
 
-header {
+#header {
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -181,55 +181,55 @@ header {
   justify-content: space-between;
 }
 
-header.solid_white {
+#header.solid_white {
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
 
-header.white a:link, header.white a:visited {
+#header.white a:link, #header.white a:visited {
   color: white;
 }
 
-header.solid_black {
+#header.solid_black {
   background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }
 
-header.black a:link, header.black a:visited {
+#header.black a:link, #header.black a:visited {
   color: black;
 }
 
-header.none {
+#header.none {
   display: none;
 }
 
-header h1 {
+#header h1 {
   margin: 0;
   padding: 0;
   display: none;
   font-size: 1.5em;
 }
 
-header nav ul { 
+#header nav ul { 
   margin: 0;
   display: -webkit-flex;
   display: flex;
 
 }
 
-header nav ul li {
+#header nav ul li {
   font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
 }
 
-header a:link, header a:visited {
+#header a:link, #header a:visited {
   border-bottom: none;
 }
 
-header a.current:link, header a.current:visited {
+#header a.current:link, #header a.current:visited {
   font-weight: bold;
 }
 
-header img {
+#header img {
   display: block;
   margin-left: inherit;
   margin-right: inherit;
@@ -268,7 +268,7 @@ header img {
    Swiper
    ========================================================================== */
 
-section.swiper-container {
+div.swiper-container {
   height: 100vh;
 }
 
@@ -296,30 +296,6 @@ div.swiper-slide p {
 }
 
 /* ==========================================================================
-   Footer
-   ========================================================================== */
-
-footer {
-  color: #fff;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
-}
-
-footer p {
-  margin: auto;
-  font-size: 1em;
-}
-
-footer span.orientation {
-  display: block;
-  text-align: center;
-  font-size: 3em;
-}
-
-/* ==========================================================================
    Section
    ========================================================================== */
 
@@ -331,35 +307,20 @@ section {
   padding: 25px;
 }
 
-section.black {
-  background-color: #333;
-}
-
-section header h1 {
-  /*font-size: 3.5em;*/
-  /*margin: 0;*/
-}
-
-section {
-
-}
-
-img.pure {
-width: auto;
-height: 50vh;
+div.background {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
 }
 
 /* ==========================================================================
-    Backstretch Background & Placeholder
+    Banner & Placeholder
    ========================================================================== */
 
-div.backstretch.background {
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
+div.banner {
   position: fixed;
+  width: 100%;
   min-height: 100vh;
   z-index: -1;
 }
@@ -370,17 +331,17 @@ div.placeholder {
   justify-content: center;
   flex-direction: column;
   position: relative;
-  color: #fff;
+  background-color: transparent;
 }
 
 
-div.placeholder header h1 {
+div.placeholder #header h1 {
   font-size: 2.2em;
   margin: 0;
   /*text-align: left; */
 }
 
-div.placeholder header p {
+div.placeholder #header p {
   max-width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -473,14 +434,15 @@ section.service p#return a:before, section.service p#specs a:before {
 
 
 /* ==========================================================================
-   Section Sample
+   Sample
    ========================================================================== */
 
-section.sample {
+#sample {
+  position: relative;
   padding: 0;
 }
 
-section.sample article {
+#sample article {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -491,9 +453,64 @@ section.sample article {
   box-shadow: 1px 1px 20px #000;
 }
 
-section.sample article return{
+#sample article.return{
   background-color: #111;
 }
+
+#sample article.background {
+  /*bottom: 0;*/
+  /*position: absolute;*/
+  background-color: black;  
+  height: 100vh;
+  z-index: -100;
+}
+
+#sample article.background p {
+  z-index:-1000;
+  /*bottom: 0;*/
+  position: absolute;
+  bottom: 0;
+  /*text-align: center;*/
+}
+
+/* ==========================================================================
+   Title & Guide
+   ========================================================================== */
+
+div.title {
+  padding: 25px;
+}
+
+div.title h1 {
+  color: white;
+  font-size: 3.5em;
+  margin: 0;
+}
+
+div.title p {
+  text-align: center;
+}
+
+footer, div.guide {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+footer p, div.guide p {
+  margin: auto;
+  font-size: 1em;
+}
+
+footer span.orientation, div.guide span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
+
 
 /* ==========================================================================
   Section Gallery

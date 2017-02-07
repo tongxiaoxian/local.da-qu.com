@@ -1,20 +1,20 @@
-{layout="layout/index" text="white" header="white" title="大屈影像 - 套系及价格 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
+{layout="layout/index" text="white" header="none" title="大屈影像 - 套系及价格 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口"}
 
-{exp:channel:entries channel="sample" limit="1" disable="categories|member_data"}
+	{exp:channel:entries channel="sample" limit="1" disable="categories|member_data"}
 	
 	{layout:set name="title"}大屈影像 - 写真及婚拍 - {title} - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口{/layout:set}
 
-		<section class="sample">
+		<main id="sample">
 
 			<article class="backstretch">
 				
 				<div class="title">
-					<p>样张*</p>
+					<p>写真*</p>
 					<h1>{sample_title}</h1>
 				</div>
 
-				<div class="footer">
-				<span class="icon-phone-portrait orientation"></span>
+				<div class="guide">
+					<span class="icon-phone-portrait orientation"></span>
 					<p>* 上下滑动或翻转屏幕浏览</p>
 				</div>	
 
@@ -38,14 +38,12 @@
 
 			<a href="{path="service/portrait"}">
 			
-			<article class="return">
-				<div class="title">
+				<article class="return">
 					<p class="direction">点击此处返回</p>
-				</div>
-			</article>
+				</article>
 			
 			</a>
 
-		</section>
+		</main>
 
 {/exp:channel:entries}
