@@ -316,8 +316,31 @@ div.guide span.orientation {
 }
 
 #photography section {
-  padding: 25px;
+  padding-top: 25px;
   background-color: #fff;
+}
+
+#photography section > *:not(div.series) {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+#photography img {
+  width: 100%;
+}
+
+#photography p.short {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+#photography div.series {
+  margin-top: 5em;
+}
+
+#photography div.series img {
+  display: block;
 }
 
 /* ==========================================================================
@@ -472,7 +495,7 @@ div.guide span.orientation {
    Studio
    ========================================================================== */
 
-#studio > section {
+#studio section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -480,13 +503,13 @@ div.guide span.orientation {
   padding: 125px 25px 50px 25px;
 }
 
-#studio > section p {
+#studio section p {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
-#studio > section > div {
+#studio section > div {
   margin-bottom: 5em;
 }
 
