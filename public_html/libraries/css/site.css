@@ -404,6 +404,18 @@ div.guide span.orientation {
   transform: translate(-50%, -50%);
 }
 
+#service div.background.top {
+  height: 40vh;
+  min-height: 40vh;
+}
+
+#service div.background.fill {
+  top: 40vh;
+  height: 60vh;
+  background-color: #000;
+}
+
+
 #service div.gallery {
 
 }
