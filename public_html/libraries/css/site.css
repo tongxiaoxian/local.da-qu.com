@@ -159,7 +159,7 @@ a:hover, a:active {
 }
 
 /* ==========================================================================
-   Header
+   Header & Footer
    ========================================================================== */
 
 #header {
@@ -228,11 +228,6 @@ a:hover, a:active {
   height: auto;
 }
 
-
-/* ==========================================================================
-  Footer
-   ========================================================================== */
-
 #footer {
   color: #fff;
   z-index: 2;
@@ -252,6 +247,7 @@ a:hover, a:active {
   text-align: center;
   font-size: 3em;
 }
+
 
 /* ==========================================================================
    Backstretch
@@ -298,45 +294,6 @@ div.background {
   /*text-align: left;*/
 }
 
-
-/* ==========================================================================
-   Swiper
-   ========================================================================== */
-
-#swiper div.swiper-container {
-  height: 100vh;
-}
-
-#swiper div.swiper-wrapper div.swiper-slide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#swiper div.swiper-slide a:link, div.swiper-slide a:visited {
-  border-bottom: none; 
-}
-
-#swiper div.swiper-slide h1 {
-  font-size: 2.2em;
-  margin: 0;
-  text-align: center;
-}
-
-#swiper div.swiper-slide p {
-  font-weight: bold;
-  text-align: center;
-}
-
-/* ==========================================================================
-   Section
-   ========================================================================== */
-
-section {  
-
-}
 
 /* ==========================================================================
    Service
@@ -421,6 +378,29 @@ section {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+#service div.gallery {
+
+}
+
+#service div.gallery article {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-bottom: 2em;
+  max-width: 500px;
+  align-content: center;
+}
+
+#service div.gallery figure {
+  display: inline;
+}
+
+#service div.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
 
 
 /* ==========================================================================
@@ -526,28 +506,34 @@ section {
 
 
 /* ==========================================================================
-  Section Gallery
+   Swiper
    ========================================================================== */
 
-section.gallery {
-
+#swiper div.swiper-container {
+  height: 100vh;
 }
 
-section.gallery article {
+#swiper div.swiper-wrapper div.swiper-slide {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  margin-bottom: 2em;
-  max-width: 500px;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-section.gallery figure {
-  display: inline;
+#swiper div.swiper-slide a:link, div.swiper-slide a:visited {
+  border-bottom: none; 
 }
 
-section.gallery figure a:hover {
-  /*opacity: 0.9;*/
-  border-bottom: none;
+#swiper div.swiper-slide h1 {
+  font-size: 2.2em;
+  margin: 0;
+  text-align: center;
 }
+
+#swiper div.swiper-slide p {
+  font-weight: bold;
+  text-align: center;
+}
+
 
