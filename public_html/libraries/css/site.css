@@ -35,30 +35,6 @@ body {
   min-height: 100%;
 }
 
-
-/* ==========================================================================
-   Main
-   ========================================================================== */
-
-body.white {
-  color: #fff;
-}
-
-body.black {
-  color: #000;
-}
-
-body.white a:link, body.white a:visited {
-  color: #fff;
-  border-bottom: 1px dotted #fff;
-}
-
-body.black a:link, body.black a:visited {
-  color: #000;
-  border-bottom: 1px dotted #000;
-}
-
-
 /* ==========================================================================
    General Typography
    ========================================================================== */
@@ -127,6 +103,28 @@ ul {
 }
 
 
+/* ==========================================================================
+   Text
+   ========================================================================== */
+
+body.white {
+  color: #fff;
+}
+
+body.black {
+  color: #000;
+}
+
+body.white a:link, body.white a:visited {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+body.black a:link, body.black a:visited {
+  color: #000;
+  border-bottom: 1px dotted #000;
+}
+
 
 /* ==========================================================================
    General Images
@@ -141,7 +139,6 @@ img {
 img#backstretch{
   display:none;
 }
-
 
 img#banner {
   display: none;
@@ -238,74 +235,8 @@ a:hover, a:active {
 }
 
 /* ==========================================================================
-   Headroom
+   Backstretch
    ========================================================================== */
-
-.headroom {
-    will-change: transform;
-    transition: transform 200ms linear;
-}
-
-.headroom--pinned {
-    transform: translateY(0%);
-}
-
-.headroom--unpinned {
-    transform: translateY(-100%);
-}
-
-.headroom--top {
-    /*transform: translateY(-100%);*/
-
-}
-
-.headroom--not--top {
-    transform: translateY(0%);
-}
-
-
-/* ==========================================================================
-   Swiper
-   ========================================================================== */
-
-div.swiper-container {
-  height: 100vh;
-}
-
-div.swiper-wrapper div.swiper-slide {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-div.swiper-slide a:link, div.swiper-slide a:visited {
-  border-bottom: none; 
-}
-
-div.swiper-slide h1 {
-  font-size: 2.2em;
-  margin: 0;
-  text-align: center;
-}
-
-div.swiper-slide p {
-  font-weight: bold;
-  text-align: center;
-}
-
-/* ==========================================================================
-   Section
-   ========================================================================== */
-
-section {  
-  position: relative;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-}
 
 div.background {
   position: fixed;
@@ -315,17 +246,17 @@ div.background {
 }
 
 /* ==========================================================================
-    Banner & Placeholder
+   Photography
    ========================================================================== */
 
-div.banner {
+#photography div.banner {
   position: fixed;
   width: 100%;
   min-height: 100vh;
   z-index: -1;
 }
 
-div.placeholder {
+#photography div.placeholder {
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -335,13 +266,13 @@ div.placeholder {
 }
 
 
-div.placeholder #header h1 {
+#photography div.placeholder #header h1 {
   font-size: 2.2em;
   margin: 0;
   /*text-align: left; */
 }
 
-div.placeholder #header p {
+#photography div.placeholder #header p {
   max-width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -350,80 +281,119 @@ div.placeholder #header p {
 
 
 /* ==========================================================================
-   Section Service
+   Swiper
    ========================================================================== */
 
-section.service {
-  padding-top: 40vh;
+#swiper div.swiper-container {
+  height: 100vh;
+}
+
+#swiper div.swiper-wrapper div.swiper-slide {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#swiper div.swiper-slide a:link, div.swiper-slide a:visited {
+  border-bottom: none; 
+}
+
+#swiper div.swiper-slide h1 {
+  font-size: 2.2em;
+  margin: 0;
+  text-align: center;
+}
+
+#swiper div.swiper-slide p {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ==========================================================================
+   Section
+   ========================================================================== */
+
+section {  
+
+}
+
+/* ==========================================================================
+   Service
+   ========================================================================== */
+
+#service section.package {
+  padding: 40vh 25px 50px 25px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
 }
 
-section.service h1 {
+#service section.package h1 {
   font-size: 2.2em;
   margin: 0;
 }
 
-section.service h1 + p {
+#service section.package h1 + p {
   font-weight: bold;
   margin-top: 0;
 }
 
-section.service p.english {
+#service section.package p.english {
   margin-bottom: 2em;
 }
 
-section.service p {
+#service section.package p {
   /*margin-top: 1em;*/
   /*margin-bottom: 1em;*/
 }
 
-section p.margin {
+#service section p.margin {
   margin: 0;
 }
 
-section.service > * {
+#service section.package > * {
 }
 
-section.service > div.standard {
+#service section.package > div.standard {
   max-width: 420px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-section.service > div.standard div {
+#service section.package > div.standard div {
   width: 33%;
   text-align: center;
   margin-top: 3em;
 }
 
-section.service > div.standard div p {
+#service section.package > div.standard div p {
   margin-bottom: 0em;
 }
 
-section.service > div.standard div p:first-child {
+#service section.package > div.standard div p:first-child {
   /*line-height: 1.5;*/
 }
 
-section.service > div.standard div p:first-child span {
+#service section.package > div.standard div p:first-child span {
   font-size: 2em;
   padding-right: 5px;
 }
 
-section.service p#return, section.service p#specs {
+#service section.package p#return, section.package p#specs {
   margin: 0 auto;
   font-size: 1em;
   margin-top: 5em;
   padding-bottom: 4em;
 }
 
-section.service p#return a, section.service p#specs a {
+#service section.package p#return a, section.package p#specs a {
   position: relative;
 }
 
-section.service p#return a:before, section.service p#specs a:before {
+#service section.package p#return a:before, section.package p#specs a:before {
   padding: 75px;
   content: '';
   position: absolute;
@@ -473,25 +443,22 @@ section.service p#return a:before, section.service p#specs a:before {
   /*text-align: center;*/
 }
 
-/* ==========================================================================
-   Title & Guide
-   ========================================================================== */
-
-div.title {
+#sample div.title {
   padding: 25px;
 }
 
-div.title h1 {
+#sample div.title h1 {
   color: white;
   font-size: 3.5em;
   margin: 0;
 }
 
-div.title p {
+#sample div.title p {
   text-align: center;
 }
 
-footer, div.guide {
+
+#sample div.guide {
   color: #fff;
   z-index: 2;
   position: absolute;
@@ -500,17 +467,43 @@ footer, div.guide {
   transform: translate(-50%,0);
 }
 
-footer p, div.guide p {
+
+#sample div.guide p {
   margin: auto;
   font-size: 1em;
 }
 
-footer span.orientation, div.guide span.orientation {
+
+
+#sample div.guide span.orientation {
   display: block;
   text-align: center;
   font-size: 3em;
 }
 
+/* ==========================================================================
+  Footer
+   ========================================================================== */
+
+footer {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+footer p {
+  margin: auto;
+  font-size: 1em;
+}
+
+footer span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
 
 /* ==========================================================================
   Section Gallery
