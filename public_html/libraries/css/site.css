@@ -331,8 +331,8 @@ div.guide span.orientation {
 }
 
 #photography p.short {
-  margin-top: 2em;
-  font-size: 1.5em;
+  margin-top: 1em;
+  /*font-size: 1.5em;*/
 }
 
 #photography div.series {
