@@ -405,13 +405,13 @@ div.guide span.orientation {
 }
 
 #service div.background.top {
-  height: 40vh;
-  min-height: 40vh;
+  height: 60vh;
+  min-height: 60vh;
 }
 
 #service div.background.fill {
-  top: 40vh;
-  height: 60vh;
+  top: 60vh;
+  /*height: 60vh;*/
   background-color: #000;
 }
 
