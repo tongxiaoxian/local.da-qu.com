@@ -130,12 +130,6 @@ body.black a:link, body.black a:visited {
    General Images
    ========================================================================== */
 
-img {
-  display: block;
-  margin: 0 auto;
-  margin-right: 3px;
-}
-
 img#backstretch{
   display:none;
 }
@@ -234,6 +228,31 @@ a:hover, a:active {
   height: auto;
 }
 
+
+/* ==========================================================================
+  Footer
+   ========================================================================== */
+
+#footer {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+#footer p {
+  margin: auto;
+  font-size: 1em;
+}
+
+#footer span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
+
 /* ==========================================================================
    Backstretch
    ========================================================================== */
@@ -324,10 +343,11 @@ section {
    ========================================================================== */
 
 #service section.package {
-  padding: 40vh 25px 50px 25px;
+  padding: 40vh 25px 75px 25px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
+  max-width: 600px;
 }
 
 #service section.package h1 {
@@ -481,29 +501,29 @@ section {
   font-size: 3em;
 }
 
+
 /* ==========================================================================
-  Footer
+   Studio
    ========================================================================== */
 
-footer {
-  color: #fff;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
+#studio section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 125px 25px 50px 25px;
 }
 
-footer p {
-  margin: auto;
-  font-size: 1em;
-}
-
-footer span.orientation {
-  display: block;
+#studio section p {
   text-align: center;
-  font-size: 3em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
+
+#studio section > div {
+  margin-bottom: 5em;
+}
+
 
 /* ==========================================================================
   Section Gallery
