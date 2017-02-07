@@ -25,7 +25,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('#header').headroom();
+    $('header').headroom();
 });
 
 

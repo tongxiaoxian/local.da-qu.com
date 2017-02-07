@@ -30,7 +30,6 @@ html {
 
 body {
   font-family: "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  /*font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;*/
   font-size: 62.5%;
   color: #000;
   min-height: 100%;
@@ -42,7 +41,6 @@ body {
    ========================================================================== */
 
 main.white {
-
   color: #fff;
 }
 
@@ -74,9 +72,9 @@ h1, h2 {
 }
 
 h2 {
-  /*font-weight: normal;*/
+  font-weight: normal;
   margin-top: 5em;
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
 
 * > a, * > span {
@@ -352,29 +350,21 @@ height: 50vh;
 }
 
 /* ==========================================================================
-   Section Backstretch Background
+    Backstretch Background & Placeholder
    ========================================================================== */
 
-section.backstretch.background {
+div.backstretch.background {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
   position: fixed;
   min-height: 100vh;
   z-index: -1;
 }
 
-section.pure {
-  /*position: fixed;*/
-  min-height: 100vh;
-  /*top: 100vh;*/
-  /*z-index: -1;*/
-  background-color: black;
-}
-
-
-/* ==========================================================================
-   Section Placeholder
-   ========================================================================== */
-
-section.placeholder {
+div.placeholder {
   height: 100vh;
   align-items: center;
   justify-content: center;
@@ -384,13 +374,13 @@ section.placeholder {
 }
 
 
-section.placeholder header h1 {
+div.placeholder header h1 {
   font-size: 2.2em;
   margin: 0;
   /*text-align: left; */
 }
 
-section.placeholder header p {
+div.placeholder header p {
   max-width: 100%;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -399,70 +389,7 @@ section.placeholder header p {
 
 
 /* ==========================================================================
-   Section Sample
-   ========================================================================== */
-
-section.sample {
-  height: 100vh;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-section.sample.return {
-  background-color: #111;
-}
-
-/* ==========================================================================
-   Section Content
-   ========================================================================== */
-
-section.white {
-  background-color: #fff;
-  /*background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));*/
-
-}
-
-
-
-/* ==========================================================================
-   Section Sample
-   ========================================================================== */
-
-section.studio {
-  box-shadow: 1px 1px 20px #000;
-}
-
-
-
-/* ==========================================================================
-  Section Gallery
-   ========================================================================== */
-
-section.gallery {
-
-}
-
-section.gallery article {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  margin-bottom: 2em;
-  max-width: 500px;
-  align-content: center;
-}
-
-section.gallery figure {
-  display: inline;
-}
-
-section.gallery figure a:hover {
-  /*opacity: 0.9;*/
-  border-bottom: none;
-}
-
-/* ==========================================================================
-   Section Document
+   Section Service
    ========================================================================== */
 
 section.service {
@@ -482,8 +409,8 @@ section.service h1 + p {
   margin-top: 0;
 }
 
-p.english {
-  margin-bottom: 5em;
+section.service p.english {
+  margin-bottom: 2em;
 }
 
 section.service p {
@@ -512,15 +439,15 @@ section.service > div.standard div {
 }
 
 section.service > div.standard div p {
-  margin-bottom: 0.5em;
+  margin-bottom: 0em;
 }
 
 section.service > div.standard div p:first-child {
-  line-height: 1;
+  /*line-height: 1.5;*/
 }
 
 section.service > div.standard div p:first-child span {
-  font-size: 1.5em;
+  font-size: 2em;
   padding-right: 5px;
 }
 
@@ -543,3 +470,54 @@ section.service p#return a:before, section.service p#specs a:before {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+
+/* ==========================================================================
+   Section Sample
+   ========================================================================== */
+
+section.sample {
+  padding: 0;
+}
+
+section.sample article {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 20px #000;
+}
+
+section.sample article return{
+  background-color: #111;
+}
+
+/* ==========================================================================
+  Section Gallery
+   ========================================================================== */
+
+section.gallery {
+
+}
+
+section.gallery article {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-bottom: 2em;
+  max-width: 500px;
+  align-content: center;
+}
+
+section.gallery figure {
+  display: inline;
+}
+
+section.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
