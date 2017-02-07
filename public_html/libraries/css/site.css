@@ -260,6 +260,27 @@ div.background {
   z-index: -1;
 }
 
+div.guide {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+div.guide p {
+  margin: auto;
+  font-size: 1em;
+}
+
+div.guide span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
+
+
 /* ==========================================================================
    Photography
    ========================================================================== */
@@ -294,6 +315,10 @@ div.background {
   /*text-align: left;*/
 }
 
+#photography section {
+  padding: 25px;
+  background-color: #fff;
+}
 
 /* ==========================================================================
    Service
@@ -401,16 +426,9 @@ div.background {
   border-bottom: none;
 }
 
-
-
 /* ==========================================================================
    Sample
    ========================================================================== */
-
-#sample {
-  position: relative;
-  padding: 0;
-}
 
 #sample article {
   position: relative;
@@ -427,58 +445,14 @@ div.background {
   background-color: #111;
 }
 
-#sample article.background {
-  /*bottom: 0;*/
-  /*position: absolute;*/
-  background-color: black;  
-  height: 100vh;
-  z-index: -100;
-}
-
-#sample article.background p {
-  z-index:-1000;
-  /*bottom: 0;*/
-  position: absolute;
-  bottom: 0;
-  /*text-align: center;*/
-}
-
-#sample div.title {
-  padding: 25px;
-}
-
-#sample div.title h1 {
+#sample article div.title h1 {
   color: white;
   font-size: 3.5em;
   margin: 0;
 }
 
-#sample div.title p {
+#sample article div.title p {
   text-align: center;
-}
-
-
-#sample div.guide {
-  color: #fff;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
-}
-
-
-#sample div.guide p {
-  margin: auto;
-  font-size: 1em;
-}
-
-
-
-#sample div.guide span.orientation {
-  display: block;
-  text-align: center;
-  font-size: 3em;
 }
 
 
@@ -486,7 +460,7 @@ div.background {
    Studio
    ========================================================================== */
 
-#studio section {
+#studio > section {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -494,13 +468,13 @@ div.background {
   padding: 125px 25px 50px 25px;
 }
 
-#studio section p {
+#studio > section p {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 1em;
 }
 
-#studio section > div {
+#studio > section > div {
   margin-bottom: 5em;
 }
 
