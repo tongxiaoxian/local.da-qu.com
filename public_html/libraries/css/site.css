@@ -326,7 +326,7 @@ div.guide span.orientation {
   margin-right: 25px;
 }
 
-#photography section p.branding {
+#photography section.branding p {
   font-size: 1.3em;
 }
 
