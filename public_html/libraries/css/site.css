@@ -63,6 +63,7 @@ p, figcaption, time, blockquote {
   font-size: 1.2em;
   line-height: 2;
   margin-bottom: 2em;
+  max-width: 600px;
   /*text-align: center;*/
 }
 
@@ -258,7 +259,7 @@ a:hover, a:active {
 div.background {
   position: fixed;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   z-index: -1;
 }
 
@@ -558,6 +559,9 @@ p#return a:before {
 
 #about section {
   padding: 150px 25px 75px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ==========================================================================
