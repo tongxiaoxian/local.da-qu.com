@@ -30,6 +30,7 @@ html {
 
 body {
   font-family: "Myriad Pro", "Avenir", "sourcehansans-sc", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));
   font-size: 62.5%;
   color: #fff;
   min-height: 100%;
@@ -281,6 +282,28 @@ div.guide span.orientation {
   font-size: 3em;
 }
 
+p#return {
+  text-align: center;
+  width: 30px;
+  margin: 0 auto;
+  font-size: 1em;
+  margin-top: 5em;
+  padding-bottom: 4em;
+}
+
+p#return a {
+  position: relative;
+}
+
+
+p#return a:before {
+  padding: 75px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* ==========================================================================
    Photography
@@ -529,6 +552,13 @@ div.guide span.orientation {
   margin-bottom: 5em;
 }
 
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+#about section {
+  padding: 150px 25px 75px 25px;
+}
 
 /* ==========================================================================
    Swiper
