@@ -91,16 +91,17 @@ ol {
   list-style-position:inside;
 }
 
+ul {
+  -webkit-padding-start: 0px;
+  padding:0;
+}
+
 ol li {
   font-size: 1.1em;
   line-height: 2;
   margin-top: 2em;
 }
 
-ul {
-  -webkit-padding-start: 0px;
-  padding:0;
-}
 
 
 /* ==========================================================================
@@ -344,6 +345,20 @@ div.guide span.orientation {
 #photography div.series img {
   display: block;
 }
+
+#photography ul { 
+  /*margin: 0;*/
+  display: -webkit-flex;
+  display: flex;
+
+}
+
+#photography ul li {
+  font-size: 1.4em;
+  margin-right: 1.2em;
+  list-style: none;
+}
+
 
 /* ==========================================================================
    Service
