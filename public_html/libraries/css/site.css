@@ -60,7 +60,7 @@ h2 {
 
 p, figcaption, time, blockquote {
   display: block;
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 2;
   margin-bottom: 2em;
   max-width: 600px;
@@ -71,23 +71,6 @@ p.center {
   text-align: center;
 }
 
-p.direction {
-  font-weight: bold;
-  font-size: 2em;
-}
-
-time {
-  font-size: 1em;
-}
-
-p a, p span {
-  font-size: 1em;
-}
-
-p a.prev, p a.next {
-  font-size: 0.9em;
-}
-
 ol {
   padding: 0;
   list-style-position:inside;
@@ -96,7 +79,13 @@ ol {
 ul {
   -webkit-padding-start: 0px;
   padding:0;
+  margin-bottom: 2em;
 }
+
+ul li {
+  margin-bottom: 1em;
+}
+
 
 
 ol li {
@@ -149,6 +138,22 @@ body.white a:hover, body.white a:active {
   border-bottom: none;
 }
 
+li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(209, 230, 223, 0.9);
+}
+
+li.underline a {
+  position: relative;
+  top: 10px;
+}
+
+li.underline a:link, li.underline a:visited {
+  border-bottom: none;
+}
+
+
 
 /* ==========================================================================
    General Images
@@ -167,10 +172,8 @@ img#background {
 }
 
 
-
-
 /* ==========================================================================
-   Header & Footer
+   Header
    ========================================================================== */
 
 #header {
@@ -179,8 +182,8 @@ img#background {
   width: 100%;
   height: 63px;
   padding: 25px;
-  display: flex;
-  justify-content: space-between;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
 }
 
 #header.solid_white {
@@ -211,17 +214,22 @@ img#background {
 }
 
 #header nav ul { 
+  width: 100%;
   margin: 0;
-  display: -webkit-flex;
   display: flex;
+  justify-content: space-between;
 
 }
 
 #header nav ul li {
+  /*width: 100%;*/
+  flex: 0 1 25%;
   font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
+  text-align: center;
 }
+
 
 #header a:link, #header a:visited {
   border-bottom: none;
@@ -238,6 +246,10 @@ img#background {
   margin-top: -2px;
   height: auto;
 }
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
 
 #footer {
   color: #fff;
@@ -358,19 +370,12 @@ p#return a:before {
   margin-right: 25px;
 }
 
-#photography section.branding p {
-  font-size: 1.3em;
-}
-
 #photography img {
   width: 100%;
 }
 
-#photography p.short {
-  margin-top: 1em;
-}
-
 #photography div.series {
+
 }
 
 #photography div.series img {
@@ -381,6 +386,7 @@ p#return a:before {
   /*margin: 0;*/
   display: -webkit-flex;
   display: flex;
+  flex-wrap: wrap;
 
 }
 

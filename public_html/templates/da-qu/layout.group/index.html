@@ -18,8 +18,10 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/default-skin/default-skin.css"> 
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
+<!-- <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/paradeiser.css"/> -->
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/headroom.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/site.css"/>
+
 {/exp:minimee:css}
 
 {exp:minimee:js}
@@ -58,10 +60,13 @@
       
     <h1>大屈写真摄影工作室</h1>
 
-    <nav class="{layout:nav}">
+    <nav role="navigation">
     
       <ul>
-        <li><a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a></li>
+        <li>
+          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a>
+
+        </li>
         <li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印务</a></li>
         <li><a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">套系及价格</a></li>
        <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">实体店</a></li>
