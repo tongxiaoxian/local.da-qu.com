@@ -224,6 +224,7 @@ img#background {
 #header nav ul li {
   /*width: 100%;*/
   /*flex: 0 1 25%;*/
+  width: 25%;
   font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
