@@ -61,7 +61,7 @@ p, figcaption, time, blockquote {
   display: block;
   font-size: 1.2em;
   line-height: 2;
-  margin-top: 2em;
+  margin-bottom: 2em;
   /*text-align: center;*/
 }
 
@@ -326,7 +326,7 @@ div.guide span.orientation {
   margin-right: 25px;
 }
 
-#photography section.intro p {
+#photography section p.branding {
   font-size: 1.3em;
 }
 
@@ -339,7 +339,6 @@ div.guide span.orientation {
 }
 
 #photography div.series {
-  margin-top: 5em;
 }
 
 #photography div.series img {
