@@ -64,10 +64,16 @@
     
       <ul>
         <li>
-          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">写真及婚拍</a>
-
+          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
+            <span>写真及婚拍</span>
+            <img src="{site_url}libraries/icons/camera_black.png" alt="" width="25">
+          </a>
         </li>
-        <li><a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">印务</a></li>
+        <li>
+          <a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">
+            <span>印务</span>
+          </a>
+        </li>
         <li><a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">套系及价格</a></li>
        <li><a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">实体店</a></li>
       </ul>
