@@ -247,16 +247,11 @@ img#background {
 }
 
 #header nav ul li a:link, #header nav ul li a:visited {
-  font-weight: bold;
   border-bottom: none;
 }
 
 #header nav ul li a.current:link span, #header nav ul li a.current:visited span {
   font-weight: bold;
-}
-
-#header nav ul li a:hover, #header nav ul li a:active {
-  background-color: rgba(209, 230, 223, 0.9);
 }
 
 /* ==========================================================================
@@ -278,6 +273,10 @@ img#background {
     text-align: center;
   }
 
+  #header nav ul li a:hover, #header nav ul li a:active {
+    background-color: rgba(209, 230, 223, 0.9);
+  }
+
 }
 
 /* ==========================================================================
@@ -295,7 +294,7 @@ img#background {
 
 #footer p {
   margin: auto;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 #footer span.orientation {
@@ -327,7 +326,7 @@ div.guide {
 
 div.guide p {
   margin: auto;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 div.guide span.orientation {
@@ -424,7 +423,7 @@ p#return a:before {
 }
 
 #photography ul li {
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin-right: 1.2em;
   list-style: none;
 }
@@ -439,7 +438,7 @@ p#return a:before {
    ========================================================================== */
 
 #service section.package {
-  padding: 40vh 25px 75px 25px;
+  padding: 40vh 18px 75px 18px;
   height: auto;
   min-height: 100vh;
   overflow: hidden;
@@ -653,6 +652,7 @@ p#return a:before {
 }
 
 #swiper div.swiper-slide p {
+  font-size: 1.2em;
   font-weight: bold;
   text-align: center;
   margin: 0;
