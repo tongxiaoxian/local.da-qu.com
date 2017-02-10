@@ -415,7 +415,7 @@ p#return a:before {
 #photography ul li.underline span {
   position: relative;
   top: -10px;
-  border-bottom: 8px solid rgba(209, 230, 223, 1);
+  border-bottom: 8px solid rgba(231, 246, 250, 0.9);
 }
 
 #photography ul li.underline a {
