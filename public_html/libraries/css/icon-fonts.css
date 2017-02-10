@@ -24,24 +24,20 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-hand-o-up:before {
+
+.icon-check-in:before {
   content: "\e900";
 }
-.icon-point-up:before {
-  content: "\e901";
-}
-.icon-zoomin:before {
-  content: "\e903";
-}
-.icon-home:before {
+.icon-camera:before {
   content: "\e902";
 }
-.icon-phone-portrait:before {
+.icon-folder:before {
+  content: "\e903";
+}
+.icon-card:before {
   content: "\e904";
 }
-.icon-camera:before {
-  content: "\e906";
+.icon-phone-portrait:before {
+  content: "\e901";
 }
-.icon-cube:before {
-  content: "\e905";
-}
+
