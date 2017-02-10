@@ -227,6 +227,10 @@ img#background {
   display: none;
 }
 
+#header nav ul li a.current:link, #header nav ul li a.current:visited {
+  background-color: rgba(231, 246, 250, 0.9);
+}
+
 #header nav.green ul li a.current:link, #header nav.green ul li a.current:visited {
   background-color: rgba(209, 230, 223, 0.9);
 }
