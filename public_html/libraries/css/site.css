@@ -191,8 +191,9 @@ img#background {
 }
 
 #header nav ul li span + span {
+  font-size: 0.9em;
   display: block;
-  margin-top: 3px;
+  margin-top: 4px;
 }
 
 #header nav ul li a:link, #header nav ul li a:visited {
@@ -228,7 +229,7 @@ img#background {
 }
 
 #header nav ul li a.current:link, #header nav ul li a.current:visited {
-  background-color: rgba(231, 246, 250, 0.9);
+  /*background-color: rgba(231, 246, 250, 0.9);*/
 }
 
 #header nav.green ul li a.current:link, #header nav.green ul li a.current:visited {
