@@ -132,10 +132,12 @@ body.black a:link, body.black a:visited {
 }
 
 body.black a:hover, body.black a:active {
+  font-weight: bold;
   border-bottom: none;
 }
 
 body.white a:hover, body.white a:active {
+  font-weight: bold;
   border-bottom: none;
 }
 
@@ -184,49 +186,19 @@ img#background {
   padding-right: 18px;
 }
 
-#header.solid_white {
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-}
-
-#header.white a:link, #header.white a:visited {
-  color: white;
-}
-
-#header.solid_black {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-}
-
-#header.black a:link, #header.black a:visited {
-  color: black;
-}
-
-#header.none {
-  display: none;
-}
-
 #header h1 {
-  margin: 0;
-  padding: 0;
   display: none;
   font-size: 1.5em;
 }
 
 #header nav ul { 
-  width: 100%;
-  margin: 0;
   display: flex;
   justify-content: space-between;
-    /*justify-content: center;*/
-  /*align-items: center;*/
 }
 
 #header nav ul li {
   font-size: 1.3em;
   list-style: none;
-}
-
-#header nav ul li:last-child {
-  margin-right: 0;
 }
 
 #header nav ul li a {
@@ -247,20 +219,40 @@ img#background {
   border-bottom: none;
 }
 
+#header nav ul li a:hover span, #header nav ul li a:active span{
+  font-weight: bold;
+}
+
 #header nav ul li a.current:link span, #header nav ul li a.current:visited span {
   font-weight: bold;
 }
 
-#header nav ul li a:hover, #header nav ul li a:active {
-  background-color: rgba(0, 0, 0, 0.3);
+
+#header.solid_white {
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
 }
 
+#header.white a:link, #header.white a:visited {
+  color: white;
+}
+
+#header.solid_black {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+#header.black a:link, #header.black a:visited {
+  color: black;
+}
+
+#header.none {
+  display: none;
+}
 
 /* ==========================================================================
    Header Media Queries
    ========================================================================== */
 
-
+@media screen and (min-width: 1001px) {
 
   #header {
     padding-left: inherit;
@@ -270,8 +262,7 @@ img#background {
   #header nav ul li {
     width: 25%;
   }
-
-
+}
 
 /* ==========================================================================
    Footer
