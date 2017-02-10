@@ -60,7 +60,7 @@
       
     <h1>大屈写真摄影工作室</h1>
 
-    <nav role="navigation">
+    <nav role="navigation" class="{layout:nav}">
 
       <ul>
       
@@ -74,7 +74,7 @@
         <li>
           <a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">
             <span>印铺及产品</span>
-            <span class="icon-card_s"></span>
+            <span class="icon-folder_s"></span>
           </a>
         </li>
 
@@ -82,8 +82,6 @@
           <a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">
             <span>套系及价格</span>
             <span class="icon-glasses_s"></span>
-            <!-- <br> -->
-            <!-- <img src="{site_url}libraries/icons/glasses_black.png" alt="" width="22"> -->
           </a>
         </li>
         
