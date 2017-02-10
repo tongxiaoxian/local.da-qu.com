@@ -63,7 +63,6 @@ p, figcaption, time, blockquote {
   font-size: 1.3em;
   line-height: 2;
   margin-bottom: 2em;
-  max-width: 600px;
   text-align: justify;
   /*text-align: center;*/
 }
@@ -614,6 +613,12 @@ p#return a:before {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+#swiper div.swiper-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 #swiper div.swiper-slide a:link, div.swiper-slide a:visited {
