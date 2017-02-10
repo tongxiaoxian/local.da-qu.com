@@ -25,6 +25,18 @@
 }
 
 
+.icon-camera_s:before {
+  content: "\e905";
+}
+.icon-folder_s:before {
+  content: "\e906";
+}
+.icon-check-in_s:before {
+  content: "\e907";
+}
+.icon-card_s:before {
+  content: "\e908";
+}
 .icon-check-in:before {
   content: "\e900";
 }
@@ -40,4 +52,3 @@
 .icon-phone-portrait:before {
   content: "\e901";
 }
-
