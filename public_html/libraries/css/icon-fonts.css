@@ -25,6 +25,10 @@
 }
 
 
+
+.icon-glasses_s:before {
+  content: "\e900";
+}
 .icon-camera_s:before {
   content: "\e905";
 }
@@ -37,18 +41,7 @@
 .icon-card_s:before {
   content: "\e908";
 }
-.icon-check-in:before {
-  content: "\e900";
-}
-.icon-camera:before {
-  content: "\e902";
-}
-.icon-folder:before {
-  content: "\e903";
-}
-.icon-card:before {
-  content: "\e904";
-}
 .icon-phone-portrait:before {
   content: "\e901";
 }
+
