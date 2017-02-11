@@ -87,8 +87,6 @@ ul li {
   list-style: none;
 }
 
-
-
 ol li {
   font-size: 1.2em;
   line-height: 2;
@@ -102,37 +100,38 @@ ol {
   text-indent: -1.4em;
 }
 
-
 /* ==========================================================================
-   Body
+   General Links
    ========================================================================== */
 
-body.white {
-  color: #fff;
-}
-
-body.black {
-  color: #000;
-}
-
-body.white a:link, body.white a:visited {
+a:link, a:visited {
   color: #fff;
   text-decoration: none;
   border-bottom: 1px dotted #fff;
 }
 
-body.black a:link, body.black a:visited {
+a:hover, a:active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+/* =============
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main.black {
+  color: #000;
+}
+
+main.black a:link, main.black a:visited {
   color: #000;
   text-decoration: none;
   border-bottom: 1px dotted #000;
 }
 
-body.black a:hover, body.black a:active {
-  font-weight: bold;
-  border-bottom: none;
-}
-
-body.white a:hover, body.white a:active {
+main.black a:hover, main.black a:active {
   font-weight: bold;
   border-bottom: none;
 }
@@ -163,8 +162,8 @@ img#background {
   z-index: 2;
   width: 100%;
   height: 70px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 19px;
+  padding-right: 19px;
 }
 
 #header h1 {
@@ -191,7 +190,6 @@ img#background {
 }
 
 #header nav ul li span + span {
-  font-size: 0.9em;
   display: block;
   margin-top: 4px;
 }
@@ -200,13 +198,13 @@ img#background {
   border-bottom: none;
 }
 
-#header nav ul li a:hover span, #header nav ul li a:active span {
-  /*font-weight: bold;*/
-}
-
 #header nav ul li a.current:link span, #header nav ul li a.current:visited span {
   font-weight: bold;
 }
+
+/* ==========================================================================
+   Header Background
+   ========================================================================== */
 
 #header.solid_white {
   background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
@@ -228,32 +226,11 @@ img#background {
   display: none;
 }
 
-#header nav ul li a.current:link, #header nav ul li a.current:visited {
-  /*background-color: rgba(231, 246, 250, 0.9);*/
-}
-
-#header nav.green ul li a.current:link, #header nav.green ul li a.current:visited {
-  background-color: rgba(209, 230, 223, 0.9);
-}
-
-#header nav.blue ul li a.current:link, #header nav.blue ul li a.current:visited {
-  background-color: rgba(231, 246, 250, 0.9);
-}
-
-#header nav.white ul li a.current:link, #header nav.white ul li a.current:visited {
-  background-color: rgba(255, 255, 255, 0);
-}
-
-#header nav.yellow ul li a.current:link, #header nav.yellow ul li a.current:visited {
-  background-color: rgba(180, 225, 225, 0.9)
-}
-
-
 /* ==========================================================================
    Header Media Queries
    ========================================================================== */
 
-/*@media screen and (min-width: 1001px) {*/
+@media screen and (min-width: 1001px) {
 
   #header {
     padding-left: inherit;
@@ -263,30 +240,6 @@ img#background {
   #header nav ul li {
     width: 25%;
   }
-/*}*/
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-#footer {
-  color: #fff;
-  z-index: 2;
-  position: absolute;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
-}
-
-#footer p {
-  margin: auto;
-  font-size: 1.1em;
-}
-
-#footer span.orientation {
-  display: block;
-  text-align: center;
-  font-size: 3em;
 }
 
 
@@ -379,18 +332,18 @@ p#return a:before {
 }
 
 #photography section {
-  padding-top: 18px;
+  padding-top: 20px;
   background-color: #fff;
 }
 
 #photography section > *:not(div.series) {
-  margin-left: 18px;
-  margin-right: 18px;
+  margin-left: 19px;
+  margin-right: 19px;
 }
 
 #photography img {
   width: 100%;
-}
+}x
 
 #photography div.series {
 
@@ -438,11 +391,12 @@ p#return a:before {
    ========================================================================== */
 
 #service section.package {
-  padding: 40vh 18px 75px 18px;
-  height: auto;
-  min-height: 100vh;
-  overflow: hidden;
   max-width: 600px;
+  padding: 40vh 19px 75px 19px;
+}
+
+#service section.package p {
+  font-size: 1.2em;
 }
 
 #service section.package h1 {
@@ -452,26 +406,12 @@ p#return a:before {
 
 #service section.package h1 + p {
   font-weight: bold;
-  margin-top: 0;
-}
-
-#service section.package p.english {
-  margin-bottom: 2em;
-}
-
-#service section.package p {
-  font-size: 1.2em;
-  margin: 0;
-}
-
-#service section p.margin {
-  margin: 0;
-}
-
-#service section.package > * {
 }
 
 #service section.package > div.standard {
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 420px;
   display: flex;
   justify-content: space-between;
@@ -480,16 +420,12 @@ p#return a:before {
 
 #service section.package > div.standard div {
   width: 33%;
-  text-align: center;
   margin-top: 3em;
 }
 
 #service section.package > div.standard div p {
+  text-align: center;  
   margin-bottom: 0em;
-}
-
-#service section.package > div.standard div p:first-child {
-  /*line-height: 1.5;*/
 }
 
 #service section.package > div.standard div p:first-child span {
@@ -497,29 +433,9 @@ p#return a:before {
   padding-right: 5px;
 }
 
-#service section.package p#return, section.package p#specs {
-  margin: 0 auto;
-  font-size: 1em;
-  margin-top: 5em;
-  padding-bottom: 4em;
-}
-
-#service section.package p#return a, section.package p#specs a {
-  position: relative;
-}
-
-#service section.package p#return a:before, section.package p#specs a:before {
-  padding: 75px;
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #service div.background.top {
-  height: 60vh;
-  min-height: 60vh;
+  height: 100vh;
+  min-height: 100vh;
 }
 
 #service div.background.fill {
@@ -527,28 +443,28 @@ p#return a:before {
   background-color: #000;
 }
 
+/* ==========================================================================
+   Header Media Queries
+   ========================================================================== */
 
-#service div.gallery {
+@media screen and (min-width: 1001px) {
+
+  #service {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));*/
+  }
+
+  #service section.package {
+    padding: 38vh 19px 75px 19px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #service div.background.fill {
+    display: none;
+  }
 
 }
 
-#service div.gallery article {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  margin-bottom: 2em;
-  max-width: 500px;
-  align-content: center;
-}
-
-#service div.gallery figure {
-  display: inline;
-}
-
-#service div.gallery figure a:hover {
-  /*opacity: 0.9;*/
-  border-bottom: none;
-}
 
 /* ==========================================================================
    Sample
@@ -577,6 +493,8 @@ p#return a:before {
 
 #sample article div.title p {
   text-align: center;
+  font-size: 1.2em;
+  margin: 0;
 }
 
 
@@ -658,3 +576,53 @@ p#return a:before {
 
 
 
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+#service div.gallery {
+
+}
+
+#service div.gallery article {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-bottom: 2em;
+  max-width: 500px;
+  align-content: center;
+}
+
+#service div.gallery figure {
+  display: inline;
+}
+
+#service div.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+#footer p {
+  margin: auto;
+  font-size: 1.1em;
+}
+
+#footer span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
