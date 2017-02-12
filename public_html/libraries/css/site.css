@@ -30,7 +30,6 @@ html {
 
 body {
   font-family: "Whitney SSm A", "Whitney SSm B", "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75));
   font-size: 62.5%;
   color: #fff;
   min-height: 100%;
@@ -390,7 +389,9 @@ p#return a:before {
 #photography ul li.underline span {
   position: relative;
   top: -10px;
+  /*border-bottom: 8px solid rgba(179, 216, 253, 0.9);*/
   border-bottom: 8px solid rgba(231, 246, 250, 0.9);
+
 }
 
 #photography ul li.underline a {
@@ -400,6 +401,16 @@ p#return a:before {
 
 #photography ul li.underline a:link, li.underline a:visited {
   border-bottom: none;
+}
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+main#about {
+    /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));*/
+    /*background-color: white;*/
 }
 
 
@@ -603,6 +614,9 @@ p#return a:before {
   font-weight: bold;
 }
 
+#about p {
+  font-weight: bold;
+}
 
 
 /* ==========================================================================
