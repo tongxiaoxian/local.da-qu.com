@@ -460,7 +460,7 @@ p#return a:before {
   font-weight: bold;
 }
 
-#service section.package > div.standard {
+#service section.package > div#standard {
   margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
@@ -470,17 +470,17 @@ p#return a:before {
   flex-wrap: wrap;
 }
 
-#service section.package > div.standard div {
+#service section.package > div#standard div {
   width: 33%;
   margin-top: 3em;
 }
 
-#service section.package > div.standard div p {
+#service section.package > div#standard div p {
   text-align: center;  
   margin-bottom: 0em;
 }
 
-#service section.package > div.standard div p:first-child span {
+#service section.package > div#standard div p:first-child span {
   font-size: 2em;
   padding-right: 5px;
 }
