@@ -80,8 +80,15 @@ ul {
   margin-bottom: 3em;
 }
 
-ul {
+ul li {
   list-style: none;
+  margin-bottom: 1em;
+}
+
+ol {
+  /*margin-left: 0;*/
+  /*padding-left: 1.2em;*/
+  /*text-indent: -1.4em;*/
 }
 
 ol li {
@@ -90,12 +97,6 @@ ol li {
 }
 
 
-ol {
-  /*margin-left: 0;*/
-  /*padding-left: 1.2em;*/
-  /*text-indent: -1.4em;*/
-}
-
 /* ==========================================================================
    General Links
    ========================================================================== */
@@ -103,6 +104,7 @@ ol {
 a:link, a:visited {
   color: #fff;
   text-decoration: none;
+  padding-bottom: 2px;
   border-bottom: 1px dotted #fff;
 }
 
@@ -123,13 +125,7 @@ main.black {
 
 main.black a:link, main.black a:visited {
   color: #000;
-  text-decoration: none;
   border-bottom: 1px dotted #000;
-}
-
-main.black a:hover, main.black a:active {
-  font-weight: bold;
-  border-bottom: none;
 }
 
 /* ==========================================================================
@@ -444,7 +440,7 @@ p#return a:before {
 #service section.package {
   position: relative;
   max-width: 600px;
-  padding: 40vh 19px 75px 19px;
+  padding: 40vh 19px 100px 19px;
 }
 
 #service section.package p {
@@ -543,6 +539,7 @@ p#return a:before {
 #sample article div.title h1 {
   font-size: 3.5em;
   margin: 0;
+  white-space: nowrap;
 }
 
 #sample article div.title p {
@@ -558,6 +555,7 @@ p#return a:before {
 
 #sample article.return p {
   font-size: 2em;
+  font-weight: bold;
 }
 
 
