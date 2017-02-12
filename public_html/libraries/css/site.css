@@ -540,12 +540,7 @@ p#return a:before {
   box-shadow: 1px 1px 20px #000;
 }
 
-#sample article.return{
-  background-color: #111;
-}
-
 #sample article div.title h1 {
-  color: white;
   font-size: 3.5em;
   margin: 0;
 }
@@ -555,6 +550,16 @@ p#return a:before {
   font-size: 1.2em;
   margin: 0;
 }
+
+
+#sample article.return {
+  background-color: #111;
+}
+
+#sample article.return p {
+  font-size: 2em;
+}
+
 
 
 /* ==========================================================================
