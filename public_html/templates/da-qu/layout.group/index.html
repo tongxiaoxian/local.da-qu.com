@@ -20,9 +20,67 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/headroom.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/site.css"/>
-
+<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6585572/css/fonts.css" />
 {/exp:minimee:css}
 
+</head>
+
+<body class="{layout:text}">
+
+  <header id="header" class="{layout:header}">
+      
+    <h1>大屈写真摄影工作室</h1>
+
+    <nav role="navigation" class="{layout:nav}">
+
+      <ul>
+      
+        <li>
+          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
+            <span>photography</span>
+            <span class="icon-camera"></span>
+            <span>写真及婚拍</span>
+          </a>
+        </li>
+        
+        <li>
+          <a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">
+            <span>printing</span>
+            <span class="icon-card"></span>
+            <span>印铺</span>
+          </a>
+        </li>
+
+        <li>
+          <a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">
+            <span>service</span>
+            <span class="icon-glasses"></span>
+            <span>服务及价格</span>
+          </a>
+        </li>
+        
+        <li>
+          <a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">
+            <span>locations</span>
+            <span class="icon-check-in"></span>
+            <span>实体店</span>
+          </a>
+        </li>
+        
+      </ul>
+    
+    </nav>
+
+  </header>
+  
+  {layout:contents}
+  
+  {embed="layout/photoswipe"}
+
+  <footer id="footer">
+    <p>大屈影像</p>
+  </footer>
+  
 {exp:minimee:js}
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
@@ -49,57 +107,6 @@
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
 {/exp:minimee:js}
-
-
-</head>
-
-<body class="{layout:text}">
-
-  <header id="header" class="{layout:header}">
-      
-    <h1>大屈写真摄影工作室</h1>
-
-    <nav role="navigation" class="{layout:nav}">
-
-      <ul>
-      
-        <li>
-          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
-            <span>写真及肖像</span>
-            <span class="icon-camera_s"></span>
-          </a>
-        </li>
-        
-        <li>
-          <a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">
-            <span>印铺</span>
-            <span class="icon-folder_s"></span>
-          </a>
-        </li>
-
-        <li>
-          <a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#portrait"}">
-            <span>服务及价格</span>
-            <span class="icon-card_s"></span>
-          </a>
-        </li>
-        
-        <li>
-          <a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">
-            <span>实体店</span>
-            <span class="icon-check-in_s"></span>
-          </a>
-        </li>
-        
-      </ul>
-    
-    </nav>
-
-  </header>
-  
-  {layout:contents}
-  
-  {embed="layout/photoswipe"}
 
 </body>
 

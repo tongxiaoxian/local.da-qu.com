@@ -16,10 +16,10 @@
 }
 
 .headroom--top {
-    /*transform: translateY(-100%);*/
+	/*display: none;*/
 
 }
 
 .headroom--not--top {
-    transform: translateY(0%);
+    /*transform: translateY(-60%);*/
 }

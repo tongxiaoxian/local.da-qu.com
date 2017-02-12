@@ -26,19 +26,19 @@
 
 
 
-.icon-glasses_s:before {
+.icon-glasses:before {
   content: "\e900";
 }
-.icon-camera_s:before {
+.icon-camera:before {
   content: "\e905";
 }
-.icon-folder_s:before {
+.icon-folder:before {
   content: "\e906";
 }
-.icon-check-in_s:before {
+.icon-check-in:before {
   content: "\e907";
 }
-.icon-card_s:before {
+.icon-card:before {
   content: "\e908";
 }
 .icon-phone-portrait:before {
