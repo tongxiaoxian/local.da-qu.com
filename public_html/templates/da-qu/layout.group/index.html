@@ -102,9 +102,9 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: normal;
-
+  margin-bottom: 0.5em;
 }
 
 * > a, * > span {
@@ -129,8 +129,10 @@ ul {
 }
 
 ul li {
-  list-style: none;
+  font-size: 1.3em;
   line-height: 2;
+  list-style: none;
+  text-align: justify;
 }
 
 ol {
@@ -138,9 +140,10 @@ ol {
 }
 
 ol li {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 2;
   margin-bottom: 1em;
+  text-align: justify;
 }
 
 
@@ -321,7 +324,7 @@ div.background {
   z-index: -1;
 }
 
-div.guide {
+div#guide {
   color: #fff;
   z-index: 2;
   position: absolute;
@@ -330,12 +333,12 @@ div.guide {
   transform: translate(-50%,0);
 }
 
-div.guide p {
+div#guide p {
   margin: auto;
   font-size: 1.1em;
 }
 
-div.guide span.orientation {
+div#guide span.orientation {
   display: block;
   text-align: center;
   font-size: 3em;
@@ -403,6 +406,10 @@ p.return a:before {
 
 #photography div.series img {
   display: block;
+}
+
+#photography p {
+  font-size: 1.3em;
 }
 
 #photography ul { 
@@ -576,7 +583,7 @@ main#printing img {
     margin-right: auto;
   }
 
-#service div.background.top {
+  #service div.background.top {
   height: 100vh;
   min-height: 100vh;
 }  
@@ -628,7 +635,33 @@ main#printing img {
 }
 
 
+/* ==========================================================================
+   Studio
+   ========================================================================== */
 
+#studio section {
+  padding: 150px 19px 75px 19px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+#studio h2, #studio p, #studio ol li {
+  font-size: 1.3em;
+}
+
+#studio ol { 
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: flex-start;*/
+  padding-left: 2em;
+  list-style-position:inside;
+}
+
+#studio ol li {
+  /*list-style-type: none;*/
+  margin-right: 1.3em;
+  margin-bottom: 0em;
+}
 
 /* ==========================================================================
    About
@@ -638,11 +671,10 @@ main#printing img {
   padding: 150px 19px 0px 19px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 #about h1 {
-  /*text-align: center;*/
+  
 }
 
 #about section article {
@@ -660,9 +692,9 @@ main#printing img {
 
 #about p.question {
   font-weight: bold;
-  /*color: #0326a7;*/
   margin-bottom: 0;
 }
+
 
 /* ==========================================================================
    Gallery
@@ -686,7 +718,6 @@ main#printing img {
 }
 
 #service div.gallery figure a:hover {
-  /*opacity: 0.9;*/
   border-bottom: none;
 }
 
