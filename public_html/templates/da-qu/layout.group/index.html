@@ -641,12 +641,18 @@ main#printing img {
 
 #studio section {
   padding: 150px 19px 75px 19px;
-  /*display: flex;*/
-  /*flex-direction: column;*/
+  display: flex;
+  flex-direction: column;
+  /*justify-content: center;*/
 }
 
 #studio h2, #studio p, #studio ol li {
   font-size: 1.3em;
+  /*text-align: center;*/
+}
+
+#studio h2 {
+  /*text-align: center;*/
 }
 
 #studio ol { 
@@ -767,7 +773,7 @@ main#printing img {
           <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
             <span>photography</span>
             <span class="icon-camera"></span>
-            <span>写真及婚拍</span>
+            <span>写真及肖像</span>
           </a>
         </li>
         
@@ -806,7 +812,7 @@ main#printing img {
   {embed="layout/photoswipe"}
 
   <footer id="footer" class="{layout:footer}">
-    <p>大屈影像</p>
+    <p>大屈</p>
   </footer>
 
 </body>
