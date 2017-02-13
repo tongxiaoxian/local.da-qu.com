@@ -23,6 +23,33 @@
 <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6585572/css/fonts.css" /> -->
 {/exp:minimee:css}
 
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.ScrollMagic.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/debug.addIndicators.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/sticky.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.fixedbg.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
+{/exp:minimee:js}
+
 <style>
 
 @charset "utf-8";
@@ -101,8 +128,9 @@ ul {
   margin-bottom: 3em;
 }
 
-ul {
+ul li {
   list-style: none;
+  line-height: 2;
 }
 
 ol {
@@ -191,6 +219,7 @@ img#background {
 
 #header nav ul li {
   font-size: 1.3em;
+  line-height: normal;
 }
 
 #header nav ul li a {
@@ -412,12 +441,11 @@ p.return a:before {
 
 
 /* ==========================================================================
-   About
+   Printing
    ========================================================================== */
 
-main#about {
-    /*background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));*/
-    /*background-color: white;*/
+main#printing img {
+  width: 100%;
 }
 
 
@@ -514,10 +542,10 @@ main#about {
 }
 
 #service section.wechat {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 125px 25px 25px 25px;
 }
 
@@ -525,7 +553,6 @@ main#about {
   font-size: 1.2em;
   text-align: center;
   margin-bottom: 1em;
-  margin-top: 0em;
 }
 
 #service section.wechat > div {
@@ -687,6 +714,10 @@ main#about {
   display: none;
 }
 
+#footer.black p {
+  color: black;
+}
+
 </style>
 
 </head>
@@ -705,7 +736,7 @@ main#about {
           <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
             <span>photography</span>
             <span class="icon-camera"></span>
-            <span>写真及肖像</span>
+            <span>写真及婚拍</span>
           </a>
         </li>
         
@@ -746,33 +777,6 @@ main#about {
   <footer id="footer" class="{layout:footer}">
     <p>大屈影像</p>
   </footer>
-  
-{exp:minimee:js}
-<script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/ScrollMagic.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.ScrollMagic.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/debug.addIndicators.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.waypoints.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/sticky.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.fixedbg.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/photoswipe.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/photoswipe-ui-default.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
-{/exp:minimee:js}
 
 </body>
 
