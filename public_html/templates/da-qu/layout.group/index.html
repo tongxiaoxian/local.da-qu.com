@@ -412,11 +412,11 @@ header.none {
   border-bottom: none;
 }
 
-.about main section, .promotions main section, .schedule main section {
+.about main section, .promotions main section, .schedule main section  {
   padding: 150px 19px 0px 19px;
-  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 600px;
 }
 
 .about main section article h2 {
@@ -425,20 +425,36 @@ header.none {
   font-weight: bold;
 }
 
+.about main section article p {
+  font-size: 1.3em;
+}
+
 .about main p.question {
   font-weight: bold;
   margin-bottom: 0;
 }
 
+.schedule main section {
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  /*flex-wrap: wrap;  */
+}
 
-.schedule main section h2 {
+.schedule main section div {
+  margin-bottom: 5em;
+}
+
+.schedule main section div h2 {
+  text-align: center;
+
+}
+
+.schedule main section div ul li {
   text-align: center;
 }
 
 
-.schedule main section p {
-  text-align: center;
-}
 
 
 /* ==========================================================================
