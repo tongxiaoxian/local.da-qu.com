@@ -102,7 +102,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: normal;
   margin-bottom: 0.5em;
 }
@@ -113,7 +113,7 @@ h2 {
 
 p, figcaption, time, blockquote {
   display: block;
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 2;
   margin-bottom: 2em;
   text-align: justify;
@@ -124,29 +124,32 @@ p.center {
 }
 
 ul {
-  padding:0;
+  padding: 0;
   margin-bottom: 3em;
 }
 
 ul li {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 2;
   list-style: none;
   text-align: justify;
 }
 
 ol {
+  /*padding: 0;*/
   margin-bottom: 5em;
 }
 
 ol li {
-  font-size: 1.3em;
+  font-size: 1.2em;
   line-height: 2;
   margin-bottom: 1em;
   text-align: justify;
 }
 
-
+img#backstretch{
+  display:none;
+}
 
 /* ==========================================================================
    General Links
@@ -164,152 +167,8 @@ a:hover, a:active {
   border-bottom: none;
 }
 
-/* =============
-
-/* ==========================================================================
-   Main
-   ========================================================================== */
-
-main.black {
-  color: #000;
-}
-
-main.black a:link, main.black a:visited {
-  color: #000;
-  border-bottom: 1px dotted #000;
-}
-
-/* ==========================================================================
-   Backstretch
-   ========================================================================== */
-
-img#backstretch{
-  display:none;
-}
-
-img#banner {
-  display: none;
-}
-
-img#background {
-  display: none;
-}
-
-
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-#header {
-  /*display: none;*/
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  height: 70px;
-  padding-left: 19px;
-  padding-right: 19px;
-}
-
-#header h1 {
-  display: none;
-}
-
-#header nav ul { 
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-#header nav ul li {
-  font-size: 1.3em;
-  line-height: normal;
-}
-
-#header nav ul li a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  padding-top: 18px;
-  padding-bottom: 17px;
-  text-align: center;
-}
-
-#header nav ul li span:nth-child(3) {
-  display: block;
-  margin-top: 4px;
-}
-
-#header nav ul li span:first-child {
-  font-family: "Whitney A", "Whitney B";
-  text-transform: uppercase;
-  display: none;
-}
-
-
-#header nav ul li a:link, #header nav ul li a:visited {
-  border-bottom: none;
-}
-
-#header nav ul li a.current:link , #header nav ul li a.current:visited {
-  /*background-color: rgba(231, 246, 250, 0.9);*/
-}
-
-
-#header nav ul li a.current:link span, #header nav ul li a.current:visited span {
+a.current:link, a.current:visited {
   font-weight: bold;
-}
-
-#header nav ul li a.current:hover span, #header nav ul li a.current:active span {
-  font-weight: bold;
-}
-
-#header nav ul li a.current:link span:nth-child(2) , #header nav ul li a.current:visited span:nth-child(2) {
-  display: none;
-}
-
-#header nav ul li a.current:link span:first-child, #header nav ul li a.current:visited span:first-child {
-  display: block;
-}
-
-
-/* ==========================================================================
-   Header Background
-   ========================================================================== */
-
-#header.solid_white {
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
-}
-
-#header.white a:link, #header.white a:visited {
-  color: white;
-}
-
-#header.solid_black {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
-}
-
-#header.black a:link, #header.black a:visited {
-  color: black;
-}
-
-#header.none {
-  display: none;
-}
-
-/* ==========================================================================
-   Header Media Queries
-   ========================================================================== */
-
-@media screen and (min-width: 1001px) {
-
-  #header {
-    padding-left: inherit;
-    padding-right: inherit;
-  }
-
-  #header nav ul li {
-    width: 25%;
-  }
 }
 
 
@@ -324,7 +183,7 @@ div.background {
   z-index: -1;
 }
 
-div#guide {
+div.guide {
   color: #fff;
   z-index: 2;
   position: absolute;
@@ -333,12 +192,12 @@ div#guide {
   transform: translate(-50%,0);
 }
 
-div#guide p {
+div.guide p {
   margin: auto;
   font-size: 1.1em;
 }
 
-div#guide span.orientation {
+div.guide span.orientation {
   display: block;
   text-align: center;
   font-size: 3em;
@@ -366,18 +225,126 @@ p.return a:before {
   transform: translate(-50%, -50%);
 }
 
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main.black {
+  color: #000;
+}
+
+main.black a:link, .black a:visited {
+  color: #000;
+  border-bottom: 1px dotted #000;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+  padding-left: 19px;
+  padding-right: 19px;
+  padding-top: 18px;
+  padding-bottom: 17px;
+}
+
+header nav ul { 
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  font-size: 1.3em;
+  line-height: normal;
+}
+
+header nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+header nav ul li span:nth-child(3) {
+  display: block;
+  margin-top: 4px;
+}
+
+header nav ul li span:first-child {
+  display: none;
+  font-family: "Whitney A", "Whitney B";
+  text-transform: uppercase;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+  border-bottom: none;
+}
+
+header nav ul li a:hover span, header nav ul li a:active span {
+  font-weight: bold;
+}
+
+header nav ul li a.current:link span:nth-child(2) , header nav ul li a.current:visited span:nth-child(2) {
+  display: none;
+}
+
+header nav ul li a.current:link span:first-child, header nav ul li a.current:visited span:first-child {
+  display: block;
+}
+
+header.black a:link, header.black a:visited {
+  color: black;
+}
+
+header.solid_white {
+  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+}
+
+header.solid_black {
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
+
+header.none {
+  display: none;
+}
+
+@media screen and (min-width: 1001px) {
+
+  header {
+    padding-left: inherit;
+    padding-right: inherit;
+  }
+
+  header nav ul li {
+    width: 25%;
+  }
+
+  header nav ul li a.current:link , header nav ul li a.current:visited {
+  /*background-color: rgba(231, 246, 250, 0.9);*/
+  }
+
+}
+
 /* ==========================================================================
    Photography
    ========================================================================== */
 
-#photography div.banner {
+.photography main div.banner {
   position: fixed;
   width: 100%;
   min-height: 100vh;
   z-index: -1;
 }
 
-#photography div.placeholder {
+.photography main div.placeholder {
   height: 96vh;
   align-items: center;
   justify-content: center;
@@ -386,64 +353,91 @@ p.return a:before {
   background-color: transparent;
 }
 
-#photography section {
+.photography main section {
   padding-top: 20px;
   background-color: #fff;
 }
 
-#photography section > *:not(div.series) {
+.photography main section > *:not(div.series) {
   margin-left: 19px;
   margin-right: 19px;
 }
 
-#photography img {
+.photography main img {
   width: 100%;
 }x
 
-#photography div.series {
+.photography main div.series {
 
 }
 
-#photography div.series img {
+.photography main div.series img {
   display: block;
 }
 
-#photography p {
+.photography main p {
   font-size: 1.3em;
 }
 
-#photography ul { 
+.photography main ul { 
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
 
 }
 
-#photography ul li {
+.photography main ul li {
   font-size: 1.3em;
   margin-right: 1.2em;
   list-style: none;
 }
 
-#photography ul li:before {
+.photography main ul li:before {
   content: "- ";
 }
 
-#photography ul li.underline span {
+.photography main ul li.underline span {
   position: relative;
   top: -10px;
-  /*border-bottom: 8px solid rgba(179, 216, 253, 0.9);*/
   border-bottom: 8px solid rgba(231, 246, 250, 0.9);
 
 }
 
-#photography ul li.underline a {
+.photography main ul li.underline a {
   position: relative;
   top: 10px;
 }
 
-#photography ul li.underline a:link, li.underline a:visited {
+.photography main ul li.underline a:link, li.underline a:visited {
   border-bottom: none;
+}
+
+.about main section, .promotions main section, .schedule main section {
+  padding: 150px 19px 0px 19px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about main section article h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+.about main p.question {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+.schedule main section h2 {
+  text-align: center;
+}
+
+
+.schedule main section p {
+  text-align: center;
 }
 
 
@@ -451,7 +445,7 @@ p.return a:before {
    Printing
    ========================================================================== */
 
-main#printing img {
+.printing img {
   width: 100%;
 }
 
@@ -461,11 +455,11 @@ main#printing img {
    ========================================================================== */
 
 
-#service div.swiper-container {
+.service main div.swiper-container {
   height: 100vh;
 }
 
-#service div.swiper-slide a {
+.service main div.swiper-slide a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -474,46 +468,46 @@ main#printing img {
   height: 100%;
 }
 
-#service div.swiper-slide a:link, #service div.swiper-slide a:visited {
+.service main div.swiper-slide a:link, .service main div.swiper-slide a:visited {
   border-bottom: none; 
 }
 
-#service div.swiper-slide h1 {
+.service main div.swiper-slide h1 {
   font-size: 2.3em;
   text-align: center;
   margin: 0;
 }
 
-#service div.swiper-slide p {
+.service main div.swiper-slide p {
   font-size: 1.2em;
   font-weight: bold;
   margin: 0;
 }
 
-#service section.package {
+.service main section.package {
   position: relative;
   max-width: 600px;
   padding: 40vh 19px 100px 19px;
 }
 
-#service section.package p {
+.service main section.package p {
   font-size: 1.2em;
 }
 
-#service section.package h1 {
+.service main section.package h1 {
   margin: 0;
 }
 
-#service section.package h1 + p {
+.service main section.package h1 + p {
   font-weight: bold;
 }
 
-#service section.package h2 {
+.service main section.package h2 {
   margin-top: 5em;
 
 }
 
-#service section.package > div#standard {
+.service main section.package > div#standard {
   margin-bottom: 4em;
   margin-left: auto;
   margin-right: auto;
@@ -523,32 +517,32 @@ main#printing img {
   flex-wrap: wrap;
 }
 
-#service section.package > div#standard div {
+.service main section.package > div#standard div {
   width: 33%;
   margin-top: 3em;
 }
 
-#service section.package > div#standard div p {
+.service main section.package > div#standard div p {
   text-align: center;  
   margin-bottom: 0em;
 }
 
-#service section.package > div#standard div p:first-child span {
+.service main section.package > div#standard div p:first-child span {
   font-size: 2em;
   padding-right: 5px;
 }
 
-#service div.background.top {
+.service main div.background.top {
   height: 55vh;
   min-height: 55vh;
 }
 
-#service div.background.bottom {
+.service main div.background.bottom {
   top: 54vh;
   background-color: #000;
 }
 
-#service section.wechat {
+.service main section.wechat {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -556,13 +550,13 @@ main#printing img {
   padding: 125px 25px 25px 25px;
 }
 
-#service section.wechat p {
+.service main section.wechat p {
   font-size: 1.2em;
   text-align: center;
   margin-bottom: 1em;
 }
 
-#service section.wechat > div {
+.service main section.wechat > div {
   margin-bottom: 5em;
 }
 
@@ -573,22 +567,22 @@ main#printing img {
 
 @media screen and (min-width: 1001px) {
 
-  #service {
+  .service main {
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));*/
   }
 
-  #service section.package {
+  .service main section.package {
     padding-top: 38vh;
     margin-left: auto;
     margin-right: auto;
   }
 
-  #service div.background.top {
+  .service main div.background.top {
   height: 100vh;
   min-height: 100vh;
 }  
 
-  #service div.background.bottom {
+  .service main div.background.bottom {
     display: none;
   }
 
@@ -599,7 +593,7 @@ main#printing img {
    Sample
    ========================================================================== */
 
-#sample article {
+.sample main article {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -610,24 +604,24 @@ main#printing img {
   box-shadow: 1px 1px 20px #000;
 }
 
-#sample article div.title h1 {
+.sample main article div.title h1 {
   font-size: 3.5em;
   margin: 0;
   white-space: nowrap;
 }
 
-#sample article div.title p {
+.sample main article div.title p {
   text-align: center;
   font-size: 1.2em;
   margin: 0;
 }
 
 
-#sample article.return {
+.sample main article.return {
   background-color: #111;
 }
 
-#sample article.return p {
+.sample main article.return p {
   font-size: 2em;
   padding-bottom: 0;
   margin: 0;
@@ -639,23 +633,23 @@ main#printing img {
    Studio
    ========================================================================== */
 
-#studio section {
+.studio main section {
   padding: 150px 19px 75px 19px;
   display: flex;
   flex-direction: column;
   /*justify-content: center;*/
 }
 
-#studio h2, #studio p, #studio ol li {
-  font-size: 1.3em;
+.studio main h2, .studio main p, .studio main ol li {
+  /*font-size: 1.2em;*/
   /*text-align: center;*/
 }
 
-#studio h2 {
+.studio main h2 {
   /*text-align: center;*/
 }
 
-#studio ol { 
+.studio main ol { 
   display: flex;
   flex-wrap: wrap;
   /*justify-content: flex-start;*/
@@ -663,54 +657,51 @@ main#printing img {
   list-style-position:inside;
 }
 
-#studio ol li {
+.studio main ol li {
   /*list-style-type: none;*/
   margin-right: 1.3em;
   margin-bottom: 0em;
 }
 
+
 /* ==========================================================================
-   About
+   Footer
    ========================================================================== */
 
-#about section {
-  padding: 150px 19px 0px 19px;
-  display: flex;
-  flex-direction: column;
+footer {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
 }
 
-#about h1 {
-  
+footer p {
+  letter-spacing: 2px;
+  margin: 0;
+  color: #fff;
+  font-size: 1em;
 }
 
-#about section article {
-  max-width: 600px;
+footer.none {
+  display: none;
 }
 
-#about section article h2 {
-  margin-top: 2em;
-  margin-bottom: 2em;
-  font-weight: bold;
+footer.black p {
+  color: black;
 }
 
-#about p {
-}
-
-#about p.question {
-  font-weight: bold;
-  margin-bottom: 0;
-}
 
 
 /* ==========================================================================
    Gallery
    ========================================================================== */
 
-#service div.gallery {
+div.gallery {
 
 }
 
-#service div.gallery article {
+div.gallery article {
   display: flex;
   flex-direction: row;
   flex-flow: wrap;
@@ -719,51 +710,22 @@ main#printing img {
   align-content: center;
 }
 
-#service div.gallery figure {
+div.gallery figure {
   display: inline;
 }
 
-#service div.gallery figure a:hover {
+div.gallery figure a:hover {
   border-bottom: none;
 }
 
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-#footer {
-  z-index: 2;
-  position: fixed;
-  left: 50%;
-  bottom: 6px;
-  transform: translate(-50%,0);
-}
-
-#footer p {
-  letter-spacing: 2px;
-  margin: 0;
-  color: #fff;
-  font-size: 1em;
-}
-
-#footer.none {
-  display: none;
-}
-
-#footer.black p {
-  color: black;
-}
 
 </style>
 
 </head>
 
-<body class="{layout:text}">
+<body class="{layout:body}">
 
-  <header id="header" class="{layout:header}">
-      
-    <h1>大屈摄影工作室</h1>
+  <header class="{layout:header}">
 
     <nav role="navigation" class="{layout:nav}">
 
@@ -811,7 +773,7 @@ main#printing img {
   
   {embed="layout/photoswipe"}
 
-  <footer id="footer" class="{layout:footer}">
+  <footer class="{layout:footer}">
     <p>大屈影像</p>
   </footer>
 

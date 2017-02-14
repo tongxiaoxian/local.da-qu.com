@@ -131,7 +131,7 @@ main.black a:link, main.black a:visited {
    Backstretch
    ========================================================================== */
 
-img#backstretch{
+img.backstretch{
   display:none;
 }
 
