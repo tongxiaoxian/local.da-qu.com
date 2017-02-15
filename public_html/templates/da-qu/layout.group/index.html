@@ -124,7 +124,7 @@ p.center {
 }
 
 ul {
-  padding: 0;
+  padding-left: 0;
   margin-bottom: 3em;
 }
 
@@ -136,7 +136,6 @@ ul li {
 }
 
 ol {
-  /*padding: 0;*/
   margin-bottom: 5em;
 }
 
@@ -205,11 +204,10 @@ div.guide span.orientation {
 
 p.return {
   text-align: center;
-  width: 30px;
   margin: 0 auto;
   font-size: 1.1em;
-  margin-top: 5em;
-  padding-bottom: 4em;
+  margin-top: 7em;
+  padding-bottom: 5em;
 }
 
 p.return a {
@@ -365,7 +363,7 @@ header.none {
 
 .photography main img {
   width: 100%;
-}x
+}
 
 .photography main div.series {
 
@@ -649,32 +647,28 @@ header.none {
    Studio
    ========================================================================== */
 
+.about main section, .promotions main section, .schedule main section  {
+  padding: 150px 19px 0px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
 .studio main section {
   padding: 150px 19px 75px 19px;
-  display: flex;
-  flex-direction: column;
-  /*justify-content: center;*/
-}
-
-.studio main h2, .studio main p, .studio main ol li {
-  /*font-size: 1.2em;*/
-  /*text-align: center;*/
-}
-
-.studio main h2 {
-  /*text-align: center;*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
 }
 
 .studio main ol { 
   display: flex;
   flex-wrap: wrap;
-  /*justify-content: flex-start;*/
   padding-left: 2em;
   list-style-position:inside;
 }
 
 .studio main ol li {
-  /*list-style-type: none;*/
   margin-right: 1.3em;
   margin-bottom: 0em;
 }
@@ -751,7 +745,7 @@ div.gallery figure a:hover {
           <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
             <span>photography</span>
             <span class="icon-camera"></span>
-            <span>写真及肖像</span>
+            <span>専門写真店</span>
           </a>
         </li>
         
@@ -759,7 +753,7 @@ div.gallery figure a:hover {
           <a {if segment_1 == 'printing'}class="current" {/if}href="{path="printing/index"}">
             <span>printing</span>
             <span class="icon-card"></span>
-            <span>印铺</span>
+            <span>印鋪</span>
           </a>
         </li>
 
@@ -767,7 +761,7 @@ div.gallery figure a:hover {
           <a {if segment_1 == 'service' OR segment_1 == 'sample'}class="current" {/if}href="{path="service/index#"{layout:service}""}">
             <span>service</span>
             <span class="icon-glasses"></span>
-            <span>服务及价格</span>
+            <span>服務及價格</span>
           </a>
         </li>
         
@@ -775,7 +769,7 @@ div.gallery figure a:hover {
           <a {if segment_1 == 'studio'}class="current" {/if}href="{path="studio/index"}">
             <span>studio</span>
             <span class="icon-check-in"></span>
-            <span>实体店</span>
+            <span>實體店</span>
           </a>
         </li>
         
