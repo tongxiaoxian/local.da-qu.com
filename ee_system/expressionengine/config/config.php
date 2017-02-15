@@ -87,7 +87,7 @@ $config['license_contact'] = 'tongxiaoxian@outlook.com';
 |	http://local.da-qu.com/
 |
 */
-$config['base_url']	= 'local.da-qu.com';
+$config['base_url']	= 'http://local.da-qu.com';
 
 /*
 |--------------------------------------------------------------------------

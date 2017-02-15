@@ -85,7 +85,7 @@ $config['cookie_httponly'] = "y";
 |	http://local.da-qu.com/
 |
 */
-$config['base_url']	= '';
+$config['base_url']	= 'http://local.da-qu.com';
 
 /*
 |--------------------------------------------------------------------------

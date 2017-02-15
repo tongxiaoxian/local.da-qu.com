@@ -81,7 +81,7 @@ $config['sig_img_path'] = "/var/www/html/da-qu.com/public_html/assets/images/sig
 |	http://local.da-qu.com/
 |
 */
-$config['base_url']	= 'www.da-qu.com';
+$config['base_url']	= 'http://www.da-qu.com';
 
 /*
 |--------------------------------------------------------------------------
