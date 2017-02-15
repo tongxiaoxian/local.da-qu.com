@@ -1,0 +1,45 @@
+{layout="layout/site}
+
+	<section class="backstretch middle message">
+
+		{exp:channel:entries channel="message" limit="1" disable="categories|member_data"}
+
+			{layout:set name="title"}大屈影像 - 工作日记 - {title} - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口{/layout:set}
+				
+				<header>
+					<h1>Message.</h1>
+					<p>工作日记</p>
+				</header>
+
+				<article class="message_abstract">
+					
+					<p>{message_abstract}</p>
+
+					<p class="author">{message_author}</p>
+					
+					<time datetime="{entry_date format="%Y"}-{entry_date format="%M"}-{entry_date format="%d"}">{entry_date format="%Y年%m月%d日"}</time>
+					
+				</article>
+
+				{message_cover}
+					<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+				{/message_cover}
+
+		{/exp:channel:entries}
+
+			   	<p class="pagination">
+
+					{exp:channel:prev_entry channel="message"}
+					    <a href="{path='message/index'}">上一页</a> &nbsp;
+					{/exp:channel:prev_entry}
+
+				    {exp:channel:next_entry channel="message"}
+					    <a href="{path='message/index'}">下一页</a>
+					{/exp:channel:next_entry}
+
+			     </p>
+
+			    <footer>
+					<p id="da-qu"><a class="da-qu" href="{path="service/index#message"}">大屈影像</a>／<a class="nan-su" href="http://prints.da-qu.com">屈家印铺</a></p>
+			    </footer>
+	</section>
