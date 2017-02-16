@@ -114,8 +114,8 @@ $assign_to_config['upload_preferences'] = array(
     ),
     56 => array(                                                            // ID of upload destination
         'name'        => 'message',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/uploads/photography/message/', // Server path to upload directory
-        'url'         => 'http://local.da-qu.com/assets/images/uploads/photography/message/'      // URL of upload directory
+        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/uploads/message/', // Server path to upload directory
+        'url'         => 'http://local.da-qu.com/assets/images/uploads/message/'      // URL of upload directory
     ),
     57 => array(                                                            // ID of upload destination
         'name'        => 'flowers',                          // Display name in control panel

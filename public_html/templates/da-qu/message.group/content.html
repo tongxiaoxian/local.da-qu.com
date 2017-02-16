@@ -1,27 +1,39 @@
-{layout="layout/index"}
+{layout="layout/index" body="content" service="portrait" footer="none"}
 
-	<section class="backstretch document message content">
+{layout:set name="description"}大屈攝影工作室的團隊日記{/layout:set}
+
+    <main>
 
 		{exp:channel:entries channel="message" limit="1" disable="categories|member_data"}
 
-			{layout:set name="title"}大屈影像 - 工作日记 - {title} - 正文 - 写真摄影工作室 - 广州 - 深圳 - 三亚 - 海口{/layout:set}
-				
-				<header>
-					<h1>Message.</h1>
-					<p>工作日记</p>
-				</header>
+		{layout:set name="title"}大屈影像 - 团队日记 - {title} - 广州 - 深圳 - 三亚 - 海口 - 摄影工作室{/layout:set}
 
-				<article>
-					{message_body}
-				</article>
+	    <div class="backstretch background">
 
-				<p id="return"><a href="{title_permalink="message/index"}">返回</a></p>
+			{message_cover}
+				<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+			{/message_cover}
 
-				{message_inner}
-					<img id="backstretch" src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
-				{/message_inner}
+    	</div>
+
+		<section>
+
+			<!-- <h1>{title}</h1> -->
+
+			<article>
+				{message_body}
+			</article>
+		
+			<p class="return"><a href="{title_permalink="message/index"}">返回</a></p>
+
+		</section>
 
 		{/exp:channel:entries}
+		   	
+	   	
+	</main>
 
-	</section>
+
+
+
 

@@ -9,9 +9,7 @@
 
 {exp:nsm_better_meta:template url_title="{segment_3}"}
 
-<!-- {exp:minimee:css} -->
-<!-- {/exp:minimee:css} -->
-
+{exp:minimee:css}
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/normalize.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
@@ -21,9 +19,11 @@
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/magnific-popup.css">
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/headroom.css"/>
+{/exp:minimee:css}
 
 <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6007772/css/fonts.css" />
 
+{exp:minimee:js}
 <script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
@@ -48,8 +48,7 @@
 <script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
-<!-- {exp:minimee:js} -->
-<!-- {/exp:minimee:js} -->
+{/exp:minimee:js}
 
 <style>
 
@@ -120,7 +119,7 @@ p, figcaption, time, blockquote {
   text-align: justify;
 }
 
-p.center {
+.center {
   text-align: center;
 }
 
@@ -307,11 +306,12 @@ header.black a:link, header.black a:visited {
 }
 
 header.solid_white {
-  background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  /*background-color: #e6e7e8;*/
 }
 
 header.solid_black {
-  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  /*background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));*/
 }
 
 header.none {
@@ -357,6 +357,7 @@ header.none {
 
 .photography main section {
   padding-top: 20px;
+  /*background-color: #e6e7e8;*/
   background-color: #fff;
 }
 
@@ -365,61 +366,59 @@ header.none {
   margin-right: 19px;
 }
 
-.photography main img {
+.photography main section img {
+  display: block;
   width: 100%;
 }
 
-.photography main div.series {
-
-}
-
-.photography main div.series img {
-  display: block;
-}
-
-.photography main p {
+.photography main section p {
   font-size: 1.3em;
 }
 
-.photography main ul { 
+.photography main section ul { 
   display: -webkit-flex;
   display: flex;
   flex-wrap: wrap;
-
 }
 
-.photography main ul li {
+.photography main section ul li {
   font-size: 1.3em;
   margin-right: 1.2em;
   list-style: none;
 }
 
-.photography main ul li:before {
+.photography main section ul li:before {
   content: "- ";
 }
 
-.photography main ul li.underline span {
+.photography main section ul li.underline span {
   position: relative;
   top: -10px;
   border-bottom: 8px solid rgba(231, 246, 250, 0.9);
 
 }
 
-.photography main ul li.underline a {
+.photography main section ul li.underline a {
   position: relative;
   top: 10px;
 }
 
-.photography main ul li.underline a:link, li.underline a:visited {
+.photography main section ul li.underline a:link, li.underline a:visited {
   border-bottom: none;
 }
 
-.about main section, .promotions main section, .schedule main section  {
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+.about main section, .promotions main section, .schedule main section, .content main section, .latest main section {
   padding: 175px 19px 0px 19px;
   margin-left: auto;
   margin-right: auto;
   max-width: 600px;
 }
+
 
 .about main section article h2 {
   margin-top: 2em;
@@ -435,6 +434,11 @@ header.none {
   font-weight: bold;
   margin-bottom: 0;
 }
+
+
+/* ==========================================================================
+   Schedule
+   ========================================================================== */
 
 .schedule main section {
   /*flex-direction: column;*/
@@ -457,7 +461,75 @@ header.none {
 }
 
 
+/* ==========================================================================
+   Lastest
+   ========================================================================== */
 
+.latest main section {
+  /*background-color: #e6e7e8;*/
+  /*padding-top: 10em;*/
+  /*padding-bottom: 5em;*/
+  /*color: #fff;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+}
+
+
+.latest main section article {
+  margin-bottom: 15em;
+}
+
+.latest main section article h1 {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+.latest main section article img {
+  display: block;
+  width: 100%;
+}
+
+.latest main section article div {
+  display: flex;
+}
+
+.latest main section article div p.tag, .latest main section article div time {
+  font-size: 1.1em;
+  margin-right: 1.1em;
+}
+
+
+
+/* ==========================================================================
+   Message
+   ========================================================================== */
+
+.message main {
+  margin-bottom: 70px;
+}
+
+.message main section {
+  height: 100vh;
+  padding: 0px 19px 0px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.message main {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+
+.content main {
+  overflow: hidden;
+  /*min-height: 100vh;*/
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
 
 /* ==========================================================================
    Printing
@@ -484,6 +556,8 @@ header.none {
   justify-content: center;
   width: 100%;
   height: 100%;
+  /*margin-top: 2em;*/
+  /*margin-bottom: 2em;*/
 }
 
 .service main div.swiper-slide a:link, .service main div.swiper-slide a:visited {
@@ -746,7 +820,7 @@ div.gallery figure a:hover {
       <ul>
       
         <li>
-          <a {if segment_1 == '' OR segment_1 == 'photography'}class="current" {/if}href="{path="photography/index"}">
+          <a {if segment_1 == '' OR segment_1 == 'photography' OR segment_1 == 'message'}class="current" {/if}href="{path="photography/index"}">
             <span>photography</span>
             <span class="icon-camera"></span>
             <span>専門写真店</span>
@@ -788,7 +862,7 @@ div.gallery figure a:hover {
   {embed="layout/photoswipe"}
 
   <footer class="{layout:footer}">
-    <p>大屈</p>
+    <p>大屈影像</p>
   </footer>
 
 </body>
