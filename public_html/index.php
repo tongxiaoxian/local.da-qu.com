@@ -141,6 +141,27 @@ $assign_to_config['upload_preferences'] = array(
 //	$assign_to_config['global_vars'] = array(); // This array must be associative
 
 
+$assign_to_config['site_url'] = "http://local.da-qu.com/";
+$assign_to_config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/templates";
+
+$assign_to_config['theme_folder_url'] = "http://local.da-qu.com/assets/themes/";
+$assign_to_config['theme_folder_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/themes/";
+
+$assign_to_config['captcha_url'] = "http://local.da-qu.com/assets/images/captchas/";
+$assign_to_config['captcha_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/captchas";
+
+$assign_to_config['emoticon_url'] = "http://local.da-qu.com/assets/images/smileys/";
+
+$assign_to_config['avatar_url'] = "http://local.da-qu.com/assets/images/avatars/";
+$assign_to_config['avatar_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/avatars";
+
+$assign_to_config['photo_url'] = "http://local.da-qu.com/assets/images/member_photos/";
+$assign_to_config['photo_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/member_photos/";
+
+$assign_to_config['sig_img_url'] = "http://local.da-qu.com/assets/images/signature_attachments/";
+$assign_to_config['sig_img_path'] = "/Users/tongxiaoxian/Sites/local.da-qu.com/public_html/assets/images/signature_attachments/";
+
+
 /*
  * --------------------------------------------------------------------
  *  END OF USER CONFIGURABLE SETTINGS.  DO NOT EDIT BELOW THIS LINE
