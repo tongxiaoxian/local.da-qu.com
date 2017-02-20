@@ -28,6 +28,9 @@ $(document).ready(function() {
     $('header').headroom();
 });
 
+$(document).ready(function() {
+    $("head").append("<link rel='stylesheet' type='text/css' href='https://cloud.typography.com/7558074/6549772/css/fonts.css' />");
+});
 
 // $(document).ready(function() {
 //     $('.ajax-popup-link').magnificPopup({

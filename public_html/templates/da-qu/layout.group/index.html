@@ -22,7 +22,7 @@
 {/exp:minimee:css}
 
 <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6007772/css/fonts.css" /> -->
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6549772/css/fonts.css" />
+<!-- <link rel="stylesheet" type="text/css" title="hoefler" href="https://cloud.typography.com/7558074/6549772/css/fonts.css" /> -->
 
 {exp:minimee:js}
 <script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
@@ -81,7 +81,7 @@ html {
 
 
 body {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
   color: #fff;
   min-height: 100%;
@@ -156,7 +156,7 @@ img#backstretch{
 a:link, a:visited {
   color: #fff;
   text-decoration: none;
-  padding-bottom: 2px;
+  /*padding-bottom: 2px;*/
   border-bottom: 1px dotted #fff;
 }
 
@@ -684,6 +684,10 @@ header.none {
    Sample
    ========================================================================== */
 
+.sample {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
 .sample main article {
   position: relative;
   height: 100vh;
@@ -719,6 +723,16 @@ header.none {
   font-weight: bold;
 }
 
+span.pointer {
+  display: none;
+  font-size: 3em;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translate(-50%,0);
+}
 
 /* ==========================================================================
    Studio
@@ -861,7 +875,7 @@ div.gallery figure a:hover {
   {embed="layout/photoswipe"}
 
   <footer class="{layout:footer}">
-    <p>大屈影像</p>
+    <p>大屈攝影（摄影）工作室</p>
   </footer>
 
 </body>
