@@ -40,9 +40,9 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'nan-su';
-   $assign_to_config['cp_url'] = 'http://www.nan-su.com/admin.php';
-   $assign_to_config['site_url'] = 'http://www.nan-su.com/';
+   $assign_to_config['site_name']  = 'thencafe';
+   $assign_to_config['cp_url'] = 'http://www.thencafe.com/admin.php';
+   $assign_to_config['site_url'] = 'http://www.thencafe.com/';
 
 
 /*
@@ -87,9 +87,9 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://www.nan-su.com/";
+$assign_to_config['site_url'] = "http://www.thencafe.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/nan-su.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/thencafe.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
      
@@ -212,13 +212,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/www.nan-su.com/cache',
+    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/www.thencafe.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://www.nan-su.com/cache',
+    'cache_url'         => 'http://www.thencafe.com/cache',
  
     /**
      * ==============================================
