@@ -38,8 +38,8 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'thencafe'; 
- $assign_to_config['cp_url'] = 'http://local.thencafe.com/admin.php';
+ $assign_to_config['site_name']  = 'ncafe'; 
+ $assign_to_config['cp_url'] = 'http://local.ncafe.co/admin.php';
 
 
 /*
