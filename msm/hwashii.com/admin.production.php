@@ -38,8 +38,8 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'ncoffeeshop'; 
- $assign_to_config['cp_url'] = 'http://www.ncoffeeshop.com/admin.php';
+ $assign_to_config['site_name']  = 'hwashii'; 
+ $assign_to_config['cp_url'] = 'http://www.hwashii.com/admin.php';
 
 
 /*

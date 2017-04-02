@@ -40,9 +40,9 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'ncoffee'; 
-   $assign_to_config['cp_url'] = 'http://ncoffeeshop.da-qu.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://ncoffeeshop.da-qu.com/'; 
+   $assign_to_config['site_name']  = 'ncoffee';
+   $assign_to_config['cp_url'] = 'http://ncoffeeshop.da-qu.com/admin.php';
+   $assign_to_config['site_url'] = 'http://ncoffeeshop.da-qu.com/';
 
 
 /*
@@ -89,14 +89,10 @@
 
 $assign_to_config['site_url'] = "http://ncoffeeshop.da-qu.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/var/www/html/tongxiaoxian.com/msm/ncoffeeshop.da-qu.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/ncoffeeshop.da-qu.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
-    38 => array(                                                            // ID of upload destination
-        'name'        => 'products_cn',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/ncoffee.com/assets/images/uploads/products_cn/', // Server path to upload directory
-        'url'         => 'http://www.ncoffee.com/assets/images/uploads/products_cn/'      // URL of upload directory
-    )                  
+     
 );
 
 //	$assign_to_config['template_group'] = '';
@@ -216,13 +212,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/ncoffee.com/cache',
+    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/www.ncoffeeshop.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://www.ncoffee.com/cache',
+    'cache_url'         => 'http://www.ncoffeeshop.com/cache',
  
     /**
      * ==============================================
