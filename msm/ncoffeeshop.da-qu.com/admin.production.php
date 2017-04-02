@@ -38,7 +38,7 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'ncoffee'; 
+ $assign_to_config['site_name']  = 'ncoffeeshop'; 
  $assign_to_config['cp_url'] = 'http://ncoffeeshop.da-qu.com/admin.php';
 
 

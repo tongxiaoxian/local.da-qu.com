@@ -40,7 +40,7 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'ncoffee'; 
+   $assign_to_config['site_name']  = 'ncoffeeshop'; 
    $assign_to_config['cp_url'] = 'http://local.ncoffeeshop.da-qu.com/admin.php';
    $assign_to_config['site_url'] = 'http://local.ncoffeeshop.da-qu.com/'; 
 
