@@ -107,19 +107,124 @@ a:active {
   /*font-weight: bold; */
 }
 
+
 /* ==========================================================================
    Header
    ========================================================================== */
 
-main {
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
   color: white;
   position: relative;
-  height: 100vh;
+  height: 90vh;
+  margin-bottom:6em;
 }
 
 
-main.index > h1{
+header.index > h1{
   /*display: none;*/
+  position: absolute;
+  top:15px;
+  left:25px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+
+header span {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2.5em;
+}
+
+
+header.index img#logo {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,0);
+}
+
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header div#billboard {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  padding: 1em 2em 1em 2em;
+  width: 200px;
+  height:120px;
+  background-color: #2a1414;
+}
+
+header div#billboard h1{
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+header div#billboard p{
+
+}
+
+header {
+  height: 100vh;
+  background: black;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white; 
+}
+
+header > h1{
+  font-size: 2em;
+}
+
+header p.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%,0);
+  font-size: 1em;
+}
+
+
+
+
+main {
+  height: 100vh;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white; 
+}
+
+main > h1{
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+main > h1{
   position: absolute;
   top:15px;
   left:25px;
@@ -136,55 +241,13 @@ main span {
 }
 
 
-main.index img#logo {
+main img#logo {
   position: absolute;
   left: 50%;
   top: 45%;
   transform: translate(-50%,0);
 }
 
-
-main a:link, main a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-main div#billboard {
-  position: absolute;
-  bottom: -30px;
-  right: 10px;
-  padding: 1em 2em 1em 2em;
-  width: 200px;
-  height:120px;
-  background-color: #2a1414;
-}
-
-main div#billboard h1{
-  font-weight: normal;
-  font-size: 1.2em;
-}
-
-main div#billboard p{
-
-}
-
-main {
-  height: 100vh;
-  background: black;
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: white; 
-}
-
-main > h1{
-  font-size: 2em;
-}
 
 main p.arrow {
   position: absolute;
@@ -197,6 +260,30 @@ main p.arrow {
 main section {
   text-align: center;
 }
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+  margin-bottom:6em;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+nav ul li {
+  /*font-weight: bold;*/
+  font-size: 1.2em;
+  margin-right: 0.5em;
+  list-style: none;
+}
+
 
 </style>
 
