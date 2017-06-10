@@ -3,11 +3,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>NCOFFEESHOP</title>
+<title>小夜盲的咖啡店</title>
 
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.min.css"/>
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/7048372/css/fonts.css" />
-
 <style>
 
 @charset "utf-8";
@@ -31,11 +29,14 @@ ul {
 }
 
 body {
-  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", "Helvetica", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Whitney A", "Whitney B", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 62.5%;
 }
+
+
+
 
 /* ==========================================================================
    General Typography
@@ -111,21 +112,26 @@ a:active {
    Header
    ========================================================================== */
 
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
 header {
-  background-color: black;
   color: white;
   position: relative;
-  height: 54px;
+  height: 90vh;
+  margin-bottom:6em;
 }
 
 
-header > h1{
+header.index > h1{
+  /*display: none;*/
   position: absolute;
-  top:10px;
-  left:20px;
-  /*font-weight: normal;*/
-  font-size: 14px;
-  letter-spacing: 2px;
+  top:15px;
+  left:25px;
+  font-weight: normal;
+  font-size: 18px;
 }
 
 
@@ -136,14 +142,67 @@ header span {
   font-size: 2.5em;
 }
 
+
+header.index img#logo {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,0);
+}
+
+
 header a:link, header a:visited {
   color: white;
   text-decoration: none;
 }
 
-/* ==========================================================================
-   Main
-   ========================================================================== */
+header div#billboard {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  padding: 1em 2em 1em 2em;
+  width: 200px;
+  height:120px;
+  background-color: #2a1414;
+}
+
+header div#billboard h1{
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+header div#billboard p{
+
+}
+
+header {
+  height: 100vh;
+  background: black;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white; 
+}
+
+header > h1{
+  font-size: 2em;
+}
+
+header p.arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  transform: translate(-50%,0);
+  font-size: 1em;
+}
+
+
+
 
 main {
   height: 100vh;
