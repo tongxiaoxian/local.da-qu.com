@@ -839,7 +839,7 @@ div.gallery figure a:hover {
       <ul>
       
         <li>
-          <a {if segment_1 == 'photography' OR segment_1 == 'message'}class="current" {/if}href="{path="photography/index"}">
+          <a {if segment_1 == '' OR segment_1 == 'photography' OR segment_1 == 'message'}class="current" {/if}href="{path="photography/index"}">
             <span>photography</span>
             <span class="icon-camera"></span>
             <span>攝影専門店</span>
@@ -855,7 +855,7 @@ div.gallery figure a:hover {
         </li>
 
         <li>
-          <a {if segment_1 == '' OR segment_1 == 'service' OR segment_1 == 'sample' OR segment_1 == 'workflow' OR segment_1 == 'guide'}class="current" {/if}href="{path="service/index#"{layout:service}""}">
+          <a {if segment_1 == 'service' OR segment_1 == 'sample' OR segment_1 == 'workflow' OR segment_1 == 'guide'}class="current" {/if}href="{path="service/index#"{layout:service}""}">
             <span>service</span>
             <span class="icon-glasses"></span>
             <span>服務及價格</span>
