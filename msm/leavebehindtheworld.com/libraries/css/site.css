@@ -1,0 +1,355 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  margin-top: 0em;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+  padding: 0;
+}
+
+html {
+  height: 100%
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 200;
+  font-size: 62.5%;
+  min-height: 100%;
+  color: white;
+  padding: 3em 3em 2.5em 3em;
+  letter-spacing: .5px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   Anystretch
+   ========================================================================== */
+
+#anystretch{
+  display:none;
+}
+
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  /*letter-spacing: 1px;*/
+}
+
+h1  {
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  /*font-weight: normal;*/
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+h1 a, h1 span, h2 a, h2 span {
+  font-size: 1em;
+}
+
+p, figcaption {
+  font-size: 1.2em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+p.slogan {
+  font-size:2em;
+}
+
+time {
+  display: block;
+  font-size: 1.2em;
+  line-height: 2;
+  margin-top: 1.5em;
+  display: block;
+  margin-top: 2em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+span, a {
+  /*font-size: 1.2em; */
+}
+
+span a, a span {
+  /*font-size: 1em;*/
+}
+
+ul > li, ol > li {
+  font-size: 1.2em;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+li h2, li p {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+a:active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+
+
+/* ==========================================================================
+   nav
+   ========================================================================== */
+
+nav {
+  display: -webkit-flex;
+  margin-bottom:5em;
+}
+
+nav ul li {
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 1.2em;
+  margin-top:.5em;
+  list-style: none;
+}
+
+nav ul li a.selected{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.1em;
+  border-bottom: none;
+  
+}
+
+nav ul li a:link, nav ul li a:visited, a.prev:link, a.next:link {
+  /*border-bottom: none;*/
+}
+
+nav ul li a:hover, a.prev:hover, a.next:hover, nav ul li a:active, a.prev:active, a.next:active {
+  /*border-bottom: none;*/
+  font-weight: bold;
+}
+
+figure a:visited, figure a:link{
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  position: relative;
+  margin-bottom:3em;
+}
+
+main  p {
+  max-width: 500px;
+  /*font-weight: bold;*/
+}
+
+/* ==========================================================================
+  Gallery
+   ========================================================================== */
+
+main div.gallery {
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  /*-webkit-flex-flow: wrap; */
+
+}
+
+main div.gallery article{
+  display: inline-block;
+  margin-bottom: 2em;
+  max-width: 500px;
+}
+
+main div.gallery figure {
+  display: inline;
+}
+main div.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Price
+   ========================================================================== */
+
+div.price {
+  background: white;
+  color: black;
+  max-width:900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 3em 3em 3em;
+}
+
+div.price > div {
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-flex-flow: wrap; 
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+div.price div div{
+  /*min-width: 300px;*/
+}
+
+
+
+div.price a:link, div.price a:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+div.price a:hover {
+}
+
+div.price a:active {
+  font-weight: bold;
+  border-bottom: 1px dotted black;
+}
+
+
+div.wechat {
+  text-align: center;
+  background: white;
+  color: black;
+  max-width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:3em;
+  padding-bottom: 1em;
+  /*padding: 3em 3em 3em 3em;*/
+}
+
+div.price ol > li {
+  font-size: 1.2em;
+}
+
+/* ==========================================================================
+  locations
+   ========================================================================== */
+
+main.locations ol, main.accomodations ol {
+  /*margin-bottom: 5em;*/
+}
+
+main.locations ol > li, main.accomodations ol > li {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+main.locations ol p, main.accomodations ol p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 2em;
+}
+
+main.locations ul > li, main.accomodations ul > li {
+  margin-top: 0.5em;
+  /*font-size: 1.4em;*/
+  list-style: none;
+}
+
+main.locations span, main.accomodations span {
+  padding-right: 5px;
+}
+
+main.locations p.delimiter, main.accomodations p.delimter {
+  margin-bottom: 0em;
+  margin-top: 0em;
+  /*line-height: 0;*/
+}
+
+/* ==========================================================================
+  locations
+   ========================================================================== */
+
+main.about a:link, main.about a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+main.about a:hover {
+  border-bottom: none;
+}
+
+main.about a:active {
+  font-weight: bold;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+p.footer {
+  font-size: 1.2em;
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  margin-top: 5em;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-device-width : 768px) {
+  body {
+    padding: 5em 5em 3em 5em;
+  }
+
+  div.price {
+    padding: 50px 80px;
+  }  
+}
