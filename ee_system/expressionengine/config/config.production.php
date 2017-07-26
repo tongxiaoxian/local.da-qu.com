@@ -42,8 +42,8 @@ $config['sc_temp_path'] = "/tmp";
 $config['tz_country'] = "cn";
 
 
-$config['site_url'] = "http://www.da-qu.com/";
-$config['tmpl_file_basepath']   = "/var/www/html/da-qu.com/public_html/templates";
+// $config['site_url'] = "http://www.da-qu.com/";
+// $config['tmpl_file_basepath']   = "/var/www/html/da-qu.com/public_html/templates";
 
 $config['theme_folder_url'] = "http://www.da-qu.com/assets/themes/";
 $config['theme_folder_path'] = "/var/www/html/da-qu.com/public_html/assets/themes/";
