@@ -1,4 +1,4 @@
- <?php
+<?php
 /**
  * ExpressionEngine - by EllisLab
  *
@@ -41,7 +41,7 @@
  *
  */
    $assign_to_config['site_name']  = 'littlenightblindness'; 
-   $assign_to_config['cp_url'] = 'http://www.littlenightblindness.com/admin.php';
+   $assign_to_config['cp_url'] = 'http://www.littlenightblindness.com/admin.php'; 
    $assign_to_config['site_url'] = 'http://www.littlenightblindness.com/'; 
 
 
@@ -91,8 +91,37 @@ $assign_to_config['site_url'] = "http://www.littlenightblindness.com/";
 
 $assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/littlenightblindness.com/templates';
 
-$assign_to_config['upload_preferences'] = array(
-
+$assign_to_config['upload_preferences'] = array(           
+    40 => array(                                                            // ID of upload destination
+        'name'        => 'blog',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/blog/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/blog/'      // URL of upload directory
+    ),
+    41 => array(                                                            // ID of upload destination
+        'name'        => 'weddings',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/weddings/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/weddings/'      // URL of upload directory
+    ),
+    42 => array(                                                            // ID of upload destination
+        'name'        => 'portraits',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/portraits/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/portraits/'      // URL of upload directory
+    ),
+    48 => array(                                                            // ID of upload destination
+        'name'        => 'locations',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/locations/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/locations/'      // URL of upload directory
+    ),
+    49 => array(                                                            // ID of upload destination
+        'name'        => 'accomodations',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/accomodations/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/accomodations/'      // URL of upload directory
+    ),
+    50 => array(                                                            // ID of upload destination
+        'name'        => 'hospitalities',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/hospitalities/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/hospitalities/'      // URL of upload directory
+    ) 
 );
 
 //	$assign_to_config['template_group'] = '';
@@ -198,7 +227,6 @@ $assign_to_config['upload_preferences'] = array(
 
 /* End of file index.php */
 /* Location: ./index.php */
-
 
 $config['minimee'] = array(
  

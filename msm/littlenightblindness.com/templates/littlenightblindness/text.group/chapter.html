@@ -1,0 +1,46 @@
+{layout="layout/site"}
+
+<main class="locations">
+
+{exp:channel:entries channel="locations_chapter" limit="1" disable="member_data"}
+
+{layout:set name="title"}{site_name}  -  文字  -  {parents}{parents:title}{/parents}  -  {title}{/layout:set}
+
+        <img id="anystretch" src="{locations_chapter_background}"/>
+
+        <article>
+                 
+                <h1>{parents}{parents:title}{/parents}：{title}</h1>
+                
+                {locations_chapter_body}
+
+        </article>
+    
+{/exp:channel:entries} 
+
+</main>
+
+
+{layout="layout/site"}
+
+<img id="anystretch" src="{site_url}assets/images/uploads/blog.jpg"/> 
+
+<main>
+
+{exp:channel:entries channel="text" limit="1" disable="categories|member_data"}
+
+{layout:set name="title"}{site_name}  -  文字  -  {parents}{parents:title}{/parents}  -  {title}{/layout:set}
+
+		<article>
+				
+                <h1>{parents}{parents:title}{/parents}：{title}</h1>
+
+				{text_body}
+
+				<time datetime="{entry_date format="%Y"}-{entry_date format="%m"}-{entry_date format="%d"}">{entry_date format="%F %d, %Y"}</time>
+
+		</article>
+    
+{/exp:channel:entries} 
+
+</main>
