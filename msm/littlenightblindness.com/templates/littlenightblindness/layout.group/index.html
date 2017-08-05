@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{layout:title}</title>
+
+{exp:minimee:css}
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/photoswipe.css"> 
+<link rel="stylesheet" href="{site_url}libraries/css/default-skin/default-skin.css"> 
+<link rel="stylesheet" href="{site_url}libraries/css/magnific-popup.css">
+<link rel="stylesheet" href="{site_url}libraries/css/icon-fonts.css">
+<link rel="stylesheet" href="{site_url}libraries/css/site.css">
+{/exp:minimee:css}
+
+<style>
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  margin-top: 0em;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-weight: 200;
+  font-size: 62.5%;
+  min-height: 100%;
+  color: white;
+  padding: 3em 3em 2.5em 3em;
+  letter-spacing: 1px;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100%;
+}
+
+/* ==========================================================================
+   Anystretch
+   ========================================================================== */
+
+#anystretch{
+  display:none;
+}
+
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  /*letter-spacing: 1px;*/
+}
+
+h1  {
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  /*font-weight: normal;*/
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.4em;
+  margin-top: 2em;
+  letter-spacing: 1px;
+}
+
+h1 a, h1 span, h2 a, h2 span {
+  font-size: 1em;
+}
+
+p, figcaption {
+  font-size: 1.2em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+p.slogan {
+  font-size:2em;
+}
+
+time {
+  display: block;
+  font-size: 1.2em;
+  line-height: 2;
+  margin-top: 1.5em;
+  display: block;
+  margin-top: 2em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+span, a {
+  /*font-size: 1.2em; */
+}
+
+span a, a span {
+  /*font-size: 1em;*/
+}
+
+ul > li, ol > li {
+  font-size: 1.2em;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+li h2, li p {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+a:hover {
+  border-bottom: none;
+}
+
+a:active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+
+
+/* ==========================================================================
+   nav
+   ========================================================================== */
+
+nav {
+  display: -webkit-flex;
+  margin-bottom:5em;
+}
+
+nav ul li {
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 1.2em;
+  margin-top:.5em;
+  list-style: none;
+}
+
+nav ul li a.selected{
+  color: #FFF;
+  font-weight: bold;
+  font-size: 1.2em;
+  border-bottom: none;
+  
+}
+
+nav ul li a:link, nav ul li a:visited, a.prev:link, a.next:link {
+  /*border-bottom: none;*/
+}
+
+nav ul li a:hover, a.prev:hover, a.next:hover, nav ul li a:active, a.prev:active, a.next:active {
+  /*border-bottom: none;*/
+  font-weight: bold;
+}
+
+figure a:visited, figure a:link{
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  /*width: 100%;*/
+  /*height: 100vh;*/
+  position: relative;
+  margin-bottom:3em;
+}
+
+main  p {
+  max-width: 500px;
+  /*font-weight: bold;*/
+}
+
+
+/* ==========================================================================
+  Gallery
+   ========================================================================== */
+
+main div.gallery {
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  /*-webkit-flex-flow: wrap; */
+
+}
+
+main div.gallery article{
+  display: inline-block;
+  margin-bottom: 2em;
+  max-width: 500px;
+}
+
+main div.gallery figure {
+  display: inline;
+}
+main div.gallery figure a:hover {
+  /*opacity: 0.9;*/
+  border-bottom: none;
+}
+
+/* ==========================================================================
+   Price
+   ========================================================================== */
+
+div.price {
+  background: white;
+  color: black;
+  max-width:900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3em 3em 3em 3em;
+}
+
+div.price > div {
+  display: -webkit-flex;
+  -webkit-justify-content: space-between;
+  -webkit-flex-flow: wrap; 
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+}
+
+div.price div div{
+  /*min-width: 300px;*/
+}
+
+
+
+div.price a:link, div.price a:visited {
+  color: black;
+  text-decoration: none;
+  border-bottom: 1px dotted black;
+}
+
+div.price a:hover {
+}
+
+div.price a:active {
+  font-weight: bold;
+  border-bottom: 1px dotted black;
+}
+
+
+div.wechat {
+  text-align: center;
+  background: white;
+  color: black;
+  max-width:300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:3em;
+  padding-bottom: 1em;
+  /*padding: 3em 3em 3em 3em;*/
+}
+
+div.price ol > li {
+  font-size: 1.2em;
+}
+
+/* ==========================================================================
+  destinations
+   ========================================================================== */
+
+main.destinations ol, main.accomodations ol {
+  /*margin-bottom: 5em;*/
+}
+
+main.destinations ol > li, main.accomodations ol > li {
+  margin-top: 0.5em;
+  font-size: 1.2em;
+}
+
+main.destinations ol p, main.accomodations ol p {
+  margin-top: 0em;
+  margin-bottom: 0em;
+  margin-left: 2em;
+}
+
+main.destinations ul > li, main.accomodations ul > li {
+  margin-top: 0.5em;
+  /*font-size: 1.4em;*/
+  list-style: none;
+}
+
+main.destinations span, main.accomodations span {
+  padding-right: 5px;
+}
+
+main.destinations p.delimiter, main.accomodations p.delimter {
+  margin-bottom: 0em;
+  margin-top: 0em;
+  /*line-height: 0;*/
+}
+
+/* ==========================================================================
+  destinations
+   ========================================================================== */
+
+main.about a:link, main.about a:visited {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px dotted white;
+}
+
+main.about a:hover {
+  border-bottom: none;
+}
+
+main.about a:active {
+  font-weight: bold;
+}
+
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+p.footer {
+  font-size: 1.2em;
+  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  margin-top: 5em;
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+
+@media only screen and (min-device-width : 768px) {
+  body {
+    padding: 5em 5em 3em 5em;
+  }
+
+  div.price {
+    padding: 50px 80px;
+  }  
+}	
+
+</style>
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?c029ae62342c0272778abb00422f3978";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+</head>
+
+<body>
+
+<!-- <div class="backstretch"></div> -->
+
+<nav>
+	<ul>
+		<li><a {if segment_1 == '' OR segment_1 == 'images'}class="selected" {/if}href="{path="images/index"}">影像</a><span>/</span></li>
+		<li><a {if segment_1 == 'text'}class="selected" {/if}href="{path="text/index"}">文字</a><span>/</span></li>
+		<li><a {if segment_1 == 'meeting'}class="selected" {/if}href="{path="meeting/index"}">见面及款待</a><span>/</span></li>
+		<li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于</a></li>
+	</ul>
+</nav>
+
+{layout:contents}
+
+<p class="footer">&#169;2017 小夜盲LittleNightblindness</p>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/masonry.pkgd.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+{/exp:minimee:js}
+
+
+</body>
+
+</html>
