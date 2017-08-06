@@ -395,12 +395,12 @@ var _hmt = _hmt || [];
 <!-- <div class="backstretch"></div> -->
 
 <nav>
-	<ul>
-		<li><a {if segment_1 == '' OR segment_1 == 'images'}class="selected" {/if}href="{path="images/index"}">影像</a><span>/</span></li>
-		<li><a {if segment_1 == 'text'}class="selected" {/if}href="{path="text/index"}">文字</a><span>/</span></li>
-		<li><a {if segment_1 == 'meeting'}class="selected" {/if}href="{path="meeting/index"}">见面及款待</a><span>/</span></li>
-		<li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于</a></li>
-	</ul>
+  <ul>
+    <li><a {if segment_1 == '' OR segment_1 == 'story'}class="selected" {/if}href="{path="story/index"}">咖啡馆的故事</a><span>/</span></li>
+    <li><a {if segment_1 == 'bakery'}class="selected" {/if}href="{path="bakery/index"}">烘焙与饮品</a><span>/</span></li>
+    <li><a {if segment_1 == 'shelf'}class="selected" {/if}href="{path="shelf/index"}">杂物架</a><span>/</span></li>
+    <li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于</a></li>
+  </ul>
 </nav>
 
 {layout:contents}
