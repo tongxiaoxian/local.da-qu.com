@@ -41,8 +41,8 @@
  *
  */
    $assign_to_config['site_name']  = 'tongxiaoxian'; 
-   $assign_to_config['cp_url'] = 'http://www.da-qu.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://www.da-qu.com/'; 
+   $assign_to_config['cp_url'] = 'http://tongxiaoxian.da-qu.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://tongxiaoxian.da-qu.com/'; 
 
 
 /*
@@ -87,7 +87,7 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://www.da-qu.com/";
+$assign_to_config['site_url'] = "http://tongxiaoxian.da-qu.com/";
 
 $assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/templates';
 
@@ -213,7 +213,7 @@ $config['minimee'] = array(
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://www.da-qu.com/cache',
+    'cache_url'         => 'http://tongxiaoxian.da-qu.com/cache',
  
     /**
      * ==============================================
