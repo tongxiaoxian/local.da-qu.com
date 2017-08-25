@@ -1,119 +1,135 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 /* ==========================================================================
    Body
    ========================================================================== */
 
 *, *:before, *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-user-select: text;  
+  -webkit-user-select: text;  
+  -ms-user-select: text;
+  -moz-touch-callout: none;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
 }
 
 p {
   -webkit-margin-before: 0em;
   -webkit-margin-after: 0em;
-  margin-top: 0em;
 }
 
 ul {
   -webkit-padding-start: 0px;
-  padding: 0;
+  padding:0;
+  margin-top: 0;
 }
 
-html {
-  height: 100%
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-position:inside;
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-weight: 200;
+  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  min-height: 100%;
-  color: white;
-  padding: 3em 3em 2.5em 3em;
-  letter-spacing: .5px;
-  -webkit-font-smoothing: antialiased;
+  background-color: #eeedeb;
 }
-
-/* ==========================================================================
-   Anystretch
-   ========================================================================== */
-
-#anystretch{
-  display:none;
-}
-
 
 /* ==========================================================================
    General Typography
    ========================================================================== */
 
 *, *:before, *:after {
-  /*letter-spacing: 1px;*/
+  letter-spacing: .5px;
 }
 
-h1  {
-  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  /*font-weight: normal;*/
-  font-size: 1.5em;
-  letter-spacing: 1px;
-  margin-bottom: 1em;
+h1, h2, h3, h4, h5, h6 {
+  font-style: normal;
+  font-size: 1.1em;
 }
 
-h2 {
-  font-size: 1.4em;
-  margin-top: 2em;
-  letter-spacing: 1px;
-}
-
-h1 a, h1 span, h2 a, h2 span {
+* > a, * > span {
   font-size: 1em;
 }
 
-p, figcaption {
-  font-size: 1.2em;
-  line-height: 2;
-  margin-bottom: 1em;
-}
-
-p.slogan {
-  font-size:2em;
-}
-
-time {
+p, figcaption, time, blockquote {
   display: block;
-  font-size: 1.2em;
-  line-height: 2;
-  margin-top: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.9;
+  letter-spacing: 1px;
+}
+
+img {
   display: block;
-  margin-top: 2em;
+  margin: 0 auto;
 }
 
-p a, p span {
-  font-size: 1em; 
+#backstretch{
+  display:none;
 }
 
-span, a {
-  /*font-size: 1.2em; */
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFF;
+  z-index: 1;
+  cursor: pointer;
+  padding: 25px;
 }
 
-span a, a span {
-  /*font-size: 1em;*/
+header div.text {
+  max-width: 50%;
+  position: fixed;
+  bottom: 120px;
+  left: 25px;
 }
 
-ul > li, ol > li {
-  font-size: 1.2em;
+header h1 {
+  letter-spacing: 1px;
+  margin-bottom: 2px;
+
 }
 
-article img {
-  max-width: 100%;
-  height: auto;
+header > p {
+  margin-top: 100px;
+  max-width: 500px;
 }
 
-li h2, li p {
-  font-size: 1em;
-  font-weight: normal;
+/* ==========================================================================
+   Screen Saver
+   ========================================================================== */
+
+#saver {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #FFF;
+  z-index: 10;
+  cursor: pointer;
+  padding: 25px;
+}
+
+#saver h1 {
+  position: absolute;
+  bottom: 0px;
+  font-size: 3em;
 }
 
 /* ==========================================================================
@@ -121,235 +137,120 @@ li h2, li p {
    ========================================================================== */
 
 a:link, a:visited {
-  color: white;
+  color: #000;
   text-decoration: none;
-  border-bottom: 1px dotted white;
 }
 
 a:hover {
   border-bottom: none;
+  font-weight: bold;
 }
 
 a:active {
-  font-weight: bold;
   border-bottom: none;
 }
 
-
-
 /* ==========================================================================
-   nav
+   Nav
    ========================================================================== */
 
 nav {
-  display: -webkit-flex;
-  margin-bottom:5em;
+  margin-top: 8px;
+  margin-left: 25px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {  
+  display: flex;
 }
 
 nav ul li {
-  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 1.2em;
-  margin-top:.5em;
+  font-size: 1.1em;
+  margin-right: 1em;
+  margin-top: 1em;
   list-style: none;
 }
 
-nav ul li a.selected{
-  color: #FFF;
-  font-weight: bold;
-  font-size: 1.1em;
-  border-bottom: none;
-  
+nav ul li:last-child {
+  margin-right: 0em;
 }
 
-nav ul li a:link, nav ul li a:visited, a.prev:link, a.next:link {
-  /*border-bottom: none;*/
+nav ul li a:link, nav ul li a:visited {
+  color: #AAA;
 }
 
-nav ul li a:hover, a.prev:hover, a.next:hover, nav ul li a:active, a.prev:active, a.next:active {
-  /*border-bottom: none;*/
-  font-weight: bold;
+nav ul li a.selected:link, nav ul li a.selected:visited {
+  font-style: normal;
 }
 
-figure a:visited, figure a:link{
-  border-bottom: none;
+nav ul li a:hover, nav ul li a:active {
+  font-style: italic;
 }
 
+li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(209, 230, 223, 0.9);
+}
+
+li.underline a {
+  position: relative;
+  top: 10px;
+}
 
 /* ==========================================================================
    Main
    ========================================================================== */
 
 main {
-  position: relative;
-  margin-bottom:3em;
+  margin-top: 100px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-main  p {
-  max-width: 500px;
-  /*font-weight: bold;*/
+main p {
+  max-width: 600px;
 }
 
 /* ==========================================================================
-  Gallery
+   Table
    ========================================================================== */
 
-main div.gallery {
-  /*display: -webkit-flex;*/
-  /*display: flex;*/
-  /*-webkit-flex-flow: wrap; */
-
-}
-
-main div.gallery article{
-  display: inline-block;
-  margin-bottom: 2em;
+div.container {
   max-width: 500px;
 }
 
-main div.gallery figure {
-  display: inline;
-}
-main div.gallery figure a:hover {
-  /*opacity: 0.9;*/
-  border-bottom: none;
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 5em;
 }
 
-/* ==========================================================================
-   Price
-   ========================================================================== */
-
-div.price {
-  background: white;
-  color: black;
-  max-width:900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 3em 3em 3em 3em;
+table caption {
+  text-align: left;
+  padding-bottom: 2em;
 }
 
-div.price > div {
-  display: -webkit-flex;
-  -webkit-justify-content: space-between;
-  -webkit-flex-flow: wrap; 
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
+table th, table td {
+  font-size: 1.1em;
+  padding-bottom: 5px;
 }
 
-div.price div div{
-  /*min-width: 300px;*/
+table th {
+  font-weight: normal;
+  padding-bottom: 5px;
 }
 
-
-
-div.price a:link, div.price a:visited {
-  color: black;
-  text-decoration: none;
-  border-bottom: 1px dotted black;
+table th.year {
+  width: 25%;
 }
 
-div.price a:hover {
+table .type {
+  text-align: right;
 }
 
-div.price a:active {
-  font-weight: bold;
-  border-bottom: 1px dotted black;
-}
-
-
-div.wechat {
-  text-align: center;
-  background: white;
-  color: black;
-  max-width:300px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top:3em;
-  padding-bottom: 1em;
-  /*padding: 3em 3em 3em 3em;*/
-}
-
-div.price ol > li {
-  font-size: 1.2em;
-}
-
-/* ==========================================================================
-  locations
-   ========================================================================== */
-
-main.locations ol, main.accomodations ol {
-  /*margin-bottom: 5em;*/
-}
-
-main.locations ol > li, main.accomodations ol > li {
-  margin-top: 0.5em;
-  font-size: 1.2em;
-}
-
-main.locations ol p, main.accomodations ol p {
-  margin-top: 0em;
-  margin-bottom: 0em;
-  margin-left: 2em;
-}
-
-main.locations ul > li, main.accomodations ul > li {
-  margin-top: 0.5em;
-  /*font-size: 1.4em;*/
-  list-style: none;
-}
-
-main.locations span, main.accomodations span {
-  padding-right: 5px;
-}
-
-main.locations p.delimiter, main.accomodations p.delimter {
-  margin-bottom: 0em;
-  margin-top: 0em;
-  /*line-height: 0;*/
-}
-
-/* ==========================================================================
-  locations
-   ========================================================================== */
-
-main.about a:link, main.about a:visited {
-  color: white;
-  text-decoration: none;
-  border-bottom: 1px dotted white;
-}
-
-main.about a:hover {
-  border-bottom: none;
-}
-
-main.about a:active {
-  font-weight: bold;
-}
-
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-p.footer {
-  font-size: 1.2em;
-  font-family: "Myriad Pro", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  margin-top: 5em;
-}
-
-
-/* ==========================================================================
-   Media Queries
-   ========================================================================== */
-
-
-@media only screen and (min-device-width : 768px) {
-  body {
-    padding: 5em 5em 3em 5em;
-  }
-
-  div.price {
-    padding: 50px 80px;
-  }  
+table thead tr {
+  text-align: left;
 }
