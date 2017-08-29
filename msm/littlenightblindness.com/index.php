@@ -96,21 +96,6 @@ $assign_to_config['upload_preferences'] = array(
         'name'        => 'journal',                          // Display name in control panel
         'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/littlenightblindness.com/assets/images/uploads/journal/', // Server path to upload directory
         'url'         => 'http://local.littlenightblindness.com/assets/images/uploads/journal/'      // URL of upload directory
-    ),
-    61 => array(                                                            // ID of upload destination
-        'name'        => 'bakery',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/littlenightblindness.com/assets/images/uploads/bakery/', // Server path to upload directory
-        'url'         => 'http://local.littlenightblindness.com/assets/images/uploads/bakery/'      // URL of upload directory
-    ),
-    62 => array(                                                            // ID of upload destination
-        'name'        => 'shelf',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/littlenightblindness.com/assets/images/uploads/shelf/', // Server path to upload directory
-        'url'         => 'http://local.littlenightblindness.com/assets/images/uploads/shelf/'      // URL of upload directory
-    ),
-    63 => array(                                                            // ID of upload destination
-        'name'        => 'about',                          // Display name in control panel
-        'server_path' => '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/littlenightblindness.com/assets/images/uploads/about/', // Server path to upload directory
-        'url'         => 'http://local.littlenightblindness.com/assets/images/uploads/about/'      // URL of upload directory
     )
 );
 
