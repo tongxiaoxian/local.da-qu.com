@@ -96,7 +96,22 @@ $assign_to_config['upload_preferences'] = array(
         'name'        => 'journal',                          // Display name in control panel
         'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/journal/', // Server path to upload directory
         'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/journal/'      // URL of upload directory
-    )
+    ),
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'food',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/food/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/food/'      // URL of upload directory
+    ),
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'shelf',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/shelf/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/shelf/'      // URL of upload directory
+    ),
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'about',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/littlenightblindness.com/assets/images/uploads/about/', // Server path to upload directory
+        'url'         => 'http://www.littlenightblindness.com/assets/images/uploads/about/'      // URL of upload directory
+    )    
 );
 
 //	$assign_to_config['template_group'] = '';
