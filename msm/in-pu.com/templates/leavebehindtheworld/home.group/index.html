@@ -1,0 +1,21 @@
+{layout="home/layout" title="飞到世界的另外一边"}
+	
+<main class="works_main">
+
+	{exp:channel:entries channel="works_main" sort="asc" status="open|preparing" disable="categories|member_data"}
+    
+	  	<section>
+		    
+		    <h1{if status == "Preparing"} class="preparing"{/if} id="{url_title}"><a href="{title_permalink='home/index_chapter'}">{title}</a></h1>
+
+		    	<ol>
+		     		{works_main_relationship}
+		        		<li>{works_main_relationship:title}</li>
+		     		{/works_main_relationship}
+		    	</ol>
+		
+		</section>
+
+	{/exp:channel:entries} 
+
+</main>

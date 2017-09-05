@@ -40,9 +40,9 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'in-pu'; 
-   $assign_to_config['cp_url'] = 'http://local.in-pu.com/admin.php';
-   $assign_to_config['site_url'] = 'http://local.in-pu.com/'; 
+   $assign_to_config['site_name']  = 'leavebehindtheworld'; 
+   $assign_to_config['cp_url'] = 'http://local.leavebehindtheworld.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://local.leavebehindtheworld.com/';
 
 
 /*
@@ -87,12 +87,31 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://local.in-pu.com/";
+$assign_to_config['site_url'] = "http://local.leavebehindtheworld.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/in-pu.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
-
+    1 => array(                                                            // ID of upload destination
+        'name'        => 'photography',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/photography/', // Server path to upload directory
+        'url'         => 'http://local.leavebehindtheworld.com/assets/images/uploads/photography/'      // URL of upload directory
+    ),
+    2 => array(                                                            // ID of upload destination
+        'name'        => 'text',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/text/', // Server path to upload directory
+        'url'         => 'http://local.leavebehindtheworld.com/assets/images/uploads/text/'      // URL of upload directory
+    ),
+    3 => array(                                                            // ID of upload destination
+        'name'        => 'treatment',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/treatment/', // Server path to upload directory
+        'url'         => 'http://local.leavebehindtheworld.com/assets/images/uploads/treatment/'      // URL of upload directory
+    ),
+    4 => array(                                                            // ID of upload destination
+        'name'        => 'about',                          // Display name in control panel
+        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/about/', // Server path to upload directory
+        'url'         => 'http://local.leavebehindtheworld.com/assets/images/uploads/about/'      // URL of upload directory
+    )
 );
 
 //	$assign_to_config['template_group'] = '';
@@ -212,13 +231,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/in-pu.da-qu.com/cache',
+    'cache_path'        => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/msm/leavebehindtheworld.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://local.in-pu.com/cache',
+    'cache_url'         => 'http://local.leavebehindtheworld.com/cache',
  
     /**
      * ==============================================

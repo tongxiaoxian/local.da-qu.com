@@ -1,42 +1,70 @@
-$(document).ready(function() {
-    $('body').click(function() {
-        $('#curtain').velocity('transition.fadeOut', {duration: 800})
-    });
-});
+/* ==========================================================================
+   horizontal scroll
+   ========================================================================== */
 
 $(document).ready(function() {
-  $('body').swipe({
-    //Generic swipe handler for all directions
-    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('#curtain').velocity('transition.fadeOut', {duration: 800});
-    },
-        threshold:0,
-        fingers:'all'
-    });
-
+	$(function() {
+		$('html').bind('mousewheel', function(event, delta, deltaX, deltaY) {
+			var scroll = parseInt( $(window).scrollLeft() );
+		$('html, body, main').scrollLeft( scroll - ( deltaY * 5 ) );
+			event.preventDefault();
+		});
+	});
 });
+
+
+/* ==========================================================================
+   h1.preparing
+   ========================================================================== */
 
 $(document).ready(function() {
-  $(".animsition").animsition({
-    inClass: 'fade-in',
-    outClass: 'fade-out',
-    inDuration: 1500,
-    outDuration: 800,
-    linkElement: '.animsition-link',
-    // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
-    loading: true,
-    loadingParentElement: 'body', //animsition wrapper element
-    loadingClass: 'animsition-loading',
-    loadingInner: '', // e.g '<img src="loading.svg" />'
-    timeout: false,
-    timeoutCountdown: 5000,
-    onLoadEvent: true,
-    browser: [ 'animation-duration', '-webkit-animation-duration'],
-    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-    overlay : false,
-    overlayClass : 'animsition-overlay-slide',
-    overlayParentElement : 'body',
-    transition: function(url){ window.location.href = url; }
-  });
+	$('h1.preparing a').click(function(e){
+		e.preventDefault(); 
+	});
 });
+
+/* ==========================================================================
+   Center Layout
+   ========================================================================== */
+   
+$(document).ready(function() {
+	var window_height = $(window).height();
+	var works_main = $('main.works_main');
+	var works_chapter = $('main.works_chapter');
+	var works_detail = $('main.works_detail');
+	
+	works_main.css({
+		'padding-top': window_height/2 - 120 + 'px'
+	});
+
+	works_chapter.css({
+		'padding-top': window_height/2 - 200 + 'px'
+	});
+
+	works_detail.css({
+		'padding-top': window_height/2 - 120 + 'px'
+	});		
+
+});
+
+
+/* ==========================================================================
+   Space Between
+   ========================================================================== */
+
+$(document).ready(function() {
+	var window_width = $(window).width();
+	var section_first = $('main.works_main section:first');
+	var section = $('main.works_main section');
+	var section_margin_left = window_width/2 - section_first.width()/2;
+	
+	section.css({
+		'margin-left': section_margin_left + 'px',
+		'margin-right': section_margin_left + 'px',
+	});
+
+});
+	
+
+
+
