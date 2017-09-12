@@ -398,12 +398,21 @@ var _hmt = _hmt || [];
 
 <nav>
   <ul>
+    <li>日记<span>/</span></li>
+    <li>烘焙及饮品<span>/</span></li>
+    <li>书架<span>/</span></li>
+    <li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于咖啡馆</a></li>
+  </ul>
+</nav>
+
+<!-- <nav>
+  <ul>
     <li><a {if segment_1 == '' OR segment_1 == 'journal'}class="selected" {/if}href="{path="journal/index"}">日记</a><span>/</span></li>
     <li><a {if segment_1 == 'bakery'}class="selected" {/if}href="{path="bakery/index"}">烘焙及饮品</a><span>/</span></li>
     <li><a {if segment_1 == 'shelf'}class="selected" {/if}href="{path="shelf/index"}">书架</a><span>/</span></li>
     <li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于咖啡馆</a></li>
   </ul>
-</nav>
+</nav> -->
 
 {layout:contents}
 
