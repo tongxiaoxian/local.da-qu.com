@@ -401,7 +401,7 @@ var _hmt = _hmt || [];
     <li>日记<span>/</span></li>
     <li>烘焙及饮品<span>/</span></li>
     <li>书架<span>/</span></li>
-    <li><a {if segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于咖啡馆</a></li>
+    <li><a {if segment_1 == '' OR segment_1 == 'about'}class="selected" {/if}href="{path="about/index"}">关于咖啡馆</a></li>
   </ul>
 </nav>
 
