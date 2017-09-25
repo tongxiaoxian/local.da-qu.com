@@ -1,0 +1,50 @@
+{layout="layout/index" body="sample" service="work" header="black"}
+
+	{exp:channel:entries channel="sample" limit="1" disable="categories|member_data"}
+	
+	{layout:set name="title"}大屈攝影（摄影）- 摄影工作室 - 證件照&amp;形象照 - {title} - 广州 &amp; 深圳 &amp; 三亚 &amp; 海口{/layout:set}
+
+		<main>
+
+			<article class="backstretch">
+				
+				<div class="title">
+					<!-- <p>證件照&amp;形象照*</p> -->
+					<!-- <h1>{sample_title}</h1> -->
+				</div>
+
+				<div class="guide">
+					<span class="icon-phone-portrait orientation"></span>
+					<p class="mention">* 上下滑動或翻轉屏幕瀏覽</p>
+				</div>
+
+				{sample_cover}
+					<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+				{/sample_cover}
+
+			</article>
+
+			{sample_gallery}
+
+				{sample_gallery:sample_gallery_file}
+			
+					<article class="backstretch">
+						<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+					</article>
+			
+				{/sample_gallery:sample_gallery_file}
+			
+			{/sample_gallery}
+
+			<a href="https://i.meituan.com/deal/44195079.html">
+			
+				<article class="return">
+					<span class="pointer">&#8681;</span>
+					<p>点击此处进入团购</p>
+				</article>
+			
+			</a>
+
+		</main>
+
+{/exp:channel:entries}
