@@ -86,6 +86,7 @@ p {
 img {
   max-width: 100%;
   display: block;
+  margin: 10em auto;
 }
 
 #backstretch{
@@ -212,6 +213,7 @@ main {
 }
 
 main p {
+  text-align: center; 
   max-width: 600px;
 }
 
@@ -336,54 +338,23 @@ table thead tr {
 </head>
 
 <body>
-<!-- 
-  <nav>
+
+<main class="photography">
+   
+   <article>
+
+    <div>
+      <a href="http://www.tongxiaoxian.com"><img src="{site_url}assets/images/uploads/photography/DSCF6137-2.jpg" width="50%" /></a>
+    </div> 
+
+    <div>
+      <p>点击进入</p>
+      <p>Press to enter</p>
+    </div>
     
-    <ul>
-      <li {if segment_1 == "" OR segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="{path="photography/index"}">I.<br>拍摄作品</a></span></li>
-      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a href="#">II.<br>存档</a></span></li>
-      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="#">III.<br>暗房及输出</a></span></li>
-    </ul>
-
-    <ul class="second">
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="#">IV.<br>工作</a></span></li>
-      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="#">V.<br>关于</a></span></li>
-    </ul>
-
-  </nav> -->
-
-  <nav>
-    
-    <ul>
-      <li {if segment_1 == "" OR segment_1 == 'photography'}class="underline"{/if}><span><a class="selected" {/if}href="http://www.tongxiaoxian.com/index.php/photography">I.<br>拍摄作品</a></span></li>
-      <li {if segment_1 == 'archive'}class="underline"{/if}><span><a href="http://www.tongxiaoxian.com/index.php/archive">II.<br>存档</a></span></li>
-      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="http://www.tongxiaoxian.com/index.php/studio">III.<br>暗房及输出</a></span></li>
-    </ul>
-
-    <ul class="second">
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="http://www.tongxiaoxian.com/index.php/schedule">IV.<br>工作</a></span></li>
-      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="http://www.tongxiaoxian.com/index.php/about">V.<br>关于</a></span></li>
-    </ul>
-
-  </nav>
-
-
-<main>
-
-	<p>童孝贤，摄影师，从事时尚及艺术摄影，目前接受来自全国主要城市的摄影工作及邀约。</p>
-
-	<p>现居：深圳 &amp; 广州，往返：广州 &amp; 深圳 &amp; 三亚 &amp; 海口<br>微信：tongxiaoxian1839</p>
-
-	<!-- <p>微信：tongxiaoxian1839</p> -->
-
-
-	<!-- <p>链接：<a href="http://www.leavebehindtheworld.com">飞到世界的另外一边</a></p> -->
-
+  </article>
+  
 </main>
-
-  <header>
-      <p><a href="http://www.tongxiaoxian.com/">童孝贤的摄影本</a></p>
-  </header>
 
 <script type="text/javascript" src="http://www.tongxiaoxian.com/libraries/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="http://www.tongxiaoxian.com/libraries/js/jquery.backstretch.min.js"></script>
@@ -402,5 +373,9 @@ table thead tr {
 </body>
 
 </html>
+
+
+
+
   
 
