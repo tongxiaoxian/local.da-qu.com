@@ -118,90 +118,6 @@ main a:link, main a:visited {
   border-bottom: 1px solid #000;
 }
 
-/* ==========================================================================
-   Header
-   ========================================================================== */
-
-header {
-  margin-left: 17px;
-  margin-right: 17px;  
-  margin-top: 5em;
-}
-
-header h1 {
-  font-weight: normal;
-}
-
-header p {
-  font-weight: bold;
-  font-size: 1.2em;
-  margin-bottom: 1em;
-}
-
-header p a:link, header p a:visited {
-  /*color: #AAA;*/
-}
-
-
-/* ==========================================================================
-   Nav
-   ========================================================================== */
-
-nav {
-  margin-top: 8px;
-  margin-left: 17px;
-  margin-right: 17px;
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {  
-  display: flex;
-  /*margin-right: 1em;*/
-}
-
-nav ul li {
-  font-weight: bold;
-  line-height: 1.7;
-  font-size: 1.2em;
-  margin-right: 2em;
-  margin-top: 1em;
-  list-style: none;
-}
-
-nav ul.second li:last-child {
-  margin-right: 0em;
-}
-
-nav ul li a:link, nav ul li a:visited {
-  /*color: #AAA;*/
-}
-
-nav ul li.underline a:link, nav ul li.underline a:visited {
-	color: #000;
-  /*font-weight: bold;*/
-  /*font-style: italic;*/
-}
-
-nav ul li a:hover, nav ul li a:active {
-  color: #000;
-  font-weight: normal;
-  /*font-style: italic;*/
-}
-
-li.underline span {
-  position: relative;
-  top: -10px;
-  /*border-bottom: 8px solid rgba(209, 230, 223, 0.9);*/
-  border-bottom: 8px solid rgba(0, 0, 0, 0.2);
-
-}
-
-li.underline a {
-  position: relative;
-  top: 10px;
-}
 
 /* ==========================================================================
    Main
@@ -216,103 +132,6 @@ main p {
   text-align: center; 
 }
 
-
-/* ==========================================================================
-   Main Commercial
-   ========================================================================== */
-
-main.commercial article {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin-bottom: 8em;  
-}
-
-main.commercial article h1 + p {
-  margin-bottom: 1em;
-}
-
-main.commercial article div.gallery {
-  
-}
-
-main.commercial img {
-  display: block;
-  width: 800px;
-  margin-bottom: 2em;
-}
-
-
-/* ==========================================================================
-   Main Schedule
-   ========================================================================== */
-
-main.schedule {
-  /*display: flex;*/
-  /*flex-wrap: wrap;*/
-}
-
-main.schedule div {
-  width: 100%;
-  /*max-width: 400px;*/
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 5em;
-}
-
-main.schedule div ul {
-  text-align: right;
-}
-
-
-
-/* ==========================================================================
-   Main Personal
-   ========================================================================== */
-
-div.container {
-  max-width: 500px;
-}
-
-p.instruction {
-  letter-spacing: 5px;
-}
-
-table {
-  width: 100%;
-  table-layout: fixed;
-  margin-bottom: 2em;
-}
-
-table caption {
-  text-align: left;
-  padding-bottom: 2em;
-}
-
-table th, table td {
-  font-size: 1.2em;
-  padding-bottom: 4px;
-  padding-top: 4px;
-}
-
-table th {
-  font-weight: normal;
-  padding-bottom: 5px;
-}
-
-table th.year, table th.type {
-  width: 25%;
-}
-
-table th.type, table td.type {
-  width: 20%;
-  text-align: right;
-}
-
-table thead tr {
-  text-align: left;
-} 
 
 
 /* ==========================================================================
@@ -338,20 +157,14 @@ table thead tr {
 
 <body>
 
-<main class="photography">
+<main>
    
-   <article>
+  <a href="http://www.tongxiaoxian.com"><img src="{site_url}assets/images/uploads/photography/DSCF6137-2.jpg" width="50%" /></a>
 
-    <div>
-      <a href="http://www.tongxiaoxian.com"><img src="{site_url}assets/images/uploads/photography/DSCF6137-2.jpg" width="50%" /></a>
-    </div> 
-
-    <div>
-      <p>点击进入</p>
-      <p>Press to enter</p>
-    </div>
-    
-  </article>
+  <div>
+    <p>点击进入</p>
+    <p>Press to enter</p>
+  </div>
   
 </main>
 
