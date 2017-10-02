@@ -74,10 +74,6 @@ span a, a span {
   font-size: 1.1em;
 }
 
-span {
-  display: block;
-  text-align: center;
-}
 
 img {
   display: block;
@@ -128,25 +124,8 @@ header h1 {
 	position: absolute;
 	top:15px;
 	left:25px;
-	font-weight: normal;
+	font-weight: bold;
 }
-
-
-header span {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 2.5em;
-}
-
-
-header.index img#logo {
-  position: absolute;
-  left: 50%;
-  top: 45%;
-  transform: translate(-50%,0);
-}
-
 
 header a:link, header a:visited {
   color: white;
@@ -155,17 +134,16 @@ header a:link, header a:visited {
 
 header {
   height: 100vh;
+  padding-bottom: 2em;
   background: black;
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  -webkit-flex-direction: column;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   color: white; 
 }
+
+
 
 header p.arrow {
   position: absolute;
@@ -175,23 +153,36 @@ header p.arrow {
   font-size: 1em;
 }
 
+section .section-description .button {
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 100px;
+    padding: 10px 15px 8px;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+    outline: none
+}
 
 /* ==========================================================================
    Nav
    ========================================================================== */
 
 nav {
+  position: absolute;
+  left: 25px;
+  top: 40px;
   margin-bottom:6em;
 }
 
 nav ul {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
+  /*display: -webkit-flex;*/
+  /*display: flex;*/
+  /*-webkit-justify-content: center;*/
+  /*justify-content: center;*/
 }
 
 nav ul li {
+  opacity: 0.75;
+  font-size: 1.2em;
   margin-right: 0.5em;
   list-style: none;
 }
