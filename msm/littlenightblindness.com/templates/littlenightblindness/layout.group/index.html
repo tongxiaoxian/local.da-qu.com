@@ -165,30 +165,7 @@ section .section-description .button {
     outline: none
 }
 
-/* ==========================================================================
-   Nav
-   ========================================================================== */
 
-nav {
-  position: absolute;
-  left: 25px;
-  top: 40px;
-  margin-bottom:6em;
-}
-
-nav ul {
-  /*display: -webkit-flex;*/
-  /*display: flex;*/
-  /*-webkit-justify-content: center;*/
-  /*justify-content: center;*/
-}
-
-nav ul li {
-  opacity: 0.75;
-  font-size: 1.2em;
-  margin-right: 0.5em;
-  list-style: none;
-}
 
 /* ==========================================================================
    Main
@@ -209,7 +186,7 @@ main article h1 {
 }
 
 main section {
-  margin-bottom:10em;
+  margin-bottom:2em;
   margin-left: auto;
   margin-right: auto;  
   display: -webkit-flex;
@@ -230,6 +207,27 @@ main section p.delimiter {
 main section p {
   margin-left: 1em;
   margin-right: 1em;
+}
+
+main ul li {
+  opacity: 0.75;
+  font-size: 1.1em;
+  margin-right: 0.5em;
+  list-style-type: none;
+  margin-bottom: 1em;
+}
+
+main ul li {
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;
+}
+
+
+main ul li img {
+  /*display: inline;*/
+  margin-top: 10px;
 }
 
 
