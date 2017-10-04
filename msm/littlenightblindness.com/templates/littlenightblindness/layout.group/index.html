@@ -74,6 +74,10 @@ span a, a span {
   font-size: 1.1em;
 }
 
+li span {
+  font-size: 1em;
+}
+
 
 img {
   display: block;
@@ -227,7 +231,6 @@ main ul div {
   -webkit-justify-content: center;
 }
 
-
 main ul li img {
   display: block;
   /*display: inline;*/
@@ -235,6 +238,18 @@ main ul li img {
   margin-bottom: 5px;
 }
 
+
+ul li.underline > span {
+  position: relative;
+  top: -6px;
+  border-bottom: 8px solid rgba(41, 72, 148, 0.2);
+
+}
+
+ul li.underline > span > span {
+  position: relative;
+  top: 10px;
+}
 
 
 </style>
