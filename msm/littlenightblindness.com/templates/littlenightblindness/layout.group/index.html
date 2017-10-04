@@ -136,6 +136,25 @@ header a:link, header a:visited {
   text-decoration: none;
 }
 
+header div.order {
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;  
+  margin: 2em auto;
+  padding: 1em;
+  border: 1px solid #FFF;
+  border-radius: 10px;
+  /*color: black;*/
+}
+
+header div.order:hover { 
+  cursor: pointer;
+  background: #444;
+  color: #FFF;
+  -webkit-transition-property:background; 
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-out;
+}
 
 section .section-description .button {
     border: 2px solid rgba(0, 0, 0, 0.75);
@@ -214,56 +233,6 @@ main section p {
 }
 
 
-
-main section div.order {
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;  
-  margin: 2em auto;
-  padding: 1em;
-  border: 1px solid #444;
-  color: black;
-}
-
-main section div.order:hover { 
-  cursor: pointer;
-  background: #444;
-  color: #FFF;
-  -webkit-transition-property:background; 
-  -webkit-transition-duration: 0.5s, 0.5s;
-  -webkit-transition-timing-function: linear, ease-out;
-}
-
-main section#links > div {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  /*width: 120px;*/
-}
-
-main section#links {
-  /*margin-top:6em;*/
-  margin-bottom:0em;
-}
-
-
-/* ==========================================================================
-   Footer
-   ========================================================================== */
-
-footer {
-  position: relative;
-  /*font-size: 0.9em;*/
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  -webkit-flex-flow: column;  
-}
-
-footer #footer {
-  margin-top: 3em;
-}	
 
 </style>
 
