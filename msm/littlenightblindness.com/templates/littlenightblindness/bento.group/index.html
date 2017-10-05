@@ -1,5 +1,11 @@
 {layout="layout/index" title="小夜盲的魔法便当"}
 
+<script>
+	AOS.init({
+  		duration: 1200
+	});
+</script>
+
 <header>
 
 	<div>
@@ -11,7 +17,7 @@
 
 	<div>
 
-		<time>周二，{current_time format="%i:%s %A"}</time>
+		<time>周二，{current_time format=":%s %A"}</time>
 
 		<div class="order">Add to Cart：¥ 22.00元</div>
 
@@ -65,7 +71,7 @@
 	
 	</section>
 
-	<section>
+	<section data-aos="fade-up">
 	
 		<h1>Content</h1>
 		
@@ -104,7 +110,7 @@
 		
 		<h1>Today</h1>
 
-		<p>已售出<span class="sale">10</span>份<br>库存<span class="sale">10</span>份</p>
+		<p>已售出<span class="sale">10</span>份<br>在库存<span class="sale">10</span>份</p>
 		
 		
 
@@ -131,7 +137,7 @@
 		
 
 		<p>实体店自取</p>
-		<p><a href="#">大英路66号望海国际后巷</a></p>
+		<p><a href="#">海口大英路66号望海国际后巷</a></p>
 
 		<p>小夜盲咖啡馆<br>Little Nightblindness</p>
 

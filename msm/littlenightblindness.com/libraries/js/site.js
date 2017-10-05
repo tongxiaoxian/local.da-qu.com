@@ -7,11 +7,12 @@ $(document).ready(function() {
 	document.oncontextmenu = function () { return false; }
 });
 
-$(document).ready(function() {
-    AOS.init({
-      offset: 200,
-      duration: 600,
-      easing: 'ease-in-sine',
-      delay: 100,
-    });
-});
+// $(document).ready(function() {
+//     AOS.init({
+//     	duration: 1200
+//       // offset: 200,
+//       // duration: 600,
+//       // easing: 'ease-in-sine',
+//       // delay: 100,
+//     });
+// });
