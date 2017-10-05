@@ -3,6 +3,7 @@
 <script>
   AOS.init({
       duration: 1000
+      // data-aos-once: true
   });
 </script>
 
@@ -17,7 +18,9 @@
 
 	<div>
 
-		<time>周二，{current_time format=":%s %A"}</time>
+		<h2>一人食</h2>
+
+		<time>周四，{current_time format="%l %i:%s %A"}</time>
 
 		<div class="order">Add to Cart：¥ 22.00元</div>
 
@@ -73,7 +76,7 @@
 	
 	</section>
 
-	<section>
+	<section data-aos="fade-left">
 	
 		<h1>Content</h1>
 		
@@ -107,7 +110,7 @@
 
 	</section>
 
-	<section class="sale">
+	<section class="sale" data-aos="fade-right">
 		
 		<h1>Today</h1>
 
