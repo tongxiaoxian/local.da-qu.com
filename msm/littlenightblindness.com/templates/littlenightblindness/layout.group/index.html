@@ -116,24 +116,7 @@ a:active {
    ========================================================================== */
 
 header {
-  font-size: 1.1em;
-  letter-spacing: 2px;
-  /*position: absolute;*/
-  margin-left: 25px;
-  margin-top: 25px;
-}
-
-header h1 {
-  /*font-weight: normal;*/
-}
-
-/* ==========================================================================
-   Banner
-   ========================================================================== */
-
-
-section.banner {
-  min-height: 100vh;
+  height: 100vh;
   padding-bottom: 2em;
   background: black;
   display: flex;
@@ -142,21 +125,32 @@ section.banner {
   color: white; 
 }
 
-section.banner img#play_button {
+header h1 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  /*opacity: 0.75;*/
+  font-weight: normal;
+
+}
+
+header img#play_button {
   opacity: 0.5;
 }
 
-section.banner div time {
+header div time {
   display: block;
   text-align: center;
 }
 
-section.banner a:link, section.banner a:visited {
+header a:link, header a:visited {
   color: white;
   text-decoration: none;
 }
 
-section.banner div.order {
+header div.order {
   width: 150px;
   display: -webkit-flex;
   -webkit-align-items: center; 
@@ -167,7 +161,7 @@ section.banner div.order {
   border-radius: 10px;
 }
 
-section.banner div.order:hover { 
+header div.order:hover { 
   cursor: pointer;
   background: #444;
   color: #FFF;
@@ -176,7 +170,7 @@ section.banner div.order:hover {
   -webkit-transition-timing-function: linear, ease-out;
 }
 
-section.banner .button {
+section .section-description .button {
     border: 2px solid rgba(0, 0, 0, 0.75);
     border-radius: 100px;
     padding: 10px 15px 8px;
@@ -194,23 +188,23 @@ main {
 
 }
 
-article {
+main article {
   max-width: 600px;
   margin: 0 auto;
   padding-left: 5em;
   padding-right: 5em;
 }
 
-section article h1 {
+main section article h1 {
   text-align: center;
 }
 
-section article p {
+main section article p {
   text-align: left;
 }
 
 
-section {
+main section {
   margin-top: 5em;
   margin-bottom: 5em;
   margin-left: auto;
@@ -221,17 +215,17 @@ section {
   -webkit-flex-flow: column;
 }
 
-section p.delimiter {
+main section p.delimiter {
   margin-top: 2em;
   color: #999999;
 }
 
-section p {
+main section p {
   margin-left: 1em;
   margin-right: 1em;
 }
 
-section ul li {
+main ul li {
   opacity: 0.75;
   font-size: 1.1em;
   margin-right: 0.5em;
@@ -239,33 +233,33 @@ section ul li {
   margin-top: 2em;
 }
 
-section ul li {
+main ul li {
   display: -webkit-flex;
   -webkit-align-items: center; 
   -webkit-justify-content: center;
   -webkit-flex-flow: column;
 }
 
-section ul div {
+main ul div {
   display: -webkit-flex;
   -webkit-justify-content: center;
 }
 
-section ul li img {
+main ul li img {
   display: block;
   margin-bottom: 5px;
 }
 
-section.sold {
+main section.sold {
   /*height: 70vh;*/
 }
 
-section span.sale {
+main section span.sale {
   font-size: 6em;
   padding-right: 10px;
 }
 
-section p {
+main section p {
   text-align: center;
 }
 
