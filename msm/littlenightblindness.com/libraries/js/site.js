@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var image = $('#backstretch').attr("src");
-	// $("section.banner").backstretch(image, {speed: 150});
+	$("header").backstretch(image, {speed: 150});
 });
 
 $(document).ready(function() {
