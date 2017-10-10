@@ -4,7 +4,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-	document.oncontextmenu = function () { return false; }
+	// document.oncontextmenu = function () { return false; }
 });
 
 // $(document).ready(function() {
