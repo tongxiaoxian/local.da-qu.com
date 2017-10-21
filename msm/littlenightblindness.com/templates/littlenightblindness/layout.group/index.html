@@ -107,6 +107,10 @@ p a, p span {
   font-size: 1em; 
 }
 
+ul li, ol li {
+  font-size: 1.1em;
+}
+
 span, a {
   font-size: 1.1em; 
 }
@@ -152,77 +156,20 @@ a:active {
 
 
 /* ==========================================================================
-   Header
+   Nav
    ========================================================================== */
 
-header {
-  height: 100vh;
-  padding-bottom: 2em;
-  background: black;
+nav ul {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  color: white; 
-}
-
-header h1 {
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 0;
-  /*opacity: 0.75;*/
-  font-weight: normal;
-
-}
-
-header h2 {
-  text-align: center;
-}
-
-header img#play_button {
-  opacity: 0.5;
-}
-
-header div time {
-  display: block;
-  text-align: center;
-}
-
-header a:link, header a:visited {
-  color: white;
-  text-decoration: none;
-}
-
-header div.order {
-  width: 180px;
-  display: -webkit-flex;
-  -webkit-align-items: center; 
+  -webkit-align-items: center;
   -webkit-justify-content: center;
-  margin: 0em auto 1em auto;
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 10px;
+  -webkit-align-content: space-between;
 }
 
-header div.order:hover { 
-  cursor: pointer;
-  background: #444;
-  color: #FFF;
-  -webkit-transition-property:background; 
-  -webkit-transition-duration: 0.5s, 0.5s;
-  -webkit-transition-timing-function: linear, ease-out;
-}
+nav ul li {
+  list-style: none;
 
-section .section-description .button {
-    border: 2px solid rgba(0, 0, 0, 0.75);
-    border-radius: 100px;
-    padding: 10px 15px 8px;
-    text-decoration: none;
-    margin: 0 0 0 10px;
-    outline: none
 }
-
 
 
 /* ==========================================================================
