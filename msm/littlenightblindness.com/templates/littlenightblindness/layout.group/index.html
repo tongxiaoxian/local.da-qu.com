@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.min.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
 <link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/aos.css"/>
-<link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6302992/css/fonts.css" />
+<!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/7558074/6302992/css/fonts.css" /> -->
 
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{site_url}libraries/icons/favicon/apple-touch-icon-57x57.png" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{site_url}libraries/icons/favicon/apple-touch-icon-114x114.png" />
@@ -73,7 +73,7 @@ ul {
 }
 
 body {
-  font-family: "Whitney SSm A", "Whitney SSm B", "Ideal Sans SSm A", "Ideal Sans SSm B", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Ideal Sans SSm A", "Ideal Sans SSm B", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 62.5%;
@@ -105,10 +105,6 @@ p, figcaption, time {
 
 p a, p span {
   font-size: 1em; 
-}
-
-ul li, ol li {
-  font-size: 1.1em;
 }
 
 span, a {
@@ -156,20 +152,77 @@ a:active {
 
 
 /* ==========================================================================
-   Nav
+   Header
    ========================================================================== */
 
-nav ul {
+header {
+  height: 100vh;
+  padding-bottom: 2em;
+  background: black;
   display: flex;
-  -webkit-align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white; 
+}
+
+header h1 {
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  /*opacity: 0.75;*/
+  font-weight: normal;
+
+}
+
+header h2 {
+  text-align: center;
+}
+
+header img#play_button {
+  opacity: 0.5;
+}
+
+header div time {
+  display: block;
+  text-align: center;
+}
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header div.order {
+  width: 180px;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
   -webkit-justify-content: center;
-  -webkit-align-content: space-between;
+  margin: 0em auto 1em auto;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 10px;
 }
 
-nav ul li {
-  list-style: none;
-
+header div.order:hover { 
+  cursor: pointer;
+  background: #444;
+  color: #FFF;
+  -webkit-transition-property:background; 
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-out;
 }
+
+section .section-description .button {
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 100px;
+    padding: 10px 15px 8px;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+    outline: none
+}
+
 
 
 /* ==========================================================================
