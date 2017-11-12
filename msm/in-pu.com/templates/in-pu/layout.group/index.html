@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>{layout:title}</title>
+
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.min.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/aos.css"/>
+
+
+<style>
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+  /*-webkit-margin-before: 0em;*/
+  /*-webkit-margin-after: 0em;*/
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+body {
+  font-family: "Whitney A", "Whitney B", "sourcehansans-tc", "sourcehansans-sc", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 62.5%;
+}
+
+
+
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  /*letter-spacing: 1px;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 1.1em;
+}
+
+h1 a, h1 span {
+  font-size: 1em;
+}
+
+p, figcaption, time {
+  font-size: 1.1em;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+span, a {
+  font-size: 1.1em; 
+}
+
+span a, a span {
+  font-size: 1.1em;
+}
+
+li span {
+  font-size: 1em;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+#backstretch{
+  display:none;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: #AAA*/
+}
+
+a:active {
+  /*font-weight: bold; */
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  height: 100vh;
+  padding-bottom: 2em;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  color: white; 
+}
+
+header h1 {
+	font-size: 1.2em;
+	letter-spacing: 2px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  /*opacity: 0.75;*/
+  font-weight: normal;
+
+}
+
+header img#play_button {
+  opacity: 0.5;
+}
+
+header div time {
+  display: block;
+  text-align: center;
+}
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header div.order {
+  width: 150px;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;  
+  margin: 0em auto 1em auto;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 10px;
+}
+
+header div.order:hover { 
+  cursor: pointer;
+  background: #444;
+  color: #FFF;
+  -webkit-transition-property:background; 
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-out;
+}
+
+section .section-description .button {
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    border-radius: 100px;
+    padding: 10px 15px 8px;
+    text-decoration: none;
+    margin: 0 0 0 10px;
+    outline: none
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+
+}
+
+main article {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+main section article h1 {
+  text-align: center;
+}
+
+main section article p {
+  text-align: left;
+}
+
+
+main section {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-left: auto;
+  margin-right: auto;  
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;
+}
+
+main section p.delimiter {
+  margin-top: 2em;
+  color: #999999;
+}
+
+main section p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+main ul li {
+  opacity: 0.75;
+  font-size: 1.1em;
+  margin-right: 0.5em;
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+main ul li {
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;
+}
+
+main ul div {
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+}
+
+main ul li img {
+  display: block;
+  margin-bottom: 5px;
+}
+
+main section.sold {
+  /*height: 70vh;*/
+}
+
+main section span.sale {
+  font-size: 6em;
+  padding-right: 10px;
+}
+
+main section p {
+  text-align: center;
+}
+
+</style>
+
+
+<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/aos.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+
+</head>
+
+<body>
+
+{layout:contents}
+
+</body>
+
+</html>

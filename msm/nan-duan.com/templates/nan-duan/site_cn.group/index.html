@@ -1,0 +1,61 @@
+{layout="site_cn/layout" body="homepage" title="南端旅行读本"}
+
+<header>
+
+  <a href="{path="site_cn/authors"}"><img class="avatar" width="50" height="50" src="{site_url}assets/images/uploads/sundie.jpg"/></a>
+
+  <a href="{path="site_cn/toc"}"><span class="icon-menu7"></span></a>
+
+</header>
+
+<main>
+
+  <section class="article">
+
+      <article>
+
+      <p class="english">Chapter.1</p>
+
+      <h1>一座南方岛屿及其美好的一切</h1>
+
+      <ol>
+        <li><a href="{path="site_cn/contents"}">一座南方岛屿及其美好的一切</a></li>
+        <li><a href="#">向海南出发：详尽的出发前准备</a></li>
+        <li><a href="#">飞机票攻略</a></li>
+        <li><a href="#">酒店攻略</a></li>
+      </ol>
+      
+      <img class="cover_small" src="{site_url}assets/images/uploads/hainanfen.jpg" width="100">
+
+      </article>
+
+  </section>
+
+  <section class="cover">
+
+      <img id="backstretch" src="{site_url}assets/images/uploads/hainandao.jpg">
+  
+  </section>
+
+</main>
+
+<footer>
+
+  <ul>
+
+    <li><a href="{path="site_cn/footprints"}">足迹</a></li>|
+
+    <li><a href="{path="site_cn/tips"}">锦囊</a></li>|
+
+    <li><a href="{path="site_cn/panorama"}">全景</a></li>
+
+  </ul>
+
+</footer>
+
+<script>
+  $(document).ready(function() {
+    var image = $('#backstretch').attr("src");
+    $("section.cover").backstretch(image, {speed: 150});
+  });
+</script>

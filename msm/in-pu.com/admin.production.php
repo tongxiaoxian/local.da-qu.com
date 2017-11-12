@@ -38,8 +38,8 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'leavebehindtheworld'; 
- $assign_to_config['cp_url'] = 'http://www.leavebehindtheworld.com/admin.php';
+ $assign_to_config['site_name']  = 'in-pu'; 
+ $assign_to_config['cp_url'] = 'http://www.in-pu.com/admin.php';
 
 
 /*

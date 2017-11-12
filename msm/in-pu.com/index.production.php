@@ -2,12 +2,12 @@
 /**
  * ExpressionEngine - by EllisLab
  *
- * @package		ExpressionEngine
- * @author		EllisLab Dev Team
- * @copyright	Copyright (c) 2003 - 2013, EllisLab, Inc.
- * @license		http://ellislab.com/expressionengine/user-guide/license.html
- * @link		http://ellislab.com
- * @since		Version 2.0
+ * @package     ExpressionEngine
+ * @author      EllisLab Dev Team
+ * @copyright   Copyright (c) 2003 - 2013, EllisLab, Inc.
+ * @license     http://ellislab.com/expressionengine/user-guide/license.html
+ * @link        http://ellislab.com
+ * @since       Version 2.0
  */
 
 /*
@@ -24,7 +24,7 @@
  * http://ellislab.com/expressionengine/user-guide/installation/best_practices.html
  * 
  */
-	$system_path = '../../ee_system';
+    $system_path = '../../ee_system';
 
 
 /*
@@ -40,9 +40,9 @@
  * index.php) 
  *
  */
-   $assign_to_config['site_name']  = 'leavebehindtheworld'; 
-   $assign_to_config['cp_url'] = 'http://www.leavebehindtheworld.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://www.leavebehindtheworld.com/'; 
+   $assign_to_config['site_name']  = 'in-pu'; 
+   $assign_to_config['cp_url'] = 'http://www.in-pu.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://www.in-pu.com/'; 
 
 
 /*
@@ -57,15 +57,15 @@
  * since errors happening before a user is authenticated will not normally 
  * be shown.  Options:
  *
- *	$debug = 0;  Default setting. Errors shown based on authorization level
+ *  $debug = 0;  Default setting. Errors shown based on authorization level
  *
- *	$debug = 1;  All errors shown regardless of authorization
+ *  $debug = 1;  All errors shown regardless of authorization
  *
  * NOTE: Enabling this override can have security implications.
  * Enable it only if you have a good reason to.
  * 
  */
-	$debug = 0;
+    $debug = 0;
 
 /*
  * --------------------------------------------------------------------
@@ -87,38 +87,38 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://www.leavebehindtheworld.com/";
+$assign_to_config['site_url'] = "http://www.in-pu.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/in-pu.com/templates';
 
-$assign_to_config['upload_preferences'] = array(           
-    1 => array(                                                            // ID of upload destination
-        'name'        => 'photography',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/photography/', // Server path to upload directory
-        'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/photography/'      // URL of upload directory
+$assign_to_config['upload_preferences'] = array(
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'journal',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/in-pu.com/assets/images/uploads/journal/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/journal/'      // URL of upload directory
     ),
-    2 => array(                                                            // ID of upload destination
-        'name'        => 'text',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/text/', // Server path to upload directory
-        'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/text/'      // URL of upload directory
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'food',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/in-pu.com/assets/images/uploads/food/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/food/'      // URL of upload directory
     ),
-    3 => array(                                                            // ID of upload destination
-        'name'        => 'treatment',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/treatment/', // Server path to upload directory
-        'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/treatment/'      // URL of upload directory
+    60 => array(                                                            // ID of upload destination
+        'name'        => 'shelf',                          // Display name in control panel
+        'server_path' => '/var/www/html/da-qu.com/msm/in-pu.com/assets/images/uploads/shelf/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/shelf/'      // URL of upload directory
     ),
-    4 => array(                                                            // ID of upload destination
+    60 => array(                                                            // ID of upload destination
         'name'        => 'about',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/assets/images/uploads/about/', // Server path to upload directory
-        'url'         => 'http://www.leavebehindtheworld.com/assets/images/uploads/about/'      // URL of upload directory
-    )
+        'server_path' => '/var/www/html/da-qu.com/msm/in-pu.com/assets/images/uploads/about/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/about/'      // URL of upload directory
+    )    
 );
 
-//	$assign_to_config['template_group'] = '';
-//	$assign_to_config['template'] = '';
-//	$assign_to_config['site_index'] = '';
-//	$assign_to_config['site_404'] = '';
-//	$assign_to_config['global_vars'] = array(); // This array must be associative
+//  $assign_to_config['template_group'] = '';
+//  $assign_to_config['template'] = '';
+//  $assign_to_config['site_index'] = '';
+//  $assign_to_config['site_404'] = '';
+//  $assign_to_config['global_vars'] = array(); // This array must be associative
 
 
 /*
@@ -133,16 +133,16 @@ $assign_to_config['upload_preferences'] = array(
  *  Disable all routing, send everything to the frontend
  * ---------------------------------------------------------------
  */
-	$routing['directory'] = '';
-	$routing['controller'] = 'ee';
-	$routing['function'] = 'index';
+    $routing['directory'] = '';
+    $routing['controller'] = 'ee';
+    $routing['function'] = 'index';
 
 /*
  * --------------------------------------------------------------------
  *  Mandatory config overrides
  * --------------------------------------------------------------------
  */
-	$assign_to_config['subclass_prefix'] = 'EE_';
+    $assign_to_config['subclass_prefix'] = 'EE_';
 
 /*
  * --------------------------------------------------------------------
@@ -150,60 +150,60 @@ $assign_to_config['upload_preferences'] = array(
  * --------------------------------------------------------------------
  */
 
-	if (realpath($system_path) !== FALSE)
-	{
-		$system_path = realpath($system_path).'/';
-	}
+    if (realpath($system_path) !== FALSE)
+    {
+        $system_path = realpath($system_path).'/';
+    }
 
-	// ensure there's a trailing slash
-	$system_path = rtrim($system_path, '/').'/';
+    // ensure there's a trailing slash
+    $system_path = rtrim($system_path, '/').'/';
 
-	// Is the sytsem path correct?
-	if ( ! is_dir($system_path))
-	{
-		exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
-	}
+    // Is the sytsem path correct?
+    if ( ! is_dir($system_path))
+    {
+        exit("Your system folder path does not appear to be set correctly. Please open the following file and correct this: ".pathinfo(__FILE__, PATHINFO_BASENAME));
+    }
 
 /*
  * --------------------------------------------------------------------
  *  Now that we know the path, set the main constants
  * --------------------------------------------------------------------
- */	
-	// The name of THIS file
-	define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
+ */ 
+    // The name of THIS file
+    define('SELF', pathinfo(__FILE__, PATHINFO_BASENAME));
 
-	// The PHP file extension
-	define('EXT', '.php');
+    // The PHP file extension
+    define('EXT', '.php');
 
- 	// Path to the system folder
-	define('BASEPATH', str_replace("\\", "/", $system_path.'codeigniter/system/'));
-	
-	// Path to the "application" folder
-	define('APPPATH', $system_path.'expressionengine/');
-	
-	// Path to the front controller (this file)
-	define('FCPATH', str_replace(SELF, '', __FILE__));
-	
-	// Name of the "system folder"
-	define('SYSDIR', trim(strrchr(trim(str_replace("\\", "/", $system_path), '/'), '/'), '/'));
+    // Path to the system folder
+    define('BASEPATH', str_replace("\\", "/", $system_path.'codeigniter/system/'));
+    
+    // Path to the "application" folder
+    define('APPPATH', $system_path.'expressionengine/');
+    
+    // Path to the front controller (this file)
+    define('FCPATH', str_replace(SELF, '', __FILE__));
+    
+    // Name of the "system folder"
+    define('SYSDIR', trim(strrchr(trim(str_replace("\\", "/", $system_path), '/'), '/'), '/'));
 
-	// The $debug value as a constant for global access
-	define('DEBUG', $debug);  unset($debug);
+    // The $debug value as a constant for global access
+    define('DEBUG', $debug);  unset($debug);
 
 /*
  * --------------------------------------------------------------------
  *  Set the error reporting level
  * --------------------------------------------------------------------
- */	
-	if (DEBUG == 1)
-	{
-		error_reporting(E_ALL);
-		@ini_set('display_errors', 1);
-	}
-	else
-	{
-		error_reporting(0);	
-	}
+ */ 
+    if (DEBUG == 1)
+    {
+        error_reporting(E_ALL);
+        @ini_set('display_errors', 1);
+    }
+    else
+    {
+        error_reporting(0); 
+    }
 
 /*
  *---------------------------------------------------------------
@@ -213,7 +213,7 @@ $assign_to_config['upload_preferences'] = array(
  * And away we go...
  *
  */
-	require_once BASEPATH.'core/CodeIgniter'.EXT;
+    require_once BASEPATH.'core/CodeIgniter'.EXT;
 
 /* End of file index.php */
 /* Location: ./index.php */
@@ -230,13 +230,13 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/leavebehindtheworld.com/cache',
+    'cache_path'        => '/var/www/html/da-qu.com/msm/in-pu.com/cache',
  
     /**
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://www.leavebehindtheworld.com/cache',
+    'cache_url'         => 'http://www.in-pu.com/cache',
  
     /**
      * ==============================================
