@@ -1,0 +1,48 @@
+{layout="layout/index" title="印舖 - 印舖作品 - 广州 &amp; 深圳 &amp; 三亚 &amp; 海口"}
+
+<main class="photography">
+
+  {exp:channel:entries channel="photography" disable="member_data"}
+
+      <article>      
+        
+        <div>
+          <time>{entry_date format="%Y"}</time>
+          <p>{photography_tag}</p>
+          <h1>{title}</h1>
+          <p>{categories}{category_name}{/categories}</p>
+        </div>
+
+        <div>
+          
+          <a href="{title_permalink='photography/content'}">
+          
+          {photography_cover}
+            <img src="{url}">
+          {/photography_cover}
+          
+          </a>
+
+        </div>
+
+      </article>
+
+  {/exp:channel:entries}
+
+  <article>
+
+    <div>
+      <time>2012</time>
+      <p>黑白负片 / 8x10 / 数字扫描件</p>
+      <h1>不可信的真实</h1>
+      <p>客户委托</p>
+    </div>
+    
+    <div>
+      <img src="{site_url}assets/images/uploads/photography/bu_ke_xin_de_zhen_shi_01_cropped_01.jpg" alt="">
+      <img src="{site_url}assets/images/uploads/photography/bu_ke_xin_de_zhen_shi_02_cropped_01.jpg" alt="">
+    </div>  
+
+  </article>
+
+</main>
