@@ -68,7 +68,7 @@ ol {
 body {
   font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
   font-size: 62.5%;
-  background-color: #eeedeb;
+  /*background-color: #eeedeb;*/
   position: relative;
   display: flex;
   flex-direction: column;
@@ -397,13 +397,13 @@ table thead tr {
   <nav>
     
     <ul>
-      <li {if segment_1 == "" OR segment_1 == 'works'}class="underline"{/if}><span><a class="selected" {/if}href="{path="works/index"}">I.<br>印舖作品</a></span></li>
+      <li {if segment_1 == "" OR segment_1 == 'works'}class="underline"{/if}><span><a class="selected" {/if}href="{path="works/index"}">I.<br>照片書作品</a></span></li>
       <li {if segment_1 == 'archive'}class="underline"{/if}><span><a href="{path="archive/index"}">II.<br>存檔</a></span></li>
       <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">III.<br>工作室及暗房</a></span></li>
     </ul>
 
     <ul class="second">
-      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>排期</a></span></li>
+      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">IV.<br>工作</a></span></li>
       <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">V.<br>關於</a></span></li>
     </ul>
 
