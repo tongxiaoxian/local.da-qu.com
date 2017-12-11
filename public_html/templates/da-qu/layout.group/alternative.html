@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="content-language" content="zh-CN">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>{layout:title}</title>
+
+{exp:nsm_better_meta:template url_title="{segment_3}"}
+
+{exp:minimee:css}
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/icon-fonts.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/animate.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/photoswipe.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/default-skin/default-skin.css"> 
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/magnific-popup.css">
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/pace-theme-big-counter.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/headroom.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/introjs.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/introjs-dark.css"/>
+{/exp:minimee:css}
+
+{exp:minimee:js}
+<script type="text/javascript" src="{site_url}libraries/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/pace.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/Headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jQuery.headroom.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/intro.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
+<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.2.0.js"></script>
+
+{/exp:minimee:js}
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{site_url}libraries/icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{site_url}libraries/icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{site_url}libraries/icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{site_url}libraries/icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{site_url}libraries/icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{site_url}libraries/icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{site_url}libraries/icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{site_url}libraries/icons/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+<style>
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -moz-user-select: text;  
+  -webkit-user-select: text;  
+  -ms-user-select: text;
+  -moz-touch-callout: none;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+}
+
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+html {
+  height: 100%
+}
+
+
+body {
+  font-family: "Myriad Pro", "Avenir", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 62.5%;
+  color: #fff;
+  min-height: 100%;
+  position: relative;
+}
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  letter-spacing: .5px;
+}
+
+h1 {
+  font-size: 2.3em;
+  letter-spacing: 2px;
+}
+
+h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 0.5em;
+}
+
+* > a, * > span {
+  font-size: 1em;
+}
+
+p, figcaption, time, blockquote {
+  display: block;
+  font-size: 1.2em;
+  line-height: 2;
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.center {
+  text-align: center;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 3em;
+}
+
+ul li {
+  font-size: 1.2em;
+  line-height: 2;
+  list-style: none;
+  text-align: justify;
+}
+
+ol {
+  margin-bottom: 5em;
+}
+
+ol li {
+  font-size: 1.2em;
+  line-height: 2;
+  margin-bottom: 1em;
+  text-align: justify;
+}
+
+img#backstretch{
+  display:none;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: #fff;
+  text-decoration: none;
+  /*padding-bottom: 2px;*/
+  border-bottom: 1px dotted #fff;
+}
+
+a:hover, a:active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+a.current:link, a.current:visited {
+  font-weight: bold;
+}
+
+
+/* ==========================================================================
+   Backstretch
+   ========================================================================== */
+
+div.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+div.guide {
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+div.guide p.mention {
+  margin: auto;
+  font-size: 1.1em;
+}
+
+div.guide span.orientation {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+}
+
+p.return {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.1em;
+  margin-top: 7em;
+  padding-bottom: 5em;
+}
+
+p.return a {
+  position: relative;
+}
+
+p.return a:before {
+  padding: 75px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main.black {
+  color: #000;
+}
+
+main.black a:link, .black a:visited {
+  color: #000;
+  border-bottom: 1px dotted #000;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 70px;
+  /*padding: 18px 19px 17px 19px;*/
+  padding-left: 19px;
+  padding-right: 19px;
+  /*padding-top: 18px;*/
+  /*padding-bottom: 17px;*/
+}
+
+header nav ul { 
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav ul li {
+  font-size: 1.3em;
+  line-height: normal;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+  padding-top: 19px;
+  padding-bottom: 19px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+header nav ul li span:nth-child(3) {
+  display: block;
+  margin-top: 4px;
+}
+
+header nav ul li span:first-child {
+  display: none;
+  font-family: "Whitney A", "Whitney B";
+  text-transform: uppercase;
+}
+
+header nav ul li a:link, header nav ul li a:visited {
+  border-bottom: none;
+}
+
+header nav ul li a:hover span, header nav ul li a:active span {
+  font-weight: bold;
+}
+
+header nav ul li a.current:link span:nth-child(2) , header nav ul li a.current:visited span:nth-child(2) {
+  display: none;
+}
+
+header nav ul li a.current:link span:first-child, header nav ul li a.current:visited span:first-child {
+  display: block;
+}
+
+header.black a:link, header.black a:visited {
+  color: black;
+}
+
+header.solid_white {
+background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+  /*background-color: #e6e7e8;*/
+}
+
+header.solid_black {
+  /*background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));*/
+}
+
+header.none {
+  display: none;
+}
+
+@media screen and (min-width: 1001px) {
+
+  header {
+    padding-left: inherit;
+    padding-right: inherit;
+  }
+
+  header nav ul li {
+    width: 25%;
+  }
+
+  header nav ul li a.current:link , header nav ul li a.current:visited {
+  /*background-color: rgba(231, 246, 250, 0.9);*/
+  }
+
+}
+
+/* ==========================================================================
+   Photography
+   ========================================================================== */
+
+.photography main div.banner {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -1;
+}
+
+.photography main div.placeholder {
+  height: 96vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-color: transparent;
+}
+
+.photography main section {
+  padding-top: 20px;
+  /*background-color: #e6e7e8;*/
+  background-color: #fff;
+}
+
+.photography main section > *:not(div.series) {
+  margin-left: 19px;
+  margin-right: 19px;
+}
+
+.photography main section img {
+  display: block;
+  width: 100%;
+}
+
+.photography main section p {
+  font-size: 1.3em;
+}
+
+.photography main section ul { 
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.photography main section ul li {
+  font-size: 1.3em;
+  margin-right: 1.2em;
+  list-style: none;
+}
+
+.photography main section ul li:before {
+  content: "- ";
+}
+
+.photography main section ul li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(231, 246, 250, 0.9);
+
+}
+
+.photography main section ul li.underline a {
+  position: relative;
+  top: 10px;
+}
+
+.photography main section ul li.underline a:link, li.underline a:visited {
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+.about main section, .promotions main section, .schedule main section, .content main section, .latest main section {
+  padding: 175px 19px 0px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+
+.about main section article h2 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-weight: bold;
+}
+
+.about main section article p {
+  font-size: 1.3em;
+}
+
+.about main p.question {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+
+/* ==========================================================================
+   Schedule
+   ========================================================================== */
+
+.schedule main section {
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
+  /*align-content: center;*/
+  /*flex-wrap: wrap;  */
+}
+
+.schedule main section div {
+  margin-bottom: 5em;
+}
+
+.schedule main section div h2 {
+  text-align: center;
+
+}
+
+.schedule main section div ul li {
+  text-align: center;
+}
+
+
+/* ==========================================================================
+   Lastest
+   ========================================================================== */
+
+.latest main section {
+  /*background-color: #e6e7e8;*/
+  /*padding-top: 10em;*/
+  /*padding-bottom: 5em;*/
+  /*color: #fff;*/
+  /*padding-left: 10px;*/
+  /*padding-right: 10px;*/
+}
+
+
+.latest main section article {
+  margin-bottom: 15em;
+}
+
+.latest main section article h1 {
+  margin-top: 2em;
+  font-size: 1.5em;
+}
+
+.latest main section article img {
+  display: block;
+  width: 100%;
+}
+
+.latest main section article div {
+  display: flex;
+}
+
+.latest main section article div p.tag, .latest main section article div time {
+  font-size: 1.1em;
+  margin-right: 1.1em;
+}
+
+
+
+/* ==========================================================================
+   Message
+   ========================================================================== */
+
+.message main {
+  margin-bottom: 70px;
+}
+
+.message main section {
+  height: 100vh;
+  padding: 0px 19px 0px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  /*align-items: center;*/
+}
+
+.message main {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+
+.content main {
+  overflow: hidden;
+  /*min-height: 100vh;*/
+  background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+}
+
+/* ==========================================================================
+   Printing
+   ========================================================================== */
+
+.printing img {
+  width: 100%;
+}
+
+
+/* ==========================================================================
+   Service
+   ========================================================================== */
+
+
+.service main div.swiper-container {
+  height: 100vh;
+}
+
+.service main div.swiper-slide a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  /*margin-top: 2em;*/
+  /*margin-bottom: 2em;*/
+}
+
+.service main div.swiper-slide a:link, .service main div.swiper-slide a:visited {
+  border-bottom: none; 
+}
+
+.service main div.swiper-slide h1 {
+  font-size: 2.3em;
+  text-align: center;
+  margin: 0;
+}
+
+.service main div.swiper-slide p {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.service main section.package {
+  position: relative;
+  max-width: 600px;
+  padding: 40vh 19px 100px 19px;
+}
+
+.service main section.package p {
+  font-size: 1.2em;
+}
+
+.service main section.package h1 {
+  margin: 0;
+}
+
+.service main section.package h1 + p {
+  font-weight: bold;
+}
+
+.service main section.package h2 {
+  margin-top: 5em;
+
+}
+
+.service main section.package > div.standard {
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 420px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service main section.package > div.standard div {
+  width: 33%;
+  margin-top: 3em;
+}
+
+.service main section.package > div.standard div p {
+  text-align: center;  
+  margin-bottom: 0em;
+}
+
+.service main section.package > div.standard div p:first-child span {
+  font-size: 2em;
+  padding-right: 5px;
+}
+
+.service main div.background.top {
+  height: 55vh;
+  min-height: 55vh;
+}
+
+.service main div.background.bottom {
+  top: 54vh;
+  background-color: #000;
+}
+
+.service main div.background.fill {
+  min-height: 100vh;
+  /*top: 100vh;*/
+  background-color: #000;
+}
+
+.service main section.wechat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 125px 25px 25px 25px;
+}
+
+.service main section.wechat p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.service main section.wechat > div {
+  margin-bottom: 5em;
+}
+
+
+/* ==========================================================================
+   Header Media Queries
+   ========================================================================== */
+
+@media screen and (min-width: 1001px) {
+
+  .service main {
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));*/
+  }
+
+  .service main section.package {
+    padding-top: 38vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .service main div.background.top {
+  height: 100vh;
+  min-height: 100vh;
+}  
+
+  .service main div.background.bottom {
+    display: none;
+  }
+
+}
+
+
+/* ==========================================================================
+   Sample
+   ========================================================================== */
+
+.sample {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
+.sample main article {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 1px 1px 20px #000;
+}
+
+.sample main article div.title h1 {
+  font-size: 3.5em;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.sample main article div.title p {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 0;
+}
+
+
+.sample main article.return {
+  background-color: #111;
+}
+
+.sample main article.return p {
+  font-size: 2em;
+  padding-bottom: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+span.pointer {
+  /*display: none;*/
+  font-size: 3em;
+  color: #fff;
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  top: 6px;
+  transform: translate(-50%,0);
+}
+
+/* ==========================================================================
+   Studio
+   ========================================================================== */
+
+.about main section, .promotions main section, .schedule main section  {
+  padding: 150px 19px 0px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.studio main section {
+  padding: 150px 19px 75px 19px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+}
+
+.studio main ol { 
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 2em;
+  list-style-position:inside;
+}
+
+.studio main ol li {
+  margin-right: 1.3em;
+  margin-bottom: 0em;
+}
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer {
+  z-index: 2;
+  position: fixed;
+  left: 50%;
+  bottom: 6px;
+  transform: translate(-50%,0);
+}
+
+footer p {
+  letter-spacing: 2px;
+  margin: 0;
+  color: #fff;
+  font-size: 1em;
+}
+
+footer.none {
+  display: none;
+}
+
+footer.black p {
+  color: black;
+}
+
+
+
+/* ==========================================================================
+   Gallery
+   ========================================================================== */
+
+div.gallery {
+
+}
+
+div.gallery article {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-bottom: 2em;
+  max-width: 500px;
+  align-content: center;
+}
+
+div.gallery figure {
+  display: inline;
+}
+
+div.gallery figure a:hover {
+  border-bottom: none;
+}
+
+
+</style>
+
+</head>
+
+<body class="{layout:body}">
+
+  <header class="{layout:header}">
+
+  </header>
+  
+  {layout:contents}
+  
+  {embed="layout/photoswipe"}
+
+</body>
+
+</html>
