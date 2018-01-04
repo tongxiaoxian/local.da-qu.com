@@ -1,71 +1,79 @@
 @charset "utf-8";
 /* CSS Document */
 
-
 /* ==========================================================================
    Body
    ========================================================================== */
 
 *, *:before, *:after {
-  box-sizing: border-box;
-  -moz-user-select: text;  
-  -webkit-user-select: text;  
-  -ms-user-select: text;
-  -moz-touch-callout: none;
-  -webkit-touch-callout: none;
-  -ms-touch-callout: none;
+    box-sizing: border-box;
 }
 
 p {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
+  /*-webkit-margin-before: 0em;*/
+  /*-webkit-margin-after: 0em;*/
 }
 
 ul {
   -webkit-padding-start: 0px;
-  padding:0;
-  margin-top: 0;
-}
-
-ol {
-  padding: 0;
-  margin: 0;
-  list-style-position:inside;
 }
 
 body {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "Whitney A", "Whitney B", "sourcehansans-tc", "sourcehansans-sc", "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-style: normal;
+  font-weight: 300;
   font-size: 62.5%;
-  background-color: #eeedeb;
 }
+
+
+
 
 /* ==========================================================================
    General Typography
    ========================================================================== */
 
 *, *:before, *:after {
-  letter-spacing: .5px;
+  /*letter-spacing: 1px;*/
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-style: normal;
   font-size: 1.1em;
 }
 
-* > a, * > span {
+h1 a, h1 span {
   font-size: 1em;
 }
 
-p, figcaption, time, blockquote {
-  display: block;
+p, figcaption, time {
   font-size: 1.1em;
-  line-height: 1.9;
-  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 1em;
+}
+
+p a, p span {
+  font-size: 1em; 
+}
+
+span, a {
+  font-size: 1.1em; 
+}
+
+span a, a span {
+  font-size: 1.1em;
+}
+
+span {
+  display: block;
+  text-align: center;
 }
 
 img {
   display: block;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  pointer-events: none;
 }
 
 #backstretch{
@@ -73,131 +81,102 @@ img {
 }
 
 /* ==========================================================================
-   Header
-   ========================================================================== */
-
-header {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #FFF;
-  z-index: 1;
-  cursor: pointer;
-  padding: 25px;
-}
-
-header div.text {
-  max-width: 50%;
-  position: fixed;
-  bottom: 120px;
-  left: 25px;
-}
-
-header h1 {
-  letter-spacing: 1px;
-  margin-bottom: 2px;
-
-}
-
-header > p {
-  margin-top: 100px;
-  max-width: 500px;
-}
-
-/* ==========================================================================
-   Screen Saver
-   ========================================================================== */
-
-#saver {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.9);
-  color: #FFF;
-  z-index: 10;
-  cursor: pointer;
-  padding: 25px;
-}
-
-#saver h1 {
-  position: absolute;
-  bottom: 0px;
-  font-size: 3em;
-}
-
-/* ==========================================================================
    General Links
    ========================================================================== */
 
 a:link, a:visited {
-  color: #000;
+  color: black;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: none;
-  font-weight: bold;
+  /*color: #AAA*/
 }
 
 a:active {
-  border-bottom: none;
+  /*font-weight: bold; */
 }
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  color: white;
+
+  position: relative;
+  height: 90vh;
+}
+
+header > h1 {
+  /*display: none;*/
+  position: absolute;
+  top:15px;
+  left:25px;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+header span {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 2.5em;
+}
+
+
+header img#logo {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%,0);
+}
+
+
+header a:link, header a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+header div#billboard {
+  position: absolute;
+  bottom: -30px;
+  right: 10px;
+  padding: 1em 2em 1em 2em;
+  width: 200px;
+  height:120px;
+  background-color: #2a1414;
+}
+
+header div#billboard h1{
+  font-weight: normal;
+  font-size: 1.2em;
+}
+
+header div#billboard p{
+
+}
+
 
 /* ==========================================================================
    Nav
    ========================================================================== */
 
 nav {
-  margin-top: 8px;
-  margin-left: 25px;
-  margin-right: 25px;
-  display: flex;
-  justify-content: space-between;
+  margin-top:6em;
+  margin-bottom:6em;
 }
 
-nav ul {  
+nav ul {
+  display: -webkit-flex;
   display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 nav ul li {
-  font-size: 1.1em;
-  margin-right: 1em;
-  margin-top: 1em;
+  margin-right: 0.5em;
   list-style: none;
-}
-
-nav ul li:last-child {
-  margin-right: 0em;
-}
-
-nav ul li a:link, nav ul li a:visited {
-  color: #AAA;
-}
-
-nav ul li a.selected:link, nav ul li a.selected:visited {
-  font-style: normal;
-}
-
-nav ul li a:hover, nav ul li a:active {
-  font-style: italic;
-}
-
-li.underline span {
-  position: relative;
-  top: -10px;
-  border-bottom: 8px solid rgba(209, 230, 223, 0.9);
-}
-
-li.underline a {
-  position: relative;
-  top: 10px;
 }
 
 /* ==========================================================================
@@ -205,52 +184,81 @@ li.underline a {
    ========================================================================== */
 
 main {
-  margin-top: 100px;
-  margin-left: 25px;
-  margin-right: 25px;
+
 }
 
-main p {
-  max-width: 600px;
+main section {
+  margin-bottom:10em;
+  margin-left: auto;
+  margin-right: auto;  
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;
 }
+
+main div.gallery {
+}
+
+
+main section p.delimiter {
+  margin-top: 2em;
+  color: #999999;
+}
+
+main section p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+
+main section div.order {
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;  
+  margin: 2em auto;
+  padding: 1em;
+  border: 1px solid black;
+  color: #000000;
+}
+
+main section div.order:hover { 
+  cursor: pointer;
+  background: #444;
+  color: #FFF;
+  -webkit-transition-property:background; 
+  -webkit-transition-duration: 0.5s, 0.5s;
+  -webkit-transition-timing-function: linear, ease-out;
+}
+
+main section#links > div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  /*width: 120px;*/
+}
+
+main section#links {
+  /*margin-top:6em;*/
+  margin-bottom:0em;
+}
+
 
 /* ==========================================================================
-   Table
+   Footer
    ========================================================================== */
 
-div.container {
-  max-width: 500px;
+footer {
+  position: relative;
+  display: -webkit-flex;
+  -webkit-align-items: center; 
+  -webkit-justify-content: center;
+  -webkit-flex-flow: column;  
 }
 
-table {
-  width: 100%;
-  table-layout: fixed;
-  margin-bottom: 5em;
-}
+footer #footer {
+  margin-top: 5em;
 
-table caption {
-  text-align: left;
-  padding-bottom: 2em;
-}
-
-table th, table td {
-  font-size: 1.1em;
-  padding-bottom: 5px;
-}
-
-table th {
-  font-weight: normal;
-  padding-bottom: 5px;
-}
-
-table th.year {
-  width: 25%;
-}
-
-table .type {
-  text-align: right;
-}
-
-table thead tr {
-  text-align: left;
 }

@@ -39,7 +39,7 @@
  *
  */
  $assign_to_config['site_name']  = 'in-pu'; 
- $assign_to_config['cp_url'] = 'http://www.in-pu.com/admin.php';
+ $assign_to_config['cp_url'] = 'http://local.in-pu.com/admin.php';
 
 
 /*
