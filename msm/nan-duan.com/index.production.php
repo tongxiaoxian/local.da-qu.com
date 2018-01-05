@@ -89,12 +89,12 @@
 
 $assign_to_config['site_url'] = "http://www.nan-duan.com/";
 
-$assign_to_config['tmpl_file_basepath'] = '/var/www/html/tongxiaoxian.com/msm/nan-duan.com/templates';
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/nan-duan.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
     38 => array(                                                            // ID of upload destination
         'name'        => 'products_cn',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/msm/nan-duan.com/assets/images/uploads/products_cn/', // Server path to upload directory
+        'server_path' => '/var/www/html/da-qu.com/msm/nan-duan.com/assets/images/uploads/products_cn/', // Server path to upload directory
         'url'         => 'http://www.nan-duan.com/assets/images/uploads/products_cn/'      // URL of upload directory
     )                  
 );
@@ -216,7 +216,7 @@ $config['minimee'] = array(
      * The path to the cache folder.
      * Defaults to site's FCPATH + '/cache'
      */
-    'cache_path'        => '/var/www/html/tongxiaoxian.com/msm/nan-duan.com/cache',
+    'cache_path'        => '/var/www/html/da-qu.com/msm/nan-duan.com/cache',
  
     /**
      * The URL to the cache folder.
