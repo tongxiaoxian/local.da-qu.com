@@ -1,0 +1,54 @@
+{layout="layout/index"}
+
+	{exp:channel:entries channel="archives" disable="member_data"}
+	
+	{layout:set name="title"}童孝賢的攝影本 - 作品存檔 - {title} - 攝影師 - 廣州 &amp; 深圳 &amp; 三亞 &amp; 海口{/layout:set}
+
+		<main class="archives content">
+
+			<div class="gallery">
+
+				{archives_gallery}
+			        
+					<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+			          
+			          {archives_gallery:file}
+
+			              <a href="{url}" itemprop="contentUrl" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+			          {/archives_gallery:file}
+
+			          {archives_gallery:thumb}
+
+			            <img src="{url}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+
+			          {/archives_gallery:thumb}
+			          
+						</a>
+			        
+			        </figure>
+
+				{/archives_gallery}
+
+			</div>
+
+			<article>
+
+				<p>在進入31歲的年齡，我花了一個下午的時間，建了一個自己的博客。和21歲的時候那樣，我小心地選擇字體、字號、調整行距；同時決定頁面上該出現什麼，不該出現什麼。31歲的我和21歲的我似乎沒有太大的差別，仍然孤獨地工作，和老媽兩人一起生活。</p>
+
+				<p>因爲我很少照相，我不太知道自己21歲時候的樣子，但10年時間我感受到媽媽真的老了。就在我寫這篇博客的時候，老媽正在屋子裏收看長征題材的電視劇，每每這個時候我喜歡聽從屋子裏傳出來的電視劇的聲音，這讓我感到安寧。而要是屋子裏沒動靜的時候，我都會進去看一眼，確定媽媽睡着了我纔回屋去。父母老了，自然而然地開始擔心他們。</p>
+				    
+				<p>前段時間因爲工作太累，飲食不專注，第一次出現胃疼。我之前沒胃疼過，沒想到那麼難受。疼的時候站也不是，坐也不是，只能躺着。有了胃痛的教訓，我後來吃飯變得非常專心，一定把食物細細嚼爛了再吃下去，腦子裏不想別的事。現在每天的吃飯如同是我在做一件很重要的工作，胃也開始好轉。畢竟如果自己的身體不好，就沒有辦法照顧家人。</p>
+				    
+				<p>同齡的朋友多數都已經生養孩子，每次聚餐我都跟他們打聽些養育孩子的事情，因爲我覺得育兒挺有意思的，我能感受到孩童的那種完滿的生命力。我現在覺得不必太過糾結於事業的成功、配偶的完美，只要能一起過日子，一起生養孩子，能把家庭生活順當地過下去就行。一家老少都沒病沒災，就已經是很大的成功。</p>
+
+				<p>人生不過一碗飯接着另一碗飯，我希望我能活到70、80歲，然後開心地告訴自己，一生之中我至少沒有餓過，並且始終有父母孩子朋友陪伴着度過。</p>
+				    
+				<p>－</p>
+				<p>2016年11月15日，家中。</p>
+
+			</article>
+
+		</main>
+
+{/exp:channel:entries}

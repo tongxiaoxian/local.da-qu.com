@@ -38,7 +38,7 @@
  * will log into, and its URL.
  *
  */
- $assign_to_config['site_name']  = 'in-pu'; 
+ $assign_to_config['site_name']  = 'photobookcafe'; 
  $assign_to_config['cp_url'] = 'http://local.photobook.cafe/admin.php';
 
 

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+<title>{layout:title}</title>
+
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/normalize.css"/>
+<link rel="stylesheet" type="text/css" media="screen" href="{site_url}libraries/css/swiper.css"/>
+<link rel="stylesheet" type="text/css" href="{site_url}libraries/css/photoswipe.css"> 
+<link rel="stylesheet" href="{site_url}libraries/css/default-skin/default-skin.css">
+
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="{site_url}libraries/icons/favicon/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="{site_url}libraries/icons/favicon/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="{site_url}libraries/icons/favicon/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="{site_url}libraries/icons/favicon/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="{site_url}libraries/icons/favicon/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="{site_url}libraries/icons/favicon/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="{site_url}libraries/icons/favicon/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="{site_url}libraries/icons/favicon/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="{site_url}libraries/icons/favicon/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+
+<style>
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ==========================================================================
+   Body
+   ========================================================================== */
+
+*, *:before, *:after { 
+  -moz-touch-callout: none;
+  -webkit-touch-callout: none;
+  -ms-touch-callout: none;
+}
+
+p {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+  padding:0;
+  margin-top: 0;
+  list-style-type: none;
+}
+
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-position:inside;
+}
+
+body {
+  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-size: 62.5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   General Typography
+   ========================================================================== */
+
+*, *:before, *:after {
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-weight: normal;*/
+  font-size: 1.2em;
+  /*margin-bottom: 2em;*/
+}
+
+* > a, * > span {
+  font-size: 1em;
+  /*letter-spacing: 1px;*/
+
+}
+
+p, figcaption, time, blockquote, li {
+  display: block;
+  font-size: 1.2em;
+  line-height: 2;
+}
+
+p {
+  margin-bottom: 2em;
+}
+
+p.s {
+  font-size: 1.1em;
+}
+
+p.n {
+  margin-top: -1em;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#backstretch{
+  display:none;
+}
+
+/* ==========================================================================
+   General Links
+   ========================================================================== */
+
+a:link, a:visited {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: none;
+  font-weight: bold;
+}
+
+a:active {
+  border-bottom: none;
+}
+
+main a:link, main a:visited {
+  border-bottom: 1px solid #000;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+header {
+  margin-left: 15px;
+  margin-right: 15px;  
+  margin-top: 5em;
+}
+
+header h1 {
+  font-weight: normal;
+}
+
+header p {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+header p a:link, header p a:visited {
+  /*color: #AAA;*/
+}
+
+
+/* ==========================================================================
+   Nav
+   ========================================================================== */
+
+nav {
+  margin-top: 8px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {  
+  display: flex;
+}
+
+nav ul li {
+  line-height: 1.7;
+  font-size: 1.2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  list-style: none;
+}
+
+nav ul.second li:last-child {
+  margin-right: 0em;
+}
+
+nav ul li a:link, nav ul li a:visited {
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li.underline a:link, nav ul li.underline a:visited {
+  color: #000;
+  font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a:active {
+  color: #000;
+  font-weight: normal;
+  /*font-style: italic;*/
+}
+
+li.underline span {
+  position: relative;
+  top: -10px;
+  border-bottom: 8px solid rgba(200, 155, 100, 0.4);
+
+}
+
+li.underline a {
+  position: relative;
+  top: 10px;
+}
+
+/* ==========================================================================
+   Main
+   ========================================================================== */
+
+main {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+main p {
+  max-width: 600px;
+}
+
+
+
+/* ==========================================================================
+   Main Photography
+   ========================================================================== */
+
+main.photography article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8em;  
+}
+
+main.photography article h1 + p {
+  margin-bottom: 1em;
+}
+
+main.photography img {
+  display: block;
+  width: 640px;
+  margin-bottom: 2em;
+}
+
+/* ==========================================================================
+   Main Archives
+   ========================================================================== */
+
+main.archives.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 8em;  
+}
+
+main.archives.content div.gallery {
+  margin-bottom: 10em;
+}
+
+main.archives.content article {
+  width: 500px;
+}
+
+
+/* ==========================================================================
+   Main Content
+   ========================================================================== */
+
+main.content img {
+  margin-bottom: 2em;
+}
+
+main.content figure a:visited, main.content figure a:link{
+  border-bottom: none;
+}
+
+main.content figure {
+  margin: 0;
+}
+
+main.content figure:first-child {
+  flex: 0 1 100%;
+}
+
+
+
+main.content article div.gallery {
+
+
+}
+
+
+
+/* ==========================================================================
+   Main Schedule
+   ========================================================================== */
+
+main.schedule {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+}
+
+main.schedule div {
+  width: 100%;
+  /*max-width: 400px;*/
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+
+main.schedule div ul {
+  text-align: right;
+}
+
+
+
+/* ==========================================================================
+   Main Personal
+   ========================================================================== */
+
+div.container {
+  max-width: 500px;
+}
+
+p.instruction {
+  letter-spacing: 5px;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin-bottom: 2em;
+}
+
+table caption {
+  text-align: left;
+  padding-bottom: 2em;
+}
+
+table th, table td {
+  font-size: 1.2em;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+table th {
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+table th.year, table th.type {
+  width: 25%;
+}
+
+table th.type, table td.type {
+  width: 20%;
+  text-align: right;
+}
+
+table thead tr {
+  text-align: left;
+} 
+
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+footer p {
+  /*color: #666;*/
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media screen and (min-width: 1001px) {
+
+    nav, main, header {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+
+    nav {
+      
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+  <header>
+
+      <p><a href="{site_url}">童孝賢的攝影本</a></p>
+      <p class="s n">Last Update: 2018.1.6</p>
+
+  </header>
+  
+  {layout:contents}
+
+
+
+  <nav>
+    
+    <ul>
+      <li {if segment_1 == '' OR segment_1 == 'photography'}class="underline"{/if}><span><a href="{path="photography/index"}">壹.<br>攝影集</a></span></li>
+      <li {if segment_1 == 'archives'}class="underline"{/if}><span><a href="{path="archives/index"}">貳.<br>作品存檔</a></span></li>
+      <li {if segment_1 == 'studio'}class="underline" {/if}><span><a href="{path="studio/index"}">叄.<br>暗房</a></span></li>
+    </ul>
+
+    <ul class="second">
+      <li {if segment_1 == 'schedule'}class="underline" {/if}><span><a href="{path="schedule/index"}">肆.<br>日程</a></span></li>
+      <li {if segment_1 == 'about'}class="underline" {/if}><span><a href="{path="about/index"}">伍.<br>聯繫</a></span></li>
+    </ul>
+
+  </nav>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader-active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>  
+
+<script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/swiper.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/velocity.ui.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/photoswipe-ui-default.min.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/prevent.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/baidu.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
+
+</body>
+
+</html>
+  
