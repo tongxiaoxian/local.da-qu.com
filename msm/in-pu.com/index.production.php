@@ -24,7 +24,7 @@
  * https://docs.expressionengine.com/v2/installation/best_practices.html
  *
  */
-	$system_path = '../ee_system';
+	$system_path = '../../ee_system';
 
 
 /*
@@ -40,9 +40,9 @@
  * index.php)
  *
  */
-   $assign_to_config['site_name']  = 'tongxiaoxian'; 
-   $assign_to_config['cp_url'] = 'http://www.tongxiaoxian.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://www.tongxiaoxian.com/'; 
+   $assign_to_config['site_name']  = 'in-pu'; 
+   $assign_to_config['cp_url'] = 'http://www.in-pu.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://www.in-pu.com/'; 
 
 
 /*
@@ -93,20 +93,20 @@
 //	$assign_to_config['site_404'] = '';
 //	$assign_to_config['global_vars'] = array(); // This array must be associative
 
-$assign_to_config['site_url'] = "http://www.tongxiaoxian.com/";
+$assign_to_config['site_url'] = "http://www.in-pu.com/";
 
-$assign_to_config['tmpl_file_basepath']   = "/var/www/html/tongxiaoxian.com/public_html/templates";
+$assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/in-pu.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
     5 => array(                                                            // ID of upload destination
         'name'        => 'photography',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/public_html/assets/images/uploads/photography/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.com/assets/images/uploads/photography/'      // URL of upload directory
+        'server_path' => '/var/www/html/in-pu.com/public_html/assets/images/uploads/photography/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/photography/'      // URL of upload directory
     ),
     6 => array(                                                            // ID of upload destination
         'name'        => 'archives',                          // Display name in control panel
-        'server_path' => '/var/www/html/tongxiaoxian.com/public_html/assets/images/uploads/archives/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.com/assets/images/uploads/archives/'      // URL of upload directory
+        'server_path' => '/var/www/html/in-pu.com/public_html/assets/images/uploads/archives/', // Server path to upload directory
+        'url'         => 'http://www.in-pu.com/assets/images/uploads/archives/'      // URL of upload directory
     )    
 );
 

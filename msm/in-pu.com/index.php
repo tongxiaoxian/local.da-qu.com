@@ -24,7 +24,7 @@
  * https://docs.expressionengine.com/v2/installation/best_practices.html
  *
  */
-	$system_path = '../ee_system';
+	$system_path = '../../ee_system';
 
 
 /*
@@ -40,9 +40,9 @@
  * index.php)
  *
  */
-   $assign_to_config['site_name']  = 'tongxiaoxian'; 
-   $assign_to_config['cp_url'] = 'http://local.tongxiaoxian.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://local.tongxiaoxian.com/'; 
+   $assign_to_config['site_name']  = 'in-pu'; 
+   $assign_to_config['cp_url'] = 'http://local.in-pu.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://local.in-pu.com/'; 
 
 
 /*
@@ -93,20 +93,20 @@
 //	$assign_to_config['site_404'] = '';
 //	$assign_to_config['global_vars'] = array(); // This array must be associative
 
-$assign_to_config['site_url'] = "http://local.tongxiaoxian.com/";
+$assign_to_config['site_url'] = "http://local.in-pu.com/";
 
-$assign_to_config['tmpl_file_basepath']   = "/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/templates";
+$assign_to_config['tmpl_file_basepath'] = '/Users/tongxiaoxian/Sites/local.da-qu.com/msm/in-pu.com/templates';
 
 $assign_to_config['upload_preferences'] = array(
     5 => array(
         'name'        => 'photography',
-        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/photography/',
-        'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/photography/'
+        'server_path' => '/Users/tongxiaoxian/Sites/local.in-pu.com/public_html/assets/images/uploads/photography/',
+        'url'         => 'http://local.in-pu.com/assets/images/uploads/photography/'
     ),
     6 => array(
         'name'        => 'archives',
-        'server_path' => '/Users/tongxiaoxian/Sites/local.tongxiaoxian.com/public_html/assets/images/uploads/archives/',
-        'url'         => 'http://local.tongxiaoxian.com/assets/images/uploads/archives/'
+        'server_path' => '/Users/tongxiaoxian/Sites/local.in-pu.com/public_html/assets/images/uploads/archives/',
+        'url'         => 'http://local.in-pu.com/assets/images/uploads/archives/'
     )    
 );
 

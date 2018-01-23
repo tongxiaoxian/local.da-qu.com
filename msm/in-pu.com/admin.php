@@ -24,7 +24,7 @@
  * https://docs.expressionengine.com/v2/installation/best_practices.html
  *
  */
-	$system_path = '../ee_system';
+	$system_path = '../../ee_system';
 
 /*
  * --------------------------------------------------------------------
