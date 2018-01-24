@@ -171,17 +171,20 @@ header {
 
 nav {
   position: absolute;
+  left: 50%;
   bottom: 0;
+  transform: translate(-50%,0);
   margin-top: 8px;
-  margin-left: 25px;
-  margin-right: 25px;
+  /*margin-left: 25px;*/
+  /*margin-right: 25px;*/
   margin-bottom: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-nav ul {  
+nav ul {
   display: flex;
+  justify-content: center;
 }
 
 nav ul li {
@@ -197,7 +200,7 @@ nav ul li a:link, nav ul li a:visited {
 }
 
 nav ul li a:hover, nav ul li a:active {
-  color: #000;
+  /*color: #000;*/
   font-weight: normal;
 }
 
@@ -216,12 +219,17 @@ nav ul li a:hover, nav ul li a:active {
 
 <header>
 	
-	<img id="backstretch" src="{site_url}assets/images/uploads/SCAN_1_1-as-Smart-Object-1.jpg"/>
+	<!-- <img id="backstretch" src="{site_url}assets/images/uploads/SCAN_1_1-as-Smart-Object-1.jpg"/> -->
+  <img id="backstretch" src="{site_url}assets/images/uploads/tiantian.jpg"/>  
+
 
   <nav>
     <ul>
-      <li><a href="http://www.tongxiaoxian.com">童孝贤的摄影本</a></li>
-      <li><a href="http://www.tongxiaoxian.com">微博</a></li>
+      <li><a href="http://www.tongxiaoxian.com">摄影本</a></li>
+      <li><a href="http://www.leavebehindtheworld.com">博客</a></li>
+      <li><a href="http://www.tongxiaoxian.com">Instagram</a></li>
+      <!-- <li><a href="http://www.tongxiaoxian.com">豆瓣</a></li> -->
+
     </ul>
   </nav>
 
