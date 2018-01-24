@@ -62,11 +62,6 @@
     box-sizing: border-box;
 }
 
-p {
-  /*-webkit-margin-before: 0em;*/
-  /*-webkit-margin-after: 0em;*/
-}
-
 ul {
   -webkit-padding-start: 0px;
 }
@@ -85,7 +80,7 @@ body {
    ========================================================================== */
 
 *, *:before, *:after {
-  /*letter-spacing: 1px;*/
+  letter-spacing: 1px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -136,18 +131,24 @@ img {
    General Links
    ========================================================================== */
 
+
 a:link, a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
+  padding-bottom: 2px;
+  /*border-bottom: 1px solid #d1d1d1;*/
+  border-bottom: dotted 1px rgba(209, 209, 209, .6);
 }
 
 a:hover {
-  /*color: #AAA*/
+  border-bottom: none;
 }
 
 a:active {
-  /*font-weight: bold; */
+  font-weight: bold;
+  border-bottom: none;
 }
+
 
 
 /* ==========================================================================
@@ -164,163 +165,42 @@ header {
   color: white; 
 }
 
-header h1 {
-  font-size: 1.2em;
-  letter-spacing: 2px;
-  margin-left: 25px;
-  margin-top: 25px;
-  margin-bottom: 0;
-  /*opacity: 0.75;*/
-  font-weight: normal;
-  color: black;
-
-}
-
-header h2 {
-  font-size: 1.2em;
-  text-align: center;
-}
-
-header img#play_button {
-  opacity: 0.5;
-}
-
-header div time {
-  display: block;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
-header a:link, header a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-header div.order {
-  width: 180px;
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  margin: 0em auto 1em auto;
-  padding: 1em;
-  border: 1px solid #CCC;
-  border-radius: 10px;
-}
-
-header div.order:hover { 
-  cursor: pointer;
-  background: #444;
-  color: #FFF;
-  -webkit-transition-property:background; 
-  -webkit-transition-duration: 0.5s, 0.5s;
-  -webkit-transition-timing-function: linear, ease-out;
-}
-
-section .section-description .button {
-    border: 2px solid rgba(0, 0, 0, 0.75);
-    border-radius: 100px;
-    padding: 10px 15px 8px;
-    text-decoration: none;
-    margin: 0 0 0 10px;
-    outline: none
-}
-
-
-
 /* ==========================================================================
-   Main
+   Nav
    ========================================================================== */
 
-article {
-  max-width: 600px;
-  margin: 0 auto;
-  padding-left: 5em;
-  padding-right: 5em;
+nav {
+  position: absolute;
+  bottom: 0;
+  margin-top: 8px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
 }
 
-section article h1 {
-  text-align: center;
+nav ul {  
+  display: flex;
 }
 
-section article p {
-  text-align: left;
-}
-
-
-section {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  margin-left: auto;
-  margin-right: auto;  
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  -webkit-flex-flow: column;
-}
-
-main section p.delimiter {
-  margin-top: 2em;
-  color: #999999;
-}
-
-main section p {
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-main ul li {
-  opacity: 0.75;
+nav ul li {
+  line-height: 1.7;
   font-size: 1.1em;
-  margin-right: 0.5em;
-  list-style-type: none;
-  margin-top: 2em;
+  margin-right: 2em;
+  margin-top: 1em;
+  list-style: none;
 }
 
-main ul li {
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-  -webkit-flex-flow: column;
+nav ul li a:link, nav ul li a:visited {
+  color: #FFF;
 }
 
-main ul div {
-  display: -webkit-flex;
-  -webkit-justify-content: center;
+nav ul li a:hover, nav ul li a:active {
+  color: #000;
+  font-weight: normal;
 }
 
-main ul li img {
-  display: block;
-  margin-bottom: 5px;
-}
-
-main section.sold {
-}
-
-main section span.sale {
-  font-family: "Avenir", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-  font-size: 8em;
-  padding-right: 10px;
-}
-
-main section.delivery div {
-  display: -webkit-flex;
-  -webkit-align-items: center; 
-  -webkit-justify-content: center;
-}
-
-main section.delivery div img {
-  margin: -1em 4em 4em 4em;
-}
-
-main section.team div {
-  /*display: -webkit-flex;*/
-  /*-webkit-align-items: center; */
-  /*-webkit-justify-content: center;*/
-}
-
-main section.team div p {
-  text-align: center;
-}
 
 
 </style>
@@ -328,46 +208,22 @@ main section.team div p {
 
 <script type="text/javascript" src="{site_url}libraries/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="{site_url}libraries/js/jquery.backstretch.min.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/aos.js"></script>
-<script type="text/javascript" src="{site_url}libraries/js/site2.js"></script>
+<script type="text/javascript" src="{site_url}libraries/js/site.js"></script>
 
 </head>
 
 <body>
 
-<script>
-  AOS.init({
-      duration: 1000,
-      once: true
-  });
-</script>
-
-<header  data-aos="fade-up">
-
-	<div>
-		<!-- <h1>照片書咖啡館</h1> -->
-		<!-- <p>Bag - 0</p>	 -->
-	</div>
+<header>
 	
-	<div>
-		<!-- <p>讓一個人也要好好吃飯的便當</p> -->
-		<h2>「你好，初次見面。」</h2>
+	<img id="backstretch" src="{site_url}assets/images/uploads/SCAN_1_1-as-Smart-Object-1.jpg"/>
 
-		<!-- <p>也许有些话，不知道怎么说出口，那就用料理来好好表现吧！让每一口都是一句，谢谢！</p> -->
-	</div>
-	<!-- <img id="play_button" src="{site_url}libraries/icons/play_button.svg" alt=""> -->
-
-	<div>
-
-		<time>營業時間</time>
-
-		<div class="order">15:00 PM － 00:00 AM</div>
-
-	</div>
-
-		<!-- <img id="backstretch" src="{site_url}assets/images/uploads/BAO-SOHO_Finalcropped.jpg"/> -->
-	
-	<img id="backstretch" src="{site_url}assets/images/uploads/STUDIO_FLM_0005.jpg"/>
+  <nav>
+    <ul>
+      <li><a href="http://www.tongxiaoxian.com">童孝贤的摄影本</a></li>
+      <li><a href="http://www.tongxiaoxian.com">微博</a></li>
+    </ul>
+  </nav>
 
 </header>
 
