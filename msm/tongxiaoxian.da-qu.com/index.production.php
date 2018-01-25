@@ -41,8 +41,8 @@
  *
  */
    $assign_to_config['site_name']  = 'tongxiaoxian'; 
-   $assign_to_config['cp_url'] = 'http://www.tongxiaoxian.da-qu.com/admin.php'; 
-   $assign_to_config['site_url'] = 'http://www.tongxiaoxian.da-qu.com/'; 
+   $assign_to_config['cp_url'] = 'http://tongxiaoxian.da-qu.com/admin.php'; 
+   $assign_to_config['site_url'] = 'http://tongxiaoxian.da-qu.com/'; 
 
 
 /*
@@ -87,7 +87,7 @@
  *
  */
 
-$assign_to_config['site_url'] = "http://www.tongxiaoxian.da-qu.com/";
+$assign_to_config['site_url'] = "http://tongxiaoxian.da-qu.com/";
 
 $assign_to_config['tmpl_file_basepath'] = '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/templates';
 
@@ -95,22 +95,22 @@ $assign_to_config['upload_preferences'] = array(
     60 => array(                                                            // ID of upload destination
         'name'        => 'journal',                          // Display name in control panel
         'server_path' => '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/assets/images/uploads/journal/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.da-qu.com/assets/images/uploads/journal/'      // URL of upload directory
+        'url'         => 'http://tongxiaoxian.da-qu.com/assets/images/uploads/journal/'      // URL of upload directory
     ),
     60 => array(                                                            // ID of upload destination
         'name'        => 'food',                          // Display name in control panel
         'server_path' => '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/assets/images/uploads/food/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.da-qu.com/assets/images/uploads/food/'      // URL of upload directory
+        'url'         => 'http://tongxiaoxian.da-qu.com/assets/images/uploads/food/'      // URL of upload directory
     ),
     60 => array(                                                            // ID of upload destination
         'name'        => 'shelf',                          // Display name in control panel
         'server_path' => '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/assets/images/uploads/shelf/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.da-qu.com/assets/images/uploads/shelf/'      // URL of upload directory
+        'url'         => 'http://tongxiaoxian.da-qu.com/assets/images/uploads/shelf/'      // URL of upload directory
     ),
     60 => array(                                                            // ID of upload destination
         'name'        => 'about',                          // Display name in control panel
         'server_path' => '/var/www/html/da-qu.com/msm/tongxiaoxian.da-qu.com/assets/images/uploads/about/', // Server path to upload directory
-        'url'         => 'http://www.tongxiaoxian.da-qu.com/assets/images/uploads/about/'      // URL of upload directory
+        'url'         => 'http://tongxiaoxian.da-qu.com/assets/images/uploads/about/'      // URL of upload directory
     )    
 );
 
@@ -236,7 +236,7 @@ $config['minimee'] = array(
      * The URL to the cache folder.
      * Defaults to $EE->config->item('base_url') + '/cache'
      */
-    'cache_url'         => 'http://www.tongxiaoxian.da-qu.com/cache',
+    'cache_url'         => 'http://tongxiaoxian.da-qu.com/cache',
  
     /**
      * ==============================================

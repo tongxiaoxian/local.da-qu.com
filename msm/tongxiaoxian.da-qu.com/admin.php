@@ -39,7 +39,7 @@
  *
  */
  $assign_to_config['site_name']  = 'tongxiaoxian'; 
- $assign_to_config['cp_url'] = 'http://local.tongxiaoxian.da-qu.com/admin.php';
+ $assign_to_config['cp_url'] = 'http://tongxiaoxian.da-qu.com/admin.php';
 
 
 /*
