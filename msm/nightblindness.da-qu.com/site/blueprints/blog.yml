@@ -1,0 +1,14 @@
+title: Blog
+pages:
+  template: article
+  sort: flip
+files: false
+icon:  book
+fields:
+  title:
+    label: Title
+    type:  text
+  text:
+    label: Text
+    type:  textarea
+    help: Text to display if no article.

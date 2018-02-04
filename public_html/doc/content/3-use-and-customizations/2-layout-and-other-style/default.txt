@@ -1,0 +1,24 @@
+Title: Adjusting Design
+
+----
+
+Text: 
+
+This theme is a very simple and standard Kirby 2.0 type theme. It intentionally adds as little as possible, so that there's not a lot to learn on top of (link: https://getkirby.com/docs/templates text: Kirby template customization) in general.
+
+The theme has only one template (default) and three snippets (header, footer, sidebar).
+
+## Add CSS
+The included npm local build tool does SCSS processing, which happens to the */assets/scss/main.scss* file. You can add more SCSS files and reference them in main.scss. 
+
+The main.scss file just imports the SCSS files:
+
+```
+@import "normalize";
+@import "highlightjs/railscasts";
+@import "primary";
+// you could add more file imports to this file
+```
+
+## Or not
+You can also just ignore all this and use the included rendered CSS file. If you go this route, you won't need to do any SCSS processing. You may find that simply [adjusting the primary color](primary-color) is enough

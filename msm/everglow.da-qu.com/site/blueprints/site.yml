@@ -1,0 +1,63 @@
+title: Site
+
+pages: default
+
+fields:
+  title:
+    label: Title
+    type:  text
+
+  author:
+    label: Author
+    type:  text
+
+  description:
+    label: Description
+    type:  textarea
+
+  copyright:
+    label: Copyright
+    type:  textarea
+
+  socialFacebook:
+    label: Facebook
+    type:  input
+  socialTwitter:
+    label: Twitter
+    type:  input
+  socialLinkedin:
+    label: LinkedIn
+    type:  input
+  socialInstagram:
+    label: Instagram
+    type:  input
+  socialDribbble:
+    label: Dribbble
+    type:  input
+  socialBehance:
+    label: Behance
+    type:  input
+  socialGithub:
+    label: GitHub
+    type:  input
+  socialMedium:
+    label: Medium
+    type:  input
+  socialYouTube:
+    label: YouTube
+    type:  input
+  socialVimeo:
+    label: Vimeo
+    type:  input
+  socialSnapchat:
+    label: Snapchat
+    type:  input
+  socialSoundcloud:
+    label: SoundCloud
+    type:  input
+  socialSpotify:
+    label: Spotify
+    type:  input
+  socialEmail:
+    label: Email
+    type:  input

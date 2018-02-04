@@ -1,0 +1,99 @@
+.accent-1 {
+	display: block;
+	padding: 0 ($linksUnderline / 2);
+	position: relative;
+	line-height: 1em;
+	&:after {
+		content: "";
+
+		width: 100%;
+		height: 0;
+
+		position: absolute;
+		left: 0;
+		bottom: -($linksUnderline / 2);
+		z-index: -1;
+
+		transition: .3s all $transition1;
+
+		opacity: .8;
+		background: $ca1;
+	}
+	&:hover {
+		&:after {
+			height: $linksUnderline;
+			bottom: 0;
+		}
+	}
+}
+
+.accent-2 {
+	@extend .accent-1;
+	&:after {
+		height: $linksUnderline;
+		bottom: $linksUnderline/2;
+	}
+	&:hover {
+		&:after {
+			bottom: -$linksUnderline;
+		}
+	}
+}
+
+
+.accent-3 {
+	padding: 10px 0;
+	margin: 0 20px;
+	color: #797878;
+	text-shadow: none;
+	position: relative;
+
+	&::before {
+		content: attr(data-hover);
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		padding: 10px 0;
+		max-width: 0;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		transition: max-width 0.5s;
+	}
+	&:hover{
+		&::before{
+			max-width: 100%;
+		}
+	}
+}
+
+
+.project-next {
+	.accent-3.out {
+		padding: 0px 0;
+		margin: 0 20px;
+		color: #797878;
+		text-shadow: none;
+		position: relative;
+
+		&::before {
+			content: attr(data-hover);
+			position: absolute;
+			top: 0;
+			left: 0;
+			overflow: hidden;
+			padding:  0px 0;
+			max-width: 0;
+			border-bottom: 3px solid #fff;
+			color: #fff;
+			transition: max-width 0.5s;
+		}
+	}
+	&:hover{
+		.accent-3 {
+			&::before{
+				max-width: 100%;
+			}
+		}
+	}
+}

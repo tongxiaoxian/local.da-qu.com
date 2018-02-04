@@ -1,0 +1,19 @@
+Title: Primary Color
+
+----
+
+Year: 2014
+
+----
+
+Tags: outdoor
+
+----
+
+Text:
+
+Changing the primary color is very simple, just go to */assets/scss/_primary.sccs* and on the first line change the value to whatever you need.
+
+```
+$site-brand-color : #f00;
+```

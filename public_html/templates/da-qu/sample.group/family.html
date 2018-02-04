@@ -1,0 +1,50 @@
+{layout="layout/index" body="sample" service="family" header="white"}
+
+	{exp:channel:entries channel="sample" limit="1" disable="categories|member_data"}
+	
+	{layout:set name="title"}大屈攝影（摄影）- 摄影工作室 - 家庭單元 - {title} - 深圳 &amp; 廣州 &amp; 三亚 &amp; 海口{/layout:set}
+
+		<main>
+
+			<article class="backstretch">
+				
+				<div class="title">
+					<p>家庭／小時候*</p>
+					<h1>{sample_title}</h1>
+				</div>
+
+				<div class="guide">
+					<span class="icon-phone-portrait orientation"></span>
+					<p class="mention">* 上下滑動或翻轉屏幕瀏覽</p>
+				</div>
+
+				{sample_cover}
+					<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+				{/sample_cover}
+
+			</article>
+
+			{sample_gallery}
+
+				{sample_gallery:sample_gallery_file}
+			
+					<article class="backstretch">
+						<img id="backstretch" src="{url}" alt="{sample_gallery:sample_gallery_file_desc}" width="{exp:mx_calc expression="{width}/2"}" height="{exp:mx_calc expression="{height}/2"}">
+					</article>
+			
+				{/sample_gallery:sample_gallery_file}
+			
+			{/sample_gallery}
+
+			<a href="{path="service/family"}#standard">
+			
+				<article class="return">
+					<span class="pointer">&#8681;</span>
+					<p>點擊此處返回規格</p>
+				</article>
+			
+			</a>
+
+		</main>
+
+{/exp:channel:entries}

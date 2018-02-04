@@ -1,0 +1,35 @@
+Title: Making a Static Version
+
+----
+
+Text: 
+
+When running this code locally you are using Kirby and PHP. One way to use this is to install the code on a server that supports PHP, which would allow you to log into the panel and make edits as needed over the web. Another way, is to work with the site locally and then generate a static non-php version as-needed.
+
+Generating a static version is a great way to get your documentation site up on Github's free Pages service. Just open up a branch called *gh-pages* and put the static contents in it. You can also just FTP the files to just about any web host, since there are no server-side dependencies.
+
+*NOTE*: The new search feature is not yet compatible with static output described on this page, so if you're making a static version be sure to remove the search form, which can be found in `/sites/snippets/header.php`. The intenion is to provide a static-friendly search function in the near future.
+
+## Method 1: Using Statify.php, which is included in KDoc.
+
+This script is included at the root and called (link: https://gist.github.com/bastianallgeier/5f182b30d4c90152b468 text: statify.php).
+
+To use this, open the statify.php page in your code editor and modify the url variable to whatever your destination URL will be.
+
+```
+$url = 'http://nsteiner.github.io/kdoc';
+```
+
+Then go to */statify.php* in your local site (in a web browser) to run the build. The static files will be generated at */static/* at the root.
+
+## Method 2: Using Wget
+
+(link: https://www.gnu.org/software/wget/ text: Wget) must be installed on your computer ((link: http://gnuwin32.sourceforge.net/packages/wget.htm text: win)/(link: http://brewformulas.org/wget text: mac)) to do this, but the results can be preferable. The following command and options will generate a static version of the script that uses relative paths, instead of the absolute $url value path. This makes the resulting files more portable.
+
+In terminal, navigate to the root of the site, and run:
+
+```
+wget -p -E -r -k http://localhost:8008/kdoc
+```
+
+The static files generated this way will be found in the root, in a subfolder called */localhost:8008/*. Note that if you're not using the supplied npm build system, your local domain might be different (e.g. localhost/kdoc without the port number), and should be changed in the code above.

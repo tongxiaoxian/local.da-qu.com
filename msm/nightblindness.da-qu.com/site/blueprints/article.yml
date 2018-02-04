@@ -1,0 +1,20 @@
+title: Project
+pages: false
+files:
+  sortable: true
+icon:  file-text
+fields:
+  title:
+    label: Title
+    type:  text
+    width: 3/4
+  date:
+    label: Date
+    type:  date
+    width: 1/4
+  text:
+    label: Text
+    type:  textarea
+  tags:
+    label: Tags
+    type:  tags

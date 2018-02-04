@@ -1,0 +1,15 @@
+Title: Home
+
+----
+
+Text: 
+
+Welcome to the KDoc theme for Kirby CMS. This theme is free to use, and is (link: https://github.com/nsteiner/kdoc text: on github here). This site is both information about the theme, as well as a demo of the theme itself.
+
+## Introduction
+
+KDoc is starter theme for building documentation websites using Kirby CMS. It's based on (link: https://github.com/cfpb/DOCter text: DOCter) which is used for the same purpose, but based on Jekyll. This version also includes some inspiration from (link: https://pages.18f.gov/guides-template/ text: 18F's Guides Template), especially for the expanding menu idea.
+
+It includes a method for generating a totally static (non-php) version of the site, suitable for use in Github Pages, or on pretty much any server.
+
+It's ready to go out of the box with Kirby v2.2.3. The theme is kept simple so it's easy to customize and modify. When you're ready to launch, don't forget to get your (link: https://getkirby.com/buy text: Kirby license).

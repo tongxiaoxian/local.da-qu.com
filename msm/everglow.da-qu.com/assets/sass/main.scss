@@ -1,0 +1,642 @@
+@import '_components';
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-x: hidden !important;
+	background: $bgr1;
+}
+body {
+	overflow-x: hidden !important;
+	color: $c2;
+}
+
+img {
+	border-radius: $borderRadius;
+}
+
+// ---------------------------------------------------------
+// Anchors
+// ---------------------------------------------------------
+a {
+	color: $c2; // x
+	text-decoration: none;
+	transition: .2s all $transition1;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	padding: 0;
+	line-height: 1em;
+
+	&:hover {
+		color: inherit;
+	}
+	&:active {
+		opacity: .95;
+		color: inherit;
+	}
+	&:link {
+		color: inherit;
+	}
+	&:visited {
+		color: inherit;
+	}
+
+	&:after {
+		content: "";
+
+		width: 0;
+		height: $linksUnderline;
+
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+
+		transition: .5s all $transition1;
+
+		opacity: .8;
+		background: $ca1;
+
+		display: none;
+	}
+
+	&.accent {
+		border-color: transparent !important;
+		&:after {
+			content: "";
+
+			width: 100%;
+			height: $linksUnderline;
+
+			position: absolute;
+			left: 0;
+			bottom: -5px;
+			z-index: -1;
+
+			transition: .5s all $transition1;
+
+			opacity: 1;
+			background: $ca1;
+
+			display: block;
+		}
+		&:hover {
+			&:after {
+				transform: translateY(4px);
+			}
+		}
+	}
+}
+
+.links-body a {
+// .footer a {
+	border-bottom: 2px solid transparent;
+	color: $c1;
+	&:hover {
+		border-color: $ca1;
+	}
+}
+
+// ---------------------------------------------------------
+// Header
+// ---------------------------------------------------------
+.header {
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	padding: 4%;
+	padding-bottom: 0;
+	margin: 0;
+	font-size: $h5-font-size;
+	color: $c1;
+
+	.logo {
+		float: left;
+		display: block;
+		line-height: .9em;
+		font-family: $ff1;
+		font-weight: bold;
+		text-transform: uppercase;
+		visibility: hidden;
+		padding: 10px 0;
+		margin: -10px 0;
+		&:first-letter {
+			visibility: visible;
+			padding: 10px 0;
+			margin: -10px 0;
+		}
+		&:hover {
+			visibility: visible;
+			padding: 10px 0;
+			margin: -10px 0;
+		}
+	}
+
+	&:hover {
+		.logo {
+			transform: translateY(0);
+			transition: .3s all ease;
+		}
+	}
+
+	.hamburger-container {
+		display: none;
+		@media #{$bm} {
+			display: block;
+			z-index: 1100;
+			position: fixed;
+			position: absolute;
+			top: 13px; right: 13px;
+			top: 20px; right: 20px;
+		}
+	}
+
+	.menu {
+		display: block;
+		position: relative;
+		padding: 0;
+		margin: 0;
+		font-family: $ff1;
+		float: right;
+		font-size: 14px;
+		line-height: 1;
+
+		li {
+			list-style: none;
+			position: relative;
+			float: left;
+			padding: 0;
+			margin: 0;
+
+			a {
+				display: inline-block;
+				text-align: left;
+				padding: 10px 0 10px $sitePadding;
+				margin: -10px 0;
+				line-height: .1;
+
+				span {
+					opacity: 0;
+					margin-right: 10px;
+					transition: .3s all ease;
+				}
+
+				&:hover {
+					color: $ca1;
+					span {
+						opacity: 1;
+						color: $c1;
+						transition: .3s all ease;
+					}
+				}
+			}
+
+		}
+	}
+}
+
+
+// ---------------------------------------------------------
+// Footer
+// ---------------------------------------------------------
+.footer {
+	width: 100%;
+	padding: 8% 4% 2% 4%;
+	padding: 4% 4% 2% 4%;
+	margin: 1% 0 0 0;
+	position: relative;
+	background: $bgr3;
+	font-size: 12px;
+	a {
+		color: inherit;
+		border-bottom: 2px solid transparent;
+		// &:hover {
+			// border-bottom-color: $c3;
+		// }
+	}
+}
+
+.svg-path {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	height: 4%;
+	z-index: 3;
+	transform: rotate(180deg);
+	top: auto;
+	bottom: -50px;
+	bottom: -2.2%;
+	path {
+		fill: $bgr3;
+	}
+	@media #{$bm} {
+		display: none;
+	}
+}
+
+
+// ---------------------------------------------------------
+// Fullscreen Video
+// ---------------------------------------------------------
+.fullscreen-video-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+
+	z-index: 0;
+
+	@media #{$bm} {
+		position: relative;
+		display: block;
+		background-size: cover !important;
+	}
+
+	.fullscreen-video {
+		@media #{$bd} {
+			margin-right: 15%;
+		}
+		@media #{$bm} {
+			width: 100%;
+			display: block;
+		}
+		mix-blend-mode: lighten;
+	}
+}
+
+// ---------------------------------------------------------
+// Projects
+// ---------------------------------------------------------
+.cards {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+
+	@media #{$bm} {
+		padding: $sitePadding 0;
+	}
+
+	@media #{$bd} {
+		&:hover > .card {
+			opacity: .1;
+		}
+
+		&:hover > .card:hover{
+			opacity: 1;
+			color: #fff;
+			h1,h2,h3,h4,h5,h6,.icon-arrow {
+				color: inherit;
+			}
+		}
+	}
+
+	// footer next project button
+	// doesnt need additional padding, since it's just one .card
+	&.pagination .card {
+		&:nth-child(odd),
+		&:nth-child(even) {
+			padding: 4% !important;
+		}
+	}
+
+	.card {
+		width: 33.3333%;
+		display: block;
+		margin: 0;
+		padding: 20px 0;
+		position: relative;
+		z-index: 10;
+
+		display: flex;
+		justify-content: flex-start;
+		justify-content: center;
+		align-items: center;
+		align-content: flex-start;
+
+		@media #{$bm} {
+			width: 50%;
+			flex-direction: column-reverse;
+			&:nth-child(odd) {
+				padding-right: 10px;
+			}
+			&:nth-child(even) {
+				padding-left: 10px;
+			}
+		}
+
+		h1,h2,h3,h4,h5,h6 {
+			margin: 0;
+		}
+
+		.image-container {
+			@media #{$bd} {
+				display: block;
+				// position: fixed;
+				position: absolute;
+				transform: translateX(-38%);
+				opacity: 0;
+				visibility: hidden;
+				transition: .3s all ease;
+				pointer-events: none;
+
+				// z-index: 1000;
+			}
+			@media #{$bm} {
+				margin-bottom: 10px;
+			}
+			img {
+				display: block;
+			}
+		}
+		&:hover {
+			.image-container {
+				@media #{$bd} {
+					visibility: visible;
+					opacity: 1;
+					transform: translateX(-43%);
+					transition: .3s all ease;
+				}
+			}
+		}
+
+		.text-container {
+			display: block;
+			clear: both;
+			position: relative;
+			z-index: 10;
+			@media #{$bm} {
+				text-align: center;
+				time {
+					margin-top: 0px;
+				}
+			}
+		}
+
+		.icon-arrow {
+			position: absolute;
+			right: 10px;
+			top: 26px;
+			right: -80px;
+			top: 40%;
+			transform: translateY(-50%) translateX(100%);
+			font-size: $h5-font-size;
+			transition: 2s all ease;
+			text-shadow: 0px 0px 30px $bgr3;
+			color: transparent;
+			opacity: 0;
+		}
+		&:hover .icon-arrow {
+			@media #{$bd} {
+				color: $bgr3;
+				transition: .3s all ease;
+				opacity: 1;
+				text-shadow: none;
+				transform: translateY(-50%) translateX(0);
+			}
+			@media #{$bm} {
+				display: none;
+			}
+		}
+	}
+
+}
+
+
+time {
+	font-size: 10px;
+	margin-top: -5px;
+	display: block;
+	letter-spacing: 1px;
+	position: relative;
+	display: block;
+	&.styled {
+		margin-top: -50px;
+		margin-bottom: 30px;
+		&:after {
+			content: "";
+			width: 10px;
+			height: 2px;
+			display: block;
+			background: $ca1;
+			position: absolute;
+			bottom: -10px;
+		}
+	}
+}
+
+// ---------------------------------------------------------
+// Item Single
+// ---------------------------------------------------------
+.btn-info,
+.btn-next {
+	position: absolute;
+
+	bottom: 4%;
+	right: 4%;
+
+	z-index: 10;
+	display: block;
+
+	font-size: 16px;
+
+	&.active {
+		color: $ca1;
+	}
+}
+.btn-info {
+	right: 6%;
+	@media #{$bm} {
+		right: 4%;
+		bottom: 19px;
+	}
+}
+.btn-next {
+	@media #{$bm} {
+		display: none;
+	}
+}
+.text {
+	font-size: 14px;
+}
+
+.title {
+	transform: translateY(70%);
+	opacity: 0;
+	animation: slideInFromBottom 1s ease forwards;
+	animation-delay: .3s;
+}
+
+@keyframes slideInFromBottom {
+	from {
+		opacity: 0;
+		transform: translateY(70%);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+// ---------------------------------------------------------
+// Social Icons
+// ---------------------------------------------------------
+.social {
+	margin: 4% 0 0 0;
+	padding: 0;
+	font-size: $h5-font-size;
+	cursor: default;
+	a {
+		padding: 0;
+		margin: 20px 20px 0px 0;
+		line-height: 1;
+		font-weight: bold;
+		&:hover {
+			color: $ca1;
+		}
+	}
+}
+.footer .social a {
+	margin: 20px 10px 0 10px;
+}
+
+// ---------------------------------------------------------
+// Next/Prev
+// ---------------------------------------------------------
+.pagination {
+	width: 100%;
+	display: flex;
+	.pagination-item {
+		width: 100%;
+		padding: $sitePadding 0;
+		display: block;
+		border: none;
+
+		color: $c3;
+		font-size: $h1-font-size;
+		text-align: center;
+	}
+
+	* {
+		color: #fff;
+	}
+
+	span.pagination-item {
+		opacity: .5;
+	}
+
+	.next {}
+	.prev {}
+
+	.cards:hover .card {
+		opacity: 1;
+	}
+
+	.card {
+		width: 100%;
+
+		.text-container {
+			text-align: center;
+			padding: $sitePadding;
+			display: block;
+			width: 100%;
+			span {
+
+			}
+		}
+		.image-container {
+			left: 47%;
+		}
+	}
+}
+
+
+// ---------------------------------------------------------
+// Slider Controls
+// ---------------------------------------------------------
+.fp-auto-height-mobile.fp-section,
+.fp-auto-height-mobile .fp-slide,
+.fp-auto-height-mobile .fp-tableCell {
+	@media #{$bm} {
+	    height: auto !important;
+	}
+}
+
+.fp-slidesNav.bottom {
+	bottom: 4%;
+	margin-bottom: -16px;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: .3s all ease;
+	width: 1px;
+	height: 6px;
+	border-radius: 0;
+	margin: 0;
+	background: $c2;
+}
+
+#fp-nav ul li a.active span,
+.fp-slidesNav ul li a.active span,
+#fp-nav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a.active span,
+.fp-slidesNav ul li:hover a span{
+    height: 12px !important;
+    width: 2px !important;
+    margin: -3px 0 0 -3px;
+    border-radius: 100%;
+	background: $ca1;
+	border-color: $ca1;
+	transition: .3s all ease;
+	border-radius: 0;
+	margin: 0;
+}
+
+
+
+// ---------------------------------------------------------
+// Cursor
+// ---------------------------------------------------------
+
+$cursorHover: url(../images/cursor/cursor-hover.png), auto;
+$cursorActive: url(../images/cursor/cursor-active.png), auto;
+$cursorDown: url(../images/cursor/cursor-down.png), auto;
+
+.cursorTrigger {
+	cursor: $cursorHover;
+	&:active {
+		cursor: $cursorActive;
+	}
+}
+.cursorTriggerDown {
+	cursor: $cursorDown;
+	&:active {
+		cursor: $cursorActive;
+	}
+}

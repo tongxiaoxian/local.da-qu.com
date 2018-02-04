@@ -1,0 +1,30 @@
+Title: Options
+
+----
+
+Text: 
+
+Within the Kirby configuration file `site/config/config.php` there are additional options which can be turned on if desired. Currently there is just one option.
+
+## MathJax
+If you wish to display mathematical formulae in your KDoc website, the [MathJax](https://www.mathjax.org) option is for you. MathJax is described as "A JavaScript display engine for mathematics that works in all browsers."
+
+Turning on MathJax is as simple as modifying the default value of "false" to "true" in the Kirby config file mentioned earlier. The default settings are as follows.
+
+```
+c::set('kdoc.mathjax', false);
+c::set('kdoc.mathjax.url', 'https://cdn.mathjax.org/mathjax/latest/MathJax.js');
+c::set('kdoc.mathjax.config', 'TeX-AMS_CHTML');
+```
+
+See further information about these settings in the comments of the config file itself.An example of it's usage is, if you type:
+
+```
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+```
+
+The output will look like:
+
+$$x = {-b \pm \sqrt{b^2-4ac} \over 2a}$$
+
+ Further information about how to use MathJax can be found at the [MathJax website](https://www.mathjax.org).
