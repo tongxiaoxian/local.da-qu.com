@@ -1,5 +1,0 @@
-site/accounts/*
-!site/accounts/index.html
-node_modules
-static
-.idea
