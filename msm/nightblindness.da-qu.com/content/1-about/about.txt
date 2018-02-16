@@ -1,0 +1,17 @@
+Title: About
+
+----
+
+Intro: Window Height means your content is going to be centered in the middle of the page's height, which equals the height of the browser. However, sometimes it's better to make it auto expand the height of the section - for example when you have lot of content.
+
+----
+
+Text: 
+
+----
+
+Sectiontype: fp-auto-height
+
+----
+
+Coverimage: vk284nkoavu-samuel-zeller.jpg

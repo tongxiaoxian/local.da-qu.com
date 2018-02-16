@@ -1,17 +1,69 @@
-Title: 小夜盲
+Title: EVERGLOW
 
 ----
 
-Author: 小夜盲
+Author: Joro Yordanov
 
 ----
 
-Description: 
+Description: Konstruct - a Kirby CMS theme.
 
 ----
 
-Keywords: Kirby,CMS,file-based
+Copyright: © (date: Year) (link: http://themes.yordanoff.net/konstruct/ text: Konstruct Theme popup: yes) for (link: http://getkirby.com text: Kirby popup: yes)
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://getkirby.com text: Kirby)
+Socialfacebook: 
+
+----
+
+Socialtwitter: 
+
+----
+
+Sociallinkedin: 
+
+----
+
+Socialinstagram: 
+
+----
+
+Socialdribbble: 
+
+----
+
+Socialbehance: 
+
+----
+
+Socialgithub: 
+
+----
+
+Socialmedium: 
+
+----
+
+Socialyoutube: 
+
+----
+
+Socialvimeo: 
+
+----
+
+Socialsnapchat: 
+
+----
+
+Socialsoundcloud: 
+
+----
+
+Socialspotify: 
+
+----
+
+Socialemail: 

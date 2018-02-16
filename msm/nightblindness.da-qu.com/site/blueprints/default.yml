@@ -1,10 +1,28 @@
 title: Page
-pages: true
-files: true
+
+pages: false
+
 fields:
   title:
     label: Title
     type:  text
+
+  sectiontype:
+    label: Section Type
+    type: radio
+    default: wh
+    options:
+      wh: Window Height
+      fp-auto-height: Auto height
+    columns: 2
+    help: >
+        Window Height means your content is going to be centered in the middle of the page's height, which equals the height of the browser.
+        However, sometimes it's better to make it auto expand the height of the section - for example when you have lot of content.
+
+  intro:
+    label: Intro
+    type:  textarea
+
   text:
     label: Text
     type:  textarea
